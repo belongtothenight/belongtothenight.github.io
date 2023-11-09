@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['input_5fstruct_0',['input_struct',['../structinput__struct.html',1,'']]],
-  ['intersection_1',['intersection',['../structintersection.html',1,'']]]
-];
