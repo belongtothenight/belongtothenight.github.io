@@ -5,8 +5,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
     - navigation.top
+    - navigation.footer
+    - toc.integrate
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -29,6 +30,13 @@ theme:
   icon:
     admonition:
       note: material/book-alert-outline
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/belongtothenight
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dachuan-chen-2b5752251/
 
 markdown_extensions:
   - pymdownx.highlight:
