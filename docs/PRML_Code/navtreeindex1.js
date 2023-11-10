@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"structhistory__t.html#a054fa13f49acec1fdf6e4bf5cd20d2e7":[6,0,4,1],
 "structhistory__t.html#a20b24e529e11411f2f32c8f252966989":[6,0,4,2],
 "structhistory__t.html#a7f297463e2e567a31fa8cb5d323a466f":[6,0,4,3],
 "structhistory__t.html#a8a4ecef56791a51ceecc00eb66b48e52":[6,0,4,0],

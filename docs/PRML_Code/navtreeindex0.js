@@ -154,6 +154,7 @@ var NAVTREEINDEX0 =
 "hw4_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[7,0,0,2,1,0],
 "index.html":[],
 "index.html":[0],
+"index.html#dependencies-2":[0,1],
 "index.html#directory-structure-2":[0,0],
 "libc_2decision__boundary_8h.html":[7,0,0,3,1],
 "libc_2decision__boundary_8h.html#a2610e8dd9c97ab934bc5ca61c7f6a9bf":[7,0,0,3,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "structdataset.html#ae1394b6d375669b7e43e07d9e47395f7":[6,0,3,13],
 "structdataset.html#aebf777940059ca94314f5741459df9a3":[6,0,3,8],
 "structdataset.html#aefdbfe3890b57ce08ec1a6325294e141":[6,0,3,12],
-"structhistory__t.html":[6,0,4],
-"structhistory__t.html#a054fa13f49acec1fdf6e4bf5cd20d2e7":[6,0,4,1]
+"structhistory__t.html":[6,0,4]
 };
