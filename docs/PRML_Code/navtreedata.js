@@ -25,25 +25,23 @@
 var NAVTREE =
 [
   [ "PRML_Code_Documents", "index.html", [
+    [ "SRC", "index.html", "index" ],
     [ "HW1 - Generate figure for beans classification result.", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw1_2readme.html", null ],
     [ "HW2 - Pinky Dimension Distribution", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html", [
-      [ "Dependencies", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#autotoc_md2", null ],
-      [ "Directory Structure", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#autotoc_md3", null ],
-      [ "Things to complete", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#autotoc_md4", null ]
+      [ "Dependencies", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#dependencies", null ],
+      [ "Directory Structure", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#directory-structure", null ],
+      [ "Things to complete", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html#things-to-complete", null ]
     ] ],
     [ "HW3 - 2 dimensional shape classification.", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html", [
-      [ "Dependencies", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#autotoc_md6", null ],
-      [ "Directory Structure", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#autotoc_md7", null ],
-      [ "Problems", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#autotoc_md8", null ]
+      [ "Dependencies", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#dependencies-1", null ],
+      [ "Directory Structure", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#directory-structure-1", null ],
+      [ "Problems", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html#problems", null ]
     ] ],
     [ "HW4 - Basic demonstration for Supervised Learning Algorithm.", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw4_2readme.html", null ],
-    [ "SRC", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2readme.html", [
-      [ "Directory Structure", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2readme.html#autotoc_md11", null ]
-    ] ],
     [ "Scripts", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html", [
-      [ "Execute entire progress with documents opened", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#autotoc_md13", null ],
-      [ "Execute Normally", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#autotoc_md14", null ],
-      [ "Options", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#autotoc_md15", null ]
+      [ "Execute entire progress with documents opened", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#execute-entire-progress-with-documents-opened", null ],
+      [ "Execute Normally", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#execute-normally", null ],
+      [ "Options", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#options", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
