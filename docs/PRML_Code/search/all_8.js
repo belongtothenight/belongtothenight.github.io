@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['main_0',['main',['../hw2_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c'],['../hw3_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.c'],['../hw4_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c']]],
-  ['main_2ec_1',['main.c',['../hw3_2main_8c.html',1,'(Global Namespace)'],['../hw4_2main_8c.html',1,'(Global Namespace)'],['../hw2_2main_8c.html',1,'(Global Namespace)']]],
-  ['male_5fdata_2',['MALE_DATA',['../hw2_2main_8c.html#aef4889da1d7fb57ba3b5b5bccec07472',1,'main.c']]],
-  ['max_3',['max',['../structdataset.html#a306b5ca364bf842a8ff5bbfc0b4d4a4b',1,'dataset']]],
-  ['max_5fcategory_4',['MAX_CATEGORY',['../hw3_2lib_2data__proc_8h.html#a48a7acb6850168cf4ee361f21741951f',1,'data_proc.h']]],
-  ['max_5fline_5flength_5',['MAX_LINE_LENGTH',['../hw3_2lib_2data__proc_8h.html#af0f2173e3b202ddf5756531b4471dcb2',1,'data_proc.h']]],
-  ['max_5frecords_6',['MAX_RECORDS',['../hw3_2lib_2data__proc_8h.html#a475c77257e5782fb60199a7d12a7e53f',1,'data_proc.h']]],
-  ['max_5fsize_7',['MAX_SIZE',['../hw2_2lib_2data__proc_8h.html#a0592dba56693fad79136250c11e5a7fe',1,'data_proc.h']]],
-  ['mean_8',['mean',['../structdataset.html#a976925cd66ff0dcd419628463f580f1c',1,'dataset']]],
-  ['min_9',['min',['../structdataset.html#ad2e88d75f808e6d4e78d48bceb10c336',1,'dataset']]],
-  ['min_5ferror_10',['min_error',['../structintersection.html#ad958bc47a2a3d0dcc5f81359b2d22635',1,'intersection']]],
-  ['mu_11',['mu',['../structnorm__dist.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'norm_dist::mu'],['../structdataset.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'dataset::mu']]]
+  ['info_5farch_0',['info_arch',['../_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch:&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fcompiler_1',['info_compiler',['../_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler:&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5flanguage_5fextensions_5fdefault_2',['info_language_extensions_default',['../_c_make_c_compiler_id_8c.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default:&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5flanguage_5fstandard_5fdefault_3',['info_language_standard_default',['../_c_make_c_compiler_id_8c.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default:&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fplatform_4',['info_platform',['../_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform:&#160;CMakeCXXCompilerId.cpp'],['../_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform:&#160;CMakeCCompilerId.c']]],
+  ['initial_5fstep_5',['initial_step',['../structconfig.html#a625f373a2c501739208f00e118d5f3ec',1,'config']]],
+  ['initialize_5fdata_6',['initialize_data',['../hw2_2lib_2data__proc_8h.html#aab62f5e8171f2763c73e60810eb26e4d',1,'initialize_data(dataset *pData):&#160;data_proc.c'],['../hw2_2lib_2data__proc_8c.html#aab62f5e8171f2763c73e60810eb26e4d',1,'initialize_data(dataset *pData):&#160;data_proc.c']]],
+  ['input_5fstruct_7',['input_struct',['../structinput__struct.html',1,'']]],
+  ['integral_8',['integral',['../structnorm__dist.html#a1174af01b8a329a6d465ea6e0951b3e5',1,'norm_dist']]],
+  ['integral_5fstep_9',['integral_step',['../structnorm__dist.html#a57f79540f91837eb36efc6b7d2938e69',1,'norm_dist']]],
+  ['integral_5fstep_10',['INTEGRAL_STEP',['../hw2_2main_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;main.c'],['../test_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;test.c']]],
+  ['intersection_11',['intersection',['../structintersection.html',1,'']]],
+  ['intersection_5fstep_12',['INTERSECTION_STEP',['../hw2_2main_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;main.c'],['../test_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;test.c']]]
 ];

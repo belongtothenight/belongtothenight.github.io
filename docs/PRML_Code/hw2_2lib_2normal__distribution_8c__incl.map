@@ -1,0 +1,14 @@
+<map id="E:/GitHub/PRML_Code/src/hw2/lib/normal_distribution.c" name="E:/GitHub/PRML_Code/src/hw2/lib/normal_distribution.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,285,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,66,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,67,74,107,72,102,150,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,112,153,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,66,146,103,142,99,178,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="177,112,238,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,64,210,96,205,96,205,64"/>
+<area shape="rect" id="Node000005" href="$hw2_2lib_2normal__distribution_8h.html" title="Normal distribution functions." alt="" coords="262,112,404,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="250,62,304,101,301,105,247,67"/>
+<area shape="rect" id="Node000006" href="$hw2_2lib_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="331,187,442,213"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="286,40,322,49,358,63,391,83,418,111,424,127,423,144,408,176,403,173,417,143,419,128,413,113,388,87,356,67,320,54,285,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="344,138,370,173,366,176,340,141"/>
+</map>

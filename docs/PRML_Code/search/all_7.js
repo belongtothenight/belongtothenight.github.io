@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['line_0',['line',['../structhistory__t.html#a7f297463e2e567a31fa8cb5d323a466f',1,'history_t']]],
-  ['line1_5fparam1_1',['line1_param1',['../structconfig.html#ad17066dc19916d7c23c334c0c022e2ab',1,'config']]],
-  ['line1_5fparam2_2',['line1_param2',['../structconfig.html#aecfc27dc18b0959bd3b0e35876d0c4b6',1,'config']]],
-  ['line1_5fparam3_3',['line1_param3',['../structconfig.html#a107905b840c52c49ff0e6fd26bcb45f7',1,'config']]],
-  ['line2_5fparam1_4',['line2_param1',['../structconfig.html#a07e9927adbb23c49f1b7724f26553ac3',1,'config']]],
-  ['line2_5fparam2_5',['line2_param2',['../structconfig.html#a4041f678e42f0e5b9c129fad92cf988d',1,'config']]],
-  ['line2_5fparam3_6',['line2_param3',['../structconfig.html#ad77aed80bbcd9e2e840f45531a0b4ba6',1,'config']]]
+  ['hash_0',['hash',['../structhistory__t.html#a20b24e529e11411f2f32c8f252966989',1,'history_t']]],
+  ['hash_5fdata_1',['hash_data',['../hw3_2lib_2data__proc_8c.html#af1a5b7eefcdc139a1c2d542816be56d0',1,'hash_data(data_t *data, history_t *history, int index, int mode):&#160;data_proc.c'],['../hw3_2lib_2data__proc_8h.html#af1a5b7eefcdc139a1c2d542816be56d0',1,'hash_data(data_t *data, history_t *history, int index, int mode):&#160;data_proc.c']]],
+  ['hash_5fstr_5flen_2',['HASH_STR_LEN',['../hw3_2lib_2data__proc_8h.html#aaf16cad9c23eb5e51be23c2ac2eb6066',1,'data_proc.h']]],
+  ['hex_3',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX:&#160;CMakeCXXCompilerId.cpp']]],
+  ['history_4',['history',['../hw3_2main_8c.html#a00dd50185ec7fbd3beaeeac205db41a4',1,'main.c']]],
+  ['history_5ft_5',['history_t',['../structhistory__t.html',1,'']]],
+  ['hw1_20_2d_20generate_20figure_20for_20beans_20classification_20result_2e_6',['HW1 - Generate figure for beans classification result.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw1_2readme.html',1,'']]],
+  ['hw2_20_2d_20pinky_20dimension_20distribution_7',['HW2 - Pinky Dimension Distribution',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html',1,'']]],
+  ['hw3_20_2d_202_20dimensional_20shape_20classification_2e_8',['HW3 - 2 dimensional shape classification.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html',1,'']]],
+  ['hw4_20_2d_20basic_20demonstration_20for_20supervised_20learning_20algorithm_2e_9',['HW4 - Basic demonstration for Supervised Learning Algorithm.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw4_2readme.html',1,'']]]
 ];

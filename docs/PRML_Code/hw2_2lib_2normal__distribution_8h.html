@@ -135,6 +135,16 @@ $(document).ready(function(){initNavTree('hw2_2lib_2normal__distribution_8h.html
 <p>Normal distribution functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="hw2_2lib_2output__format_8h_source.html">output_format.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for normal_distribution.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hw2_2lib_2normal__distribution_8h__incl.svg" width="167" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hw2_2lib_2normal__distribution_8h__dep__incl.svg" width="1128" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <p><a href="hw2_2lib_2normal__distribution_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -149,54 +159,420 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6865ee8c02afc34d016ff224ccdca8f1"><td class="memItemLeft" align="right" valign="top"><a id="a6865ee8c02afc34d016ff224ccdca8f1" name="a6865ee8c02afc34d016ff224ccdca8f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_norm_dist</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float mu, float sigma, float x_min, float x_max, float integral_step)</td></tr>
-<tr class="memdesc:a6865ee8c02afc34d016ff224ccdca8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a normal distribution struct. <br /></td></tr>
+<tr class="memitem:a6865ee8c02afc34d016ff224ccdca8f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a6865ee8c02afc34d016ff224ccdca8f1">get_norm_dist</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float mu, float sigma, float x_min, float x_max, float integral_step)</td></tr>
+<tr class="memdesc:a6865ee8c02afc34d016ff224ccdca8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a normal distribution struct.  <br /></td></tr>
 <tr class="separator:a6865ee8c02afc34d016ff224ccdca8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dfb025aa58bcab85450074bfa5b2e67"><td class="memItemLeft" align="right" valign="top"><a id="a5dfb025aa58bcab85450074bfa5b2e67" name="a5dfb025aa58bcab85450074bfa5b2e67"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print_norm_dist</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, char *name)</td></tr>
-<tr class="memdesc:a5dfb025aa58bcab85450074bfa5b2e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the normal distribution struct. <br /></td></tr>
+<tr class="memitem:a5dfb025aa58bcab85450074bfa5b2e67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a5dfb025aa58bcab85450074bfa5b2e67">print_norm_dist</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, char *name)</td></tr>
+<tr class="memdesc:a5dfb025aa58bcab85450074bfa5b2e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the normal distribution struct.  <br /></td></tr>
 <tr class="separator:a5dfb025aa58bcab85450074bfa5b2e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb7f7787fef3996a71f0b58635c70f1"><td class="memItemLeft" align="right" valign="top"><a id="a2bb7f7787fef3996a71f0b58635c70f1" name="a2bb7f7787fef3996a71f0b58635c70f1"></a>
-float *&#160;</td><td class="memItemRight" valign="bottom"><b>get_norm_dist_x_arr</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd)</td></tr>
-<tr class="memdesc:a2bb7f7787fef3996a71f0b58635c70f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malloc two float arrays for x values of the normal distribution. <br /></td></tr>
+<tr class="memitem:a2bb7f7787fef3996a71f0b58635c70f1"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a2bb7f7787fef3996a71f0b58635c70f1">get_norm_dist_x_arr</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd)</td></tr>
+<tr class="memdesc:a2bb7f7787fef3996a71f0b58635c70f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malloc two float arrays for x values of the normal distribution.  <br /></td></tr>
 <tr class="separator:a2bb7f7787fef3996a71f0b58635c70f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5073100766017df2398a3ef24e28da"><td class="memItemLeft" align="right" valign="top"><a id="a4a5073100766017df2398a3ef24e28da" name="a4a5073100766017df2398a3ef24e28da"></a>
-float *&#160;</td><td class="memItemRight" valign="bottom"><b>get_norm_dist_y_arr</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *x_arr)</td></tr>
-<tr class="memdesc:a4a5073100766017df2398a3ef24e28da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malloc float arrays for y values of the normal distribution. <br /></td></tr>
+<tr class="memitem:a4a5073100766017df2398a3ef24e28da"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a4a5073100766017df2398a3ef24e28da">get_norm_dist_y_arr</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *x_arr)</td></tr>
+<tr class="memdesc:a4a5073100766017df2398a3ef24e28da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malloc float arrays for y values of the normal distribution.  <br /></td></tr>
 <tr class="separator:a4a5073100766017df2398a3ef24e28da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9697d796a24a3f21606b7bd0e560f6dc"><td class="memItemLeft" align="right" valign="top"><a id="a9697d796a24a3f21606b7bd0e560f6dc" name="a9697d796a24a3f21606b7bd0e560f6dc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pour_arr_to_file</b> (float *arr, int arr_length, char *file_name)</td></tr>
-<tr class="memdesc:a9697d796a24a3f21606b7bd0e560f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour x y values into a file. <br /></td></tr>
+<tr class="memitem:a9697d796a24a3f21606b7bd0e560f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a9697d796a24a3f21606b7bd0e560f6dc">pour_arr_to_file</a> (float *arr, int arr_length, char *file_name)</td></tr>
+<tr class="memdesc:a9697d796a24a3f21606b7bd0e560f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour x y values into a file.  <br /></td></tr>
 <tr class="separator:a9697d796a24a3f21606b7bd0e560f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e075f9426b351e8f50e60035a6bd6cf"><td class="memItemLeft" align="right" valign="top"><a id="a0e075f9426b351e8f50e60035a6bd6cf" name="a0e075f9426b351e8f50e60035a6bd6cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>norm_dist_integral</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *y_arr)</td></tr>
-<tr class="memdesc:a0e075f9426b351e8f50e60035a6bd6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate integral of the normal distribution. <br /></td></tr>
+<tr class="memitem:a0e075f9426b351e8f50e60035a6bd6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a0e075f9426b351e8f50e60035a6bd6cf">norm_dist_integral</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *y_arr)</td></tr>
+<tr class="memdesc:a0e075f9426b351e8f50e60035a6bd6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate integral of the normal distribution.  <br /></td></tr>
 <tr class="separator:a0e075f9426b351e8f50e60035a6bd6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302381be7c41f0436ca82177671e415f"><td class="memItemLeft" align="right" valign="top"><a id="a302381be7c41f0436ca82177671e415f" name="a302381be7c41f0436ca82177671e415f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>norm_dist_integral_check</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd)</td></tr>
-<tr class="memdesc:a302381be7c41f0436ca82177671e415f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral check function. <br /></td></tr>
+<tr class="memitem:a302381be7c41f0436ca82177671e415f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a302381be7c41f0436ca82177671e415f">norm_dist_integral_check</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd)</td></tr>
+<tr class="memdesc:a302381be7c41f0436ca82177671e415f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral check function.  <br /></td></tr>
 <tr class="separator:a302381be7c41f0436ca82177671e415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c77c9aacc0d20fb41281f5cc4aac12b"><td class="memItemLeft" align="right" valign="top"><a id="a4c77c9aacc0d20fb41281f5cc4aac12b" name="a4c77c9aacc0d20fb41281f5cc4aac12b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>norm_dist_y_check</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *y_arr)</td></tr>
-<tr class="memdesc:a4c77c9aacc0d20fb41281f5cc4aac12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal distribution y value check function. <br /></td></tr>
+<tr class="memitem:a4c77c9aacc0d20fb41281f5cc4aac12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#a4c77c9aacc0d20fb41281f5cc4aac12b">norm_dist_y_check</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float *y_arr)</td></tr>
+<tr class="memdesc:a4c77c9aacc0d20fb41281f5cc4aac12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal distribution y value check function.  <br /></td></tr>
 <tr class="separator:a4c77c9aacc0d20fb41281f5cc4aac12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa041a5b92a51f5135bac62addd6a11c1"><td class="memItemLeft" align="right" valign="top"><a id="aa041a5b92a51f5135bac62addd6a11c1" name="aa041a5b92a51f5135bac62addd6a11c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print_input_struct</b> (<a class="el" href="structinput__struct.html">input_struct</a> *pIs, char *name)</td></tr>
-<tr class="memdesc:aa041a5b92a51f5135bac62addd6a11c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the input struct. <br /></td></tr>
+<tr class="memitem:aa041a5b92a51f5135bac62addd6a11c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#aa041a5b92a51f5135bac62addd6a11c1">print_input_struct</a> (<a class="el" href="structinput__struct.html">input_struct</a> *pIs, char *name)</td></tr>
+<tr class="memdesc:aa041a5b92a51f5135bac62addd6a11c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the input struct.  <br /></td></tr>
 <tr class="separator:aa041a5b92a51f5135bac62addd6a11c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa90f21f08486c4a393858b2d12ce315f"><td class="memItemLeft" align="right" valign="top"><a id="aa90f21f08486c4a393858b2d12ce315f" name="aa90f21f08486c4a393858b2d12ce315f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cal_norm_dist</b> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float mu, float sigma, float x_min, float x_max, float integral_step, <a class="el" href="structinput__struct.html">input_struct</a> *pInput_struct, char *name)</td></tr>
-<tr class="memdesc:aa90f21f08486c4a393858b2d12ce315f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack all the functions above. <br /></td></tr>
+<tr class="memitem:aa90f21f08486c4a393858b2d12ce315f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#aa90f21f08486c4a393858b2d12ce315f">cal_norm_dist</a> (<a class="el" href="structnorm__dist.html">norm_dist</a> *pNd, float mu, float sigma, float x_min, float x_max, float integral_step, <a class="el" href="structinput__struct.html">input_struct</a> *pInput_struct, char *name)</td></tr>
+<tr class="memdesc:aa90f21f08486c4a393858b2d12ce315f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack all the functions above.  <br /></td></tr>
 <tr class="separator:aa90f21f08486c4a393858b2d12ce315f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd65b552568ca00244eebad98fd898a"><td class="memItemLeft" align="right" valign="top"><a id="accd65b552568ca00244eebad98fd898a" name="accd65b552568ca00244eebad98fd898a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>free_norm_dist</b> (<a class="el" href="structinput__struct.html">input_struct</a> *pInput_struct, char *name)</td></tr>
-<tr class="memdesc:accd65b552568ca00244eebad98fd898a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory. <br /></td></tr>
+<tr class="memitem:accd65b552568ca00244eebad98fd898a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw2_2lib_2normal__distribution_8h.html#accd65b552568ca00244eebad98fd898a">free_norm_dist</a> (<a class="el" href="structinput__struct.html">input_struct</a> *pInput_struct, char *name)</td></tr>
+<tr class="memdesc:accd65b552568ca00244eebad98fd898a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory.  <br /></td></tr>
 <tr class="separator:accd65b552568ca00244eebad98fd898a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Normal distribution functions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa90f21f08486c4a393858b2d12ce315f" name="aa90f21f08486c4a393858b2d12ce315f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90f21f08486c4a393858b2d12ce315f">&#9670;&#160;</a></span>cal_norm_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cal_norm_dist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sigma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>integral_step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structinput__struct.html">input_struct</a> *&#160;</td>
+          <td class="paramname"><em>pInput_struct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack all the functions above. </p>
+
+</div>
+</div>
+<a id="accd65b552568ca00244eebad98fd898a" name="accd65b552568ca00244eebad98fd898a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd65b552568ca00244eebad98fd898a">&#9670;&#160;</a></span>free_norm_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_norm_dist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structinput__struct.html">input_struct</a> *&#160;</td>
+          <td class="paramname"><em>pInput_struct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free memory. </p>
+
+</div>
+</div>
+<a id="a6865ee8c02afc34d016ff224ccdca8f1" name="a6865ee8c02afc34d016ff224ccdca8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6865ee8c02afc34d016ff224ccdca8f1">&#9670;&#160;</a></span>get_norm_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_norm_dist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sigma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>integral_step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a normal distribution struct. </p>
+
+</div>
+</div>
+<a id="a2bb7f7787fef3996a71f0b58635c70f1" name="a2bb7f7787fef3996a71f0b58635c70f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb7f7787fef3996a71f0b58635c70f1">&#9670;&#160;</a></span>get_norm_dist_x_arr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float * get_norm_dist_x_arr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Malloc two float arrays for x values of the normal distribution. </p>
+
+</div>
+</div>
+<a id="a4a5073100766017df2398a3ef24e28da" name="a4a5073100766017df2398a3ef24e28da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5073100766017df2398a3ef24e28da">&#9670;&#160;</a></span>get_norm_dist_y_arr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float * get_norm_dist_y_arr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>x_arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Malloc float arrays for y values of the normal distribution. </p>
+
+</div>
+</div>
+<a id="a0e075f9426b351e8f50e60035a6bd6cf" name="a0e075f9426b351e8f50e60035a6bd6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e075f9426b351e8f50e60035a6bd6cf">&#9670;&#160;</a></span>norm_dist_integral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void norm_dist_integral </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y_arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate integral of the normal distribution. </p>
+
+</div>
+</div>
+<a id="a302381be7c41f0436ca82177671e415f" name="a302381be7c41f0436ca82177671e415f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302381be7c41f0436ca82177671e415f">&#9670;&#160;</a></span>norm_dist_integral_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void norm_dist_integral_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integral check function. </p>
+
+</div>
+</div>
+<a id="a4c77c9aacc0d20fb41281f5cc4aac12b" name="a4c77c9aacc0d20fb41281f5cc4aac12b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c77c9aacc0d20fb41281f5cc4aac12b">&#9670;&#160;</a></span>norm_dist_y_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void norm_dist_y_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y_arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Normal distribution y value check function. </p>
+
+</div>
+</div>
+<a id="a9697d796a24a3f21606b7bd0e560f6dc" name="a9697d796a24a3f21606b7bd0e560f6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9697d796a24a3f21606b7bd0e560f6dc">&#9670;&#160;</a></span>pour_arr_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pour_arr_to_file </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arr_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pour x y values into a file. </p>
+
+</div>
+</div>
+<a id="aa041a5b92a51f5135bac62addd6a11c1" name="aa041a5b92a51f5135bac62addd6a11c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa041a5b92a51f5135bac62addd6a11c1">&#9670;&#160;</a></span>print_input_struct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_input_struct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structinput__struct.html">input_struct</a> *&#160;</td>
+          <td class="paramname"><em>pIs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the input struct. </p>
+
+</div>
+</div>
+<a id="a5dfb025aa58bcab85450074bfa5b2e67" name="a5dfb025aa58bcab85450074bfa5b2e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfb025aa58bcab85450074bfa5b2e67">&#9670;&#160;</a></span>print_norm_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_norm_dist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnorm__dist.html">norm_dist</a> *&#160;</td>
+          <td class="paramname"><em>pNd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the normal distribution struct. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

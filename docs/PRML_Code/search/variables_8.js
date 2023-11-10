@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['normal_5fsplit_5fcount_0',['normal_split_count',['../structdataset.html#ade50175db1f8b8849d43f3438f003ae7',1,'dataset']]],
-  ['normal_5fsplit_5fdata_1',['normal_split_data',['../structdataset.html#a050e1a41d229064c76d744ecd23c90bd',1,'dataset']]],
-  ['normal_5fsplit_5fpoints_2',['normal_split_points',['../structdataset.html#a81895d4cdae19743b5667b0ae66d9d9b',1,'dataset']]],
-  ['normal_5fsplit_5fpoints_5fcenter_3',['normal_split_points_center',['../structdataset.html#aebf777940059ca94314f5741459df9a3',1,'dataset']]],
-  ['num_5fcols_4',['num_cols',['../structdata__t.html#aa018f449152d3670dbaa863f46a9e564',1,'data_t::num_cols'],['../structcsv__t.html#aa018f449152d3670dbaa863f46a9e564',1,'csv_t::num_cols']]],
-  ['num_5frows_5',['num_rows',['../structdata__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'data_t::num_rows'],['../structcsv__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'csv_t::num_rows']]]
+  ['max_0',['max',['../structdataset.html#a306b5ca364bf842a8ff5bbfc0b4d4a4b',1,'dataset']]],
+  ['mean_1',['mean',['../structdataset.html#a976925cd66ff0dcd419628463f580f1c',1,'dataset']]],
+  ['min_2',['min',['../structdataset.html#ad2e88d75f808e6d4e78d48bceb10c336',1,'dataset']]],
+  ['min_5ferror_3',['min_error',['../structintersection.html#ad958bc47a2a3d0dcc5f81359b2d22635',1,'intersection']]],
+  ['mu_4',['mu',['../structdataset.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'dataset::mu'],['../structnorm__dist.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'norm_dist::mu']]]
 ];

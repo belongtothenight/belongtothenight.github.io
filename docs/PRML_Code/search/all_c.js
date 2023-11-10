@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['read_5fcsv_0',['read_csv',['../hw2_2lib_2data__proc_8h.html#a56049b5970888b5daef5fd80d3dbf800',1,'read_csv(char *pFilename, dataset *pData):&#160;data_proc.c'],['../read__csv_8h.html#ac9909e842acad631c07d96ef237b21eb',1,'read_csv(csv_t *csv, data_t *data):&#160;read_csv.c']]],
-  ['read_5fcsv_2eh_1',['read_csv.h',['../read__csv_8h.html',1,'']]],
-  ['read_5fflag_2',['read_flag',['../structcsv__t.html#aa85180bae6a80e6f810b1517af9fa2d3',1,'csv_t']]],
-  ['remove_5fneg_5fzero_3',['remove_neg_zero',['../hw3_2lib_2data__proc_8h.html#a32d99db462aa6fe0daab9e41faee310e',1,'data_proc.c']]],
-  ['rotate_4',['rotate',['../structdata__t.html#a4ebf53356b6bbe17fbe3a03d3fa79e87',1,'data_t']]],
-  ['rotate_5fdata_5',['rotate_data',['../hw3_2lib_2data__proc_8h.html#a6020555aa90fd516c0c846dc71c51441',1,'data_proc.c']]],
-  ['rotate_5frange_6',['rotate_range',['../structdata__t.html#afe4143b50083f868792d9f39fcedc502',1,'data_t']]]
+  ['orignal_5frange_0',['orignal_range',['../structdata__t.html#ac73ff95a4a08873b7d0476c66adaa3d6',1,'data_t']]],
+  ['output_5fcsv_1',['output_csv',['../output__csv_8c.html#a22af2ec7ba9f1ecddbbf42712589eeb2',1,'output_csv(char *pFilename, dataset *pDS, norm_dist *pND):&#160;output_csv.c'],['../output__csv_8h.html#a22af2ec7ba9f1ecddbbf42712589eeb2',1,'output_csv(char *pFilename, dataset *pDS, norm_dist *pND):&#160;output_csv.c']]],
+  ['output_5fcsv_2ec_2',['output_csv.c',['../output__csv_8c.html',1,'']]],
+  ['output_5fcsv_2eh_3',['output_csv.h',['../output__csv_8h.html',1,'']]],
+  ['output_5fcsv_5ffile1_4',['OUTPUT_CSV_FILE1',['../test_8c.html#a0e3fe68dce32ddbac436a0f4a6c36f49',1,'OUTPUT_CSV_FILE1:&#160;test.c'],['../hw2_2main_8c.html#a0e3fe68dce32ddbac436a0f4a6c36f49',1,'OUTPUT_CSV_FILE1:&#160;main.c']]],
+  ['output_5fcsv_5ffile2_5',['OUTPUT_CSV_FILE2',['../hw2_2main_8c.html#a206890e0714afb575b3d0d3c68dd9171',1,'main.c']]],
+  ['output_5fcsv_5ffile3_6',['OUTPUT_CSV_FILE3',['../hw2_2main_8c.html#a719a53ad640b41ba5a057a269a61f0a9',1,'main.c']]],
+  ['output_5fcsv_5ffile4_7',['OUTPUT_CSV_FILE4',['../hw2_2main_8c.html#a275cd1ab2cd2889976747d539888d2c4',1,'main.c']]],
+  ['output_5fdecision_5fboundary_5fcsv_8',['output_decision_boundary_csv',['../output__csv_8h.html#a9fab5fa043b8dbcb791b29b8a22fb90d',1,'output_decision_boundary_csv(char *pFilename, intersection *pIntersection):&#160;output_csv.c'],['../output__csv_8c.html#a9fab5fa043b8dbcb791b29b8a22fb90d',1,'output_decision_boundary_csv(char *pFilename, intersection *pIntersection):&#160;output_csv.c']]],
+  ['output_5fformat_2ec_9',['output_format.c',['../libc_2output__format_8c.html',1,'(Global Namespace)'],['../hw2_2lib_2output__format_8c.html',1,'(Global Namespace)']]],
+  ['output_5fformat_2ec_2eobj_2ed_10',['output_format.c.obj.d',['../hw4_2_c_make_files_2hw4_8dir_2_____2libc_2output__format_8c_8obj_8d.html',1,'(Global Namespace)'],['../hw3_2_c_make_files_2hw3_8dir_2_____2libc_2output__format_8c_8obj_8d.html',1,'(Global Namespace)']]],
+  ['output_5fformat_2eh_11',['output_format.h',['../libc_2output__format_8h.html',1,'(Global Namespace)'],['../hw2_2lib_2output__format_8h.html',1,'(Global Namespace)']]]
 ];

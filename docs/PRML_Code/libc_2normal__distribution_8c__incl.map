@@ -1,0 +1,14 @@
+<map id="E:/GitHub/PRML_Code/src/libc/normal_distribution.c" name="E:/GitHub/PRML_Code/src/libc/normal_distribution.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="112,5,303,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,66,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,51,77,92,75,87,162,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,96,153,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,51,147,87,144,83,183,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="177,96,238,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,49,210,80,205,80,205,49"/>
+<area shape="rect" id="Node000005" href="$libc_2normal__distribution_8h.html" title="Normal distribution functions." alt="" coords="262,96,404,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,46,302,85,299,90,238,51"/>
+<area shape="rect" id="Node000006" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="331,171,442,197"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="304,32,336,40,367,53,395,71,418,95,424,111,423,128,408,160,403,157,418,127,419,111,413,97,391,75,364,58,334,45,303,37"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="344,122,370,157,366,160,340,125"/>
+</map>

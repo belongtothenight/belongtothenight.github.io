@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['initial_5fstep_0',['initial_step',['../structconfig.html#a625f373a2c501739208f00e118d5f3ec',1,'config']]],
-  ['integral_1',['integral',['../structnorm__dist.html#a1174af01b8a329a6d465ea6e0951b3e5',1,'norm_dist']]],
-  ['integral_5fstep_2',['integral_step',['../structnorm__dist.html#a57f79540f91837eb36efc6b7d2938e69',1,'norm_dist']]]
+  ['hash_0',['hash',['../structhistory__t.html#a20b24e529e11411f2f32c8f252966989',1,'history_t']]],
+  ['history_1',['history',['../hw3_2main_8c.html#a00dd50185ec7fbd3beaeeac205db41a4',1,'main.c']]]
 ];

@@ -43,6 +43,14 @@ var NAVTREE =
       [ "Execute Normally", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#execute-normally", null ],
       [ "Options", "md__e_1_2_git_hub_2_p_r_m_l___code_2src_2script_2readme.html#options", null ]
     ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -54,7 +62,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -66,8 +74,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"structhistory__t.html#a054fa13f49acec1fdf6e4bf5cd20d2e7"
+"_c_make_c_compiler_id_8c.html",
+"hw2_2main_8c.html#aa645c11066990cb11b8522a583846699"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
