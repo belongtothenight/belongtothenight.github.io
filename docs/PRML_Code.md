@@ -2,7 +2,7 @@
 
 Holds code for CYCUEE Pattern Recognition and Machine Learning course. Go to ```./src``` to see more.
 
-Heads to [PRML_Code Documentation](https://belongtothenight.github.io/PRML_Code/index.html) for details.
+Heads to [PRML_Code Documentation](./PRML_Code/index.html) for details.
 
 ## Directory Description
 
