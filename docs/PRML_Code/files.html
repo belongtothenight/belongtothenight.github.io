@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('files.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -98,39 +78,36 @@ $(document).ready(function(){initNavTree('files.html',''); initResizable(); });
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span id="img_0_" class="iconfopen" onclick="toggleFolder('0_')">&#160;</span><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_self">src</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><span id="img_0_0_" class="iconfopen" onclick="toggleFolder('0_0_')">&#160;</span><a class="el" href="dir_4ca348a2c9fa18408cfb55366453a6b8.html" target="_self">hw2</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_" class="arrow" onclick="toggleFolder('0_0_0_')">&#9660;</span><span id="img_0_0_0_" class="iconfopen" onclick="toggleFolder('0_0_0_')">&#160;</span><a class="el" href="dir_33c5edf059db7cce0fd7b282bf8c304b.html" target="_self">lib</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_0_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2data__plot_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2data__plot_8h.html" target="_self">hw2/lib/data_plot.h</a></td><td class="desc">Plotting functions for data </td></tr>
-<tr id="row_0_0_0_1_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2data__proc_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2data__proc_8h.html" target="_self">hw2/lib/data_proc.h</a></td><td class="desc">Data processing functions for hw2 </td></tr>
-<tr id="row_0_0_0_2_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2decision__boundary_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2decision__boundary_8h.html" target="_self">hw2/lib/decision_boundary.h</a></td><td class="desc">Decision boundary functions </td></tr>
-<tr id="row_0_0_0_3_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2normal__distribution_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2normal__distribution_8h.html" target="_self">hw2/lib/normal_distribution.h</a></td><td class="desc">Normal distribution functions </td></tr>
+<tr id="row_0_0_0_0_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2data__plot_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2data__plot_8h.html" target="_self">data_plot.h</a></td><td class="desc">Plotting functions for data </td></tr>
+<tr id="row_0_0_0_1_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2data__proc_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2data__proc_8h.html" target="_self">data_proc.h</a></td><td class="desc">Data processing functions for hw2 </td></tr>
+<tr id="row_0_0_0_2_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2decision__boundary_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2decision__boundary_8h.html" target="_self">decision_boundary.h</a></td><td class="desc">Decision boundary functions </td></tr>
+<tr id="row_0_0_0_3_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2normal__distribution_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2normal__distribution_8h.html" target="_self">normal_distribution.h</a></td><td class="desc">Normal distribution functions </td></tr>
 <tr id="row_0_0_0_4_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="output__csv_8h_source.html"><span class="icondoc"></span></a><a class="el" href="output__csv_8h.html" target="_self">output_csv.h</a></td><td class="desc">Output csv functions </td></tr>
-<tr id="row_0_0_0_5_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2output__format_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2output__format_8h.html" target="_self">hw2/lib/output_format.h</a></td><td class="desc">Output format struct for color printing (charactors) </td></tr>
-<tr id="row_0_0_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw2_2main_8c.html" target="_self">hw2/main.c</a></td><td class="desc">Main function of hw2 - Pinky knuckle dimension distribution </td></tr>
+<tr id="row_0_0_0_5_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw2_2lib_2output__format_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw2_2lib_2output__format_8h.html" target="_self">output_format.h</a></td><td class="desc">Output format struct for color printing (charactors) </td></tr>
+<tr id="row_0_0_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw2_2main_8c.html" target="_self">main.c</a></td><td class="desc">Main function of hw2 - Pinky knuckle dimension distribution </td></tr>
 <tr id="row_0_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_1_" class="arrow" onclick="toggleFolder('0_1_')">&#9660;</span><span id="img_0_1_" class="iconfopen" onclick="toggleFolder('0_1_')">&#160;</span><a class="el" href="dir_9be29e0c90fb0d94c2d500a55b1d46c8.html" target="_self">hw3</a></td><td class="desc"></td></tr>
 <tr id="row_0_1_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_1_0_" class="arrow" onclick="toggleFolder('0_1_0_')">&#9660;</span><span id="img_0_1_0_" class="iconfopen" onclick="toggleFolder('0_1_0_')">&#160;</span><a class="el" href="dir_f9679826a85f35a0b30ed3f0b44907d9.html" target="_self">lib</a></td><td class="desc"></td></tr>
-<tr id="row_0_1_0_0_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw3_2lib_2data__plot_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw3_2lib_2data__plot_8h.html" target="_self">hw3/lib/data_plot.h</a></td><td class="desc">Data plot functions </td></tr>
-<tr id="row_0_1_0_1_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw3_2lib_2data__proc_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw3_2lib_2data__proc_8h.html" target="_self">hw3/lib/data_proc.h</a></td><td class="desc">Data processing functions </td></tr>
+<tr id="row_0_1_0_0_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw3_2lib_2data__plot_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw3_2lib_2data__plot_8h.html" target="_self">data_plot.h</a></td><td class="desc">Data plot functions </td></tr>
+<tr id="row_0_1_0_1_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="hw3_2lib_2data__proc_8h_source.html"><span class="icondoc"></span></a><a class="el" href="hw3_2lib_2data__proc_8h.html" target="_self">data_proc.h</a></td><td class="desc">Data processing functions </td></tr>
 <tr id="row_0_1_0_2_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="read__csv_8h_source.html"><span class="icondoc"></span></a><a class="el" href="read__csv_8h.html" target="_self">read_csv.h</a></td><td class="desc">Read csv file related utilities </td></tr>
-<tr id="row_0_1_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw3_2main_8c.html" target="_self">hw3/main.c</a></td><td class="desc">Main function of hw3 - 2 dimensional shape classification </td></tr>
+<tr id="row_0_1_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw3_2main_8c.html" target="_self">main.c</a></td><td class="desc">Main function of hw3 - 2 dimensional shape classification </td></tr>
 <tr id="row_0_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_2_" class="arrow" onclick="toggleFolder('0_2_')">&#9660;</span><span id="img_0_2_" class="iconfopen" onclick="toggleFolder('0_2_')">&#160;</span><a class="el" href="dir_44461c01905a8c41fbd74b57f1d7b44c.html" target="_self">hw4</a></td><td class="desc"></td></tr>
 <tr id="row_0_2_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_2_0_" class="arrow" onclick="toggleFolder('0_2_0_')">&#9660;</span><span id="img_0_2_0_" class="iconfopen" onclick="toggleFolder('0_2_0_')">&#160;</span><a class="el" href="dir_75ec2f6eb77dbc26a602c0d5a181318d.html" target="_self">lib</a></td><td class="desc"></td></tr>
 <tr id="row_0_2_0_0_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="config__read_8h_source.html"><span class="icondoc"></span></a><a class="el" href="config__read_8h.html" target="_self">config_read.h</a></td><td class="desc"></td></tr>
-<tr id="row_0_2_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw4_2main_8c.html" target="_self">hw4/main.c</a></td><td class="desc">Basic demonstration for Supervised Learning Algorithm </td></tr>
+<tr id="row_0_2_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="hw4_2main_8c.html" target="_self">main.c</a></td><td class="desc">Basic demonstration for Supervised Learning Algorithm </td></tr>
 <tr id="row_0_3_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_3_" class="arrow" onclick="toggleFolder('0_3_')">&#9660;</span><span id="img_0_3_" class="iconfopen" onclick="toggleFolder('0_3_')">&#160;</span><a class="el" href="dir_ee3448fa1dc3d93b4fb7d6fba5be0d5c.html" target="_self">libc</a></td><td class="desc"></td></tr>
 <tr id="row_0_3_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="common__macro_8h_source.html"><span class="icondoc"></span></a><a class="el" href="common__macro_8h.html" target="_self">common_macro.h</a></td><td class="desc">Common macros used in the project </td></tr>
-<tr id="row_0_3_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2decision__boundary_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2decision__boundary_8h.html" target="_self">libc/decision_boundary.h</a></td><td class="desc">The decision boundary header file to calculate the intersection of two normal distributions </td></tr>
+<tr id="row_0_3_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2decision__boundary_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2decision__boundary_8h.html" target="_self">decision_boundary.h</a></td><td class="desc">The decision boundary header file to calculate the intersection of two normal distributions </td></tr>
 <tr id="row_0_3_2_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="distance_8h_source.html"><span class="icondoc"></span></a><a class="el" href="distance_8h.html" target="_self">distance.h</a></td><td class="desc">Distance calculation functions </td></tr>
-<tr id="row_0_3_3_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2normal__distribution_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2normal__distribution_8h.html" target="_self">libc/normal_distribution.h</a></td><td class="desc">Normal distribution functions </td></tr>
-<tr id="row_0_3_4_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2output__format_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2output__format_8h.html" target="_self">libc/output_format.h</a></td><td class="desc">Output format struct for color printing (charactors) </td></tr>
+<tr id="row_0_3_3_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2normal__distribution_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2normal__distribution_8h.html" target="_self">normal_distribution.h</a></td><td class="desc">Normal distribution functions </td></tr>
+<tr id="row_0_3_4_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="libc_2output__format_8h_source.html"><span class="icondoc"></span></a><a class="el" href="libc_2output__format_8h.html" target="_self">output_format.h</a></td><td class="desc">Output format struct for color printing (charactors) </td></tr>
 <tr id="row_0_3_5_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="terminal__operation_8h_source.html"><span class="icondoc"></span></a><a class="el" href="terminal__operation_8h.html" target="_self">terminal_operation.h</a></td><td class="desc">Terminal operation functions </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

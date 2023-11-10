@@ -7,7 +7,7 @@ var searchData=
   ['set_5fcsv_4',['set_csv',['../read__csv_8h.html#a8077e08e574c67e0d4a18ba6db721946',1,'read_csv.c']]],
   ['set_5fhistory_5',['set_history',['../hw3_2lib_2data__proc_8h.html#a05a7443fbf5c740c1998cb8908c41de9',1,'data_proc.c']]],
   ['shape_6',['shape',['../hw3_2main_8c.html#a24808fc4f36b4f36490fca7050b274bd',1,'main.c']]],
-  ['sigma_7',['sigma',['../structdataset.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'dataset::sigma'],['../structnorm__dist.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'norm_dist::sigma']]],
+  ['sigma_7',['sigma',['../structnorm__dist.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'norm_dist::sigma'],['../structdataset.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'dataset::sigma']]],
   ['size_8',['size',['../structdataset.html#a439227feff9d7f55384e8780cfc2eb82',1,'dataset']]],
   ['sort_5fdata_9',['sort_data',['../hw3_2lib_2data__proc_8h.html#aad5ab5fdd14c79db5dc86a9b05c3ef2e',1,'data_proc.c']]],
   ['split_5fcount_10',['split_count',['../structdataset.html#a977d21361cc17e296e74db944d4bbee5',1,'dataset']]],
@@ -17,7 +17,7 @@ var searchData=
   ['split_5fpoints_14',['split_points',['../structdataset.html#ae1394b6d375669b7e43e07d9e47395f7',1,'dataset']]],
   ['split_5fpoints_5fcenter_15',['split_points_center',['../structdataset.html#a34b07c81137c3516d4d31b788cbb4be6',1,'dataset']]],
   ['split_5fstep_16',['split_step',['../structdataset.html#a03ee295ca49fe44b3106146f90e99186',1,'dataset']]],
-  ['src_17',['SRC',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2readme.html',1,'']]],
+  ['src_17',['SRC',['../index.html',1,'']]],
   ['step_18',['step',['../structintersection.html#a863c86bdfd96bf9c461846689c2614aa',1,'intersection']]],
   ['str_5flen_5ffor_5fhash_19',['STR_LEN_FOR_HASH',['../hw3_2lib_2data__proc_8h.html#a093ed5551a07ff838a0f8aeede772790',1,'data_proc.h']]]
 ];
