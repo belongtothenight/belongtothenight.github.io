@@ -26,6 +26,9 @@ theme:
         name: Switch to light mode    
       primary: teal
       accent: lime
+  icon:
+    admonition:
+      note: material/book-alert-outline
 
 markdown_extensions:
   - pymdownx.highlight:
