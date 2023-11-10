@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['c_5fversion_0',['C_VERSION',['../_c_make_c_compiler_id_8c.html#adaee3ee7c5a7a22451ea25e762e1d7d5',1,'CMakeCCompilerId.c']]],
-  ['compiler_5fid_1',['COMPILER_ID',['../_c_make_c_compiler_id_8c.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID:&#160;CMakeCXXCompilerId.cpp']]],
-  ['coordinate_5fdim_2',['COORDINATE_DIM',['../hw3_2lib_2data__proc_8h.html#abc2d6caa5aa53484cd35a28a800c3f82',1,'data_proc.h']]],
-  ['cxx_5fstd_3',['CXX_STD',['../_c_make_c_x_x_compiler_id_8cpp.html#a34cc889e576a1ae6c84ae9e0a851ba21',1,'CMakeCXXCompilerId.cpp']]]
+  ['female_5fdata_0',['FEMALE_DATA',['../hw2_2main_8c.html#af5b590687f1f4793c0cf21a0ff94884e',1,'main.c']]]
 ];

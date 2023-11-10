@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['hash_0',['hash',['../structhistory__t.html#a20b24e529e11411f2f32c8f252966989',1,'history_t']]],
-  ['hash_5fdata_1',['hash_data',['../hw3_2lib_2data__proc_8c.html#af1a5b7eefcdc139a1c2d542816be56d0',1,'hash_data(data_t *data, history_t *history, int index, int mode):&#160;data_proc.c'],['../hw3_2lib_2data__proc_8h.html#af1a5b7eefcdc139a1c2d542816be56d0',1,'hash_data(data_t *data, history_t *history, int index, int mode):&#160;data_proc.c']]],
-  ['hash_5fstr_5flen_2',['HASH_STR_LEN',['../hw3_2lib_2data__proc_8h.html#aaf16cad9c23eb5e51be23c2ac2eb6066',1,'data_proc.h']]],
-  ['hex_3',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX:&#160;CMakeCXXCompilerId.cpp']]],
-  ['history_4',['history',['../hw3_2main_8c.html#a00dd50185ec7fbd3beaeeac205db41a4',1,'main.c']]],
-  ['history_5ft_5',['history_t',['../structhistory__t.html',1,'']]],
-  ['hw1_20_2d_20generate_20figure_20for_20beans_20classification_20result_2e_6',['HW1 - Generate figure for beans classification result.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw1_2readme.html',1,'']]],
-  ['hw2_20_2d_20pinky_20dimension_20distribution_7',['HW2 - Pinky Dimension Distribution',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw2_2readme.html',1,'']]],
-  ['hw3_20_2d_202_20dimensional_20shape_20classification_2e_8',['HW3 - 2 dimensional shape classification.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw3_2readme.html',1,'']]],
-  ['hw4_20_2d_20basic_20demonstration_20for_20supervised_20learning_20algorithm_2e_9',['HW4 - Basic demonstration for Supervised Learning Algorithm.',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw4_2readme.html',1,'']]]
+  ['initial_5fstep_0',['initial_step',['../structconfig.html#a625f373a2c501739208f00e118d5f3ec',1,'config']]],
+  ['initialize_5fdata_1',['initialize_data',['../hw2_2lib_2data__proc_8c.html#aab62f5e8171f2763c73e60810eb26e4d',1,'initialize_data(dataset *pData):&#160;data_proc.c'],['../hw2_2lib_2data__proc_8h.html#aab62f5e8171f2763c73e60810eb26e4d',1,'initialize_data(dataset *pData):&#160;data_proc.c']]],
+  ['input_5fstruct_2',['input_struct',['../structinput__struct.html',1,'']]],
+  ['integral_3',['integral',['../structnorm__dist.html#a1174af01b8a329a6d465ea6e0951b3e5',1,'norm_dist']]],
+  ['integral_5fstep_4',['integral_step',['../structnorm__dist.html#a57f79540f91837eb36efc6b7d2938e69',1,'norm_dist']]],
+  ['integral_5fstep_5',['INTEGRAL_STEP',['../hw2_2main_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;main.c'],['../test_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;test.c']]],
+  ['intersection_6',['intersection',['../structintersection.html',1,'']]],
+  ['intersection_5fstep_7',['INTERSECTION_STEP',['../hw2_2main_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;main.c'],['../test_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;test.c']]]
 ];

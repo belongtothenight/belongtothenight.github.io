@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['main_0',['main',['../hw4_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c'],['../hw3_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.c'],['../test_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;test.c'],['../hw2_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCXXCompilerId.cpp'],['../_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCCompilerId.c']]],
-  ['main_2ec_1',['main.c',['../hw2_2main_8c.html',1,'(Global Namespace)'],['../hw3_2main_8c.html',1,'(Global Namespace)'],['../hw4_2main_8c.html',1,'(Global Namespace)']]],
-  ['main_2ec_2eobj_2ed_2',['main.c.obj.d',['../hw4_2_c_make_files_2hw4_8dir_2main_8c_8obj_8d.html',1,'(Global Namespace)'],['../hw3_2_c_make_files_2hw3_8dir_2main_8c_8obj_8d.html',1,'(Global Namespace)']]],
-  ['male_5fdata_3',['MALE_DATA',['../hw2_2main_8c.html#aef4889da1d7fb57ba3b5b5bccec07472',1,'main.c']]],
-  ['max_4',['max',['../structdataset.html#a306b5ca364bf842a8ff5bbfc0b4d4a4b',1,'dataset']]],
-  ['max_5fcategory_5',['MAX_CATEGORY',['../hw3_2lib_2data__proc_8h.html#a48a7acb6850168cf4ee361f21741951f',1,'data_proc.h']]],
-  ['max_5fline_5flength_6',['MAX_LINE_LENGTH',['../hw3_2lib_2data__proc_8h.html#af0f2173e3b202ddf5756531b4471dcb2',1,'data_proc.h']]],
-  ['max_5frecords_7',['MAX_RECORDS',['../hw3_2lib_2data__proc_8h.html#a475c77257e5782fb60199a7d12a7e53f',1,'data_proc.h']]],
-  ['max_5fsize_8',['MAX_SIZE',['../hw2_2lib_2data__proc_8h.html#a0592dba56693fad79136250c11e5a7fe',1,'data_proc.h']]],
-  ['mean_9',['mean',['../structdataset.html#a976925cd66ff0dcd419628463f580f1c',1,'dataset']]],
-  ['min_10',['min',['../structdataset.html#ad2e88d75f808e6d4e78d48bceb10c336',1,'dataset']]],
-  ['min_5ferror_11',['min_error',['../structintersection.html#ad958bc47a2a3d0dcc5f81359b2d22635',1,'intersection']]],
-  ['mu_12',['mu',['../structnorm__dist.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'norm_dist::mu'],['../structdataset.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'dataset::mu']]]
+  ['norm_5fdist_0',['norm_dist',['../structnorm__dist.html',1,'']]],
+  ['norm_5fdist_5fintegral_1',['norm_dist_integral',['../libc_2normal__distribution_8h.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c']]],
+  ['norm_5fdist_5fintegral_5fcheck_2',['norm_dist_integral_check',['../libc_2normal__distribution_8h.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c']]],
+  ['norm_5fdist_5fy_5fcheck_3',['norm_dist_y_check',['../libc_2normal__distribution_8h.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c']]],
+  ['normal_5fdistribution_2ec_4',['normal_distribution.c',['../hw2_2lib_2normal__distribution_8c.html',1,'(Global Namespace)'],['../libc_2normal__distribution_8c.html',1,'(Global Namespace)']]],
+  ['normal_5fdistribution_2eh_5',['normal_distribution.h',['../libc_2normal__distribution_8h.html',1,'(Global Namespace)'],['../hw2_2lib_2normal__distribution_8h.html',1,'(Global Namespace)']]],
+  ['normal_5fsplit_5fcount_6',['normal_split_count',['../structdataset.html#ade50175db1f8b8849d43f3438f003ae7',1,'dataset']]],
+  ['normal_5fsplit_5fdata_7',['normal_split_data',['../structdataset.html#a050e1a41d229064c76d744ecd23c90bd',1,'dataset']]],
+  ['normal_5fsplit_5fparts_8',['NORMAL_SPLIT_PARTS',['../hw2_2lib_2data__proc_8h.html#a8dbe5589ce2b90333dc11609e2a87617',1,'data_proc.h']]],
+  ['normal_5fsplit_5fpoints_9',['normal_split_points',['../structdataset.html#a81895d4cdae19743b5667b0ae66d9d9b',1,'dataset']]],
+  ['normal_5fsplit_5fpoints_5fcenter_10',['normal_split_points_center',['../structdataset.html#aebf777940059ca94314f5741459df9a3',1,'dataset']]],
+  ['num_5fcols_11',['num_cols',['../structcsv__t.html#aa018f449152d3670dbaa863f46a9e564',1,'csv_t::num_cols'],['../structdata__t.html#aa018f449152d3670dbaa863f46a9e564',1,'data_t::num_cols']]],
+  ['num_5frows_12',['num_rows',['../structcsv__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'csv_t::num_rows'],['../structdata__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'data_t::num_rows']]]
 ];

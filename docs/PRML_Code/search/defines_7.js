@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['integral_5fstep_0',['INTEGRAL_STEP',['../hw2_2main_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;main.c'],['../test_8c.html#a0a08e4c0450272556a81ca06a279ea38',1,'INTEGRAL_STEP:&#160;test.c']]],
-  ['intersection_5fstep_1',['INTERSECTION_STEP',['../hw2_2main_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;main.c'],['../test_8c.html#a18d73ca7f7191b33970b078997e20a15',1,'INTERSECTION_STEP:&#160;test.c']]]
+  ['normal_5fsplit_5fparts_0',['NORMAL_SPLIT_PARTS',['../hw2_2lib_2data__proc_8h.html#a8dbe5589ce2b90333dc11609e2a87617',1,'data_proc.h']]]
 ];

@@ -1,16 +1,14 @@
 var searchData=
 [
-  ['norm_5fdist_0',['norm_dist',['../structnorm__dist.html',1,'']]],
-  ['norm_5fdist_5fintegral_1',['norm_dist_integral',['../libc_2normal__distribution_8h.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a0e075f9426b351e8f50e60035a6bd6cf',1,'norm_dist_integral(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c']]],
-  ['norm_5fdist_5fintegral_5fcheck_2',['norm_dist_integral_check',['../libc_2normal__distribution_8h.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a302381be7c41f0436ca82177671e415f',1,'norm_dist_integral_check(norm_dist *pNd):&#160;normal_distribution.c']]],
-  ['norm_5fdist_5fy_5fcheck_3',['norm_dist_y_check',['../libc_2normal__distribution_8h.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8c.html#a4c77c9aacc0d20fb41281f5cc4aac12b',1,'norm_dist_y_check(norm_dist *pNd, float *y_arr):&#160;normal_distribution.c']]],
-  ['normal_5fdistribution_2ec_4',['normal_distribution.c',['../hw2_2lib_2normal__distribution_8c.html',1,'(Global Namespace)'],['../libc_2normal__distribution_8c.html',1,'(Global Namespace)']]],
-  ['normal_5fdistribution_2eh_5',['normal_distribution.h',['../libc_2normal__distribution_8h.html',1,'(Global Namespace)'],['../hw2_2lib_2normal__distribution_8h.html',1,'(Global Namespace)']]],
-  ['normal_5fsplit_5fcount_6',['normal_split_count',['../structdataset.html#ade50175db1f8b8849d43f3438f003ae7',1,'dataset']]],
-  ['normal_5fsplit_5fdata_7',['normal_split_data',['../structdataset.html#a050e1a41d229064c76d744ecd23c90bd',1,'dataset']]],
-  ['normal_5fsplit_5fparts_8',['NORMAL_SPLIT_PARTS',['../hw2_2lib_2data__proc_8h.html#a8dbe5589ce2b90333dc11609e2a87617',1,'data_proc.h']]],
-  ['normal_5fsplit_5fpoints_9',['normal_split_points',['../structdataset.html#a81895d4cdae19743b5667b0ae66d9d9b',1,'dataset']]],
-  ['normal_5fsplit_5fpoints_5fcenter_10',['normal_split_points_center',['../structdataset.html#aebf777940059ca94314f5741459df9a3',1,'dataset']]],
-  ['num_5fcols_11',['num_cols',['../structcsv__t.html#aa018f449152d3670dbaa863f46a9e564',1,'csv_t::num_cols'],['../structdata__t.html#aa018f449152d3670dbaa863f46a9e564',1,'data_t::num_cols']]],
-  ['num_5frows_12',['num_rows',['../structcsv__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'csv_t::num_rows'],['../structdata__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'data_t::num_rows']]]
+  ['orignal_5frange_0',['orignal_range',['../structdata__t.html#ac73ff95a4a08873b7d0476c66adaa3d6',1,'data_t']]],
+  ['output_5fcsv_1',['output_csv',['../output__csv_8c.html#a22af2ec7ba9f1ecddbbf42712589eeb2',1,'output_csv(char *pFilename, dataset *pDS, norm_dist *pND):&#160;output_csv.c'],['../output__csv_8h.html#a22af2ec7ba9f1ecddbbf42712589eeb2',1,'output_csv(char *pFilename, dataset *pDS, norm_dist *pND):&#160;output_csv.c']]],
+  ['output_5fcsv_2ec_2',['output_csv.c',['../output__csv_8c.html',1,'']]],
+  ['output_5fcsv_2eh_3',['output_csv.h',['../output__csv_8h.html',1,'']]],
+  ['output_5fcsv_5ffile1_4',['OUTPUT_CSV_FILE1',['../hw2_2main_8c.html#a0e3fe68dce32ddbac436a0f4a6c36f49',1,'OUTPUT_CSV_FILE1:&#160;main.c'],['../test_8c.html#a0e3fe68dce32ddbac436a0f4a6c36f49',1,'OUTPUT_CSV_FILE1:&#160;test.c']]],
+  ['output_5fcsv_5ffile2_5',['OUTPUT_CSV_FILE2',['../hw2_2main_8c.html#a206890e0714afb575b3d0d3c68dd9171',1,'main.c']]],
+  ['output_5fcsv_5ffile3_6',['OUTPUT_CSV_FILE3',['../hw2_2main_8c.html#a719a53ad640b41ba5a057a269a61f0a9',1,'main.c']]],
+  ['output_5fcsv_5ffile4_7',['OUTPUT_CSV_FILE4',['../hw2_2main_8c.html#a275cd1ab2cd2889976747d539888d2c4',1,'main.c']]],
+  ['output_5fdecision_5fboundary_5fcsv_8',['output_decision_boundary_csv',['../output__csv_8c.html#a9fab5fa043b8dbcb791b29b8a22fb90d',1,'output_decision_boundary_csv(char *pFilename, intersection *pIntersection):&#160;output_csv.c'],['../output__csv_8h.html#a9fab5fa043b8dbcb791b29b8a22fb90d',1,'output_decision_boundary_csv(char *pFilename, intersection *pIntersection):&#160;output_csv.c']]],
+  ['output_5fformat_2ec_9',['output_format.c',['../hw2_2lib_2output__format_8c.html',1,'(Global Namespace)'],['../libc_2output__format_8c.html',1,'(Global Namespace)']]],
+  ['output_5fformat_2eh_10',['output_format.h',['../hw2_2lib_2output__format_8h.html',1,'(Global Namespace)'],['../libc_2output__format_8h.html',1,'(Global Namespace)']]]
 ];
