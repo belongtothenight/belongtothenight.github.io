@@ -27,16 +27,6 @@ theme:
       primary: teal
       accent: lime
 
-# plugins:
-#   - social
-
-# extra:
-#   social:
-#     - icon: fontawesome/brands/github-alt
-#       link: https://github.com/belongtothenight
-#     - icon: fontawesome/brands/linkedin
-#       link: https://www.linkedin.com/in/dachuan-chen-2b5752251/
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
