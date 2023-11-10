@@ -107,15 +107,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="scripts"></a> </p>
-<h1><a class="anchor" id="execute-entire-progress-with-documents-opened"></a>
-Execute entire progress with documents opened</h1>
-<div class="fragment"><div class="line"> 1</div>
-<div class="line">.\runner.ps1 -spsd -odw -p hw3</div>
-</div><!-- fragment --><h1><a class="anchor" id="execute-normally"></a>
-Execute Normally</h1>
-<div class="fragment"><div class="line"> 1</div>
-<div class="line">.\runner.ps1 -p hw3</div>
-</div><!-- fragment --><h1><a class="anchor" id="options"></a>
+<h1><a class="anchor" id="development-steps"></a>
+Development Steps</h1>
+<p>Use project "hw3" for example.</p>
+<ol type="1">
+<li>Code completion: <code>./runner.ps1 -p hw3</code> or <code>./runner.ps1 -p hw3 -nc</code></li>
+<li>Evaluate documentation:<ol type="a">
+<li>Start python http server: <code>./runner.ps1 -p hw3 -spsd</code></li>
+<li>Open document on http server: <code>./runner.ps1 -p hw3 -spsd -odw</code></li>
+</ol>
+</li>
+<li>Deploy documentation to github pages: <code>./runner.ps1 -p hw3 -dgp</code></li>
+</ol>
+<h1><a class="anchor" id="options"></a>
 Options</h1>
 <div class="fragment"><div class="line">Usage: runner.ps1 -p &lt;project&gt; [-h] [-nc] [-spsd] [-odw]</div>
 <div class="line">  -p &lt;program&gt; : project to run</div>
