@@ -20,7 +20,7 @@ var searchData=
   ['distance_2ec_17',['distance.c',['../distance_8c.html',1,'']]],
   ['distance_2eh_18',['distance.h',['../distance_8h.html',1,'']]],
   ['distance_5feuclidean_19',['distance_euclidean',['../distance_8c.html#a3960398b1c206abfd95689dce8795293',1,'distance_euclidean(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a3960398b1c206abfd95689dce8795293',1,'distance_euclidean(float x1, float y1, float x2, float y2):&#160;distance.c']]],
-  ['distance_5fhamming_20',['distance_hamming',['../distance_8h.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8c.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c']]],
+  ['distance_5fhamming_20',['distance_hamming',['../distance_8c.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c']]],
   ['distance_5fmanhattan_21',['distance_manhattan',['../distance_8c.html#a5c600c899c9e211c724bfafe7761454f',1,'distance_manhattan(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a5c600c899c9e211c724bfafe7761454f',1,'distance_manhattan(float x1, float y1, float x2, float y2):&#160;distance.c']]],
   ['distance_5fminkowski_22',['distance_minkowski',['../distance_8c.html#a404d4d9cd331a8ef16ceceac461cb5c9',1,'distance_minkowski(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a404d4d9cd331a8ef16ceceac461cb5c9',1,'distance_minkowski(float x1, float y1, float x2, float y2):&#160;distance.c']]],
   ['distance_5fstraightline_23',['distance_straightline',['../distance_8c.html#a420f969ff46782dbe89344950bc0f644',1,'distance_straightline(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a420f969ff46782dbe89344950bc0f644',1,'distance_straightline(float x1, float y1, float x2, float y2):&#160;distance.c']]],
@@ -29,5 +29,6 @@ var searchData=
   ['div5_5fmale_5fimg_26',['DIV5_MALE_IMG',['../hw2_2main_8c.html#ade51c05ed433f45e425823d9b5cb9056',1,'main.c']]],
   ['div5_5ftest_5fimg_27',['DIV5_TEST_IMG',['../test_8c.html#ade21fc957b4d4e0128ba2d9c2cad5a0f',1,'test.c']]],
   ['div5_5fvs_5fimg_28',['DIV5_VS_IMG',['../hw2_2main_8c.html#a8a77c33c918ed7527b9f89c2406900ca',1,'main.c']]],
-  ['dynamic_5fstep_29',['dynamic_step',['../structconfig.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config']]]
+  ['dynamic_5fstep_29',['dynamic_step',['../structconfig__t.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config_t']]],
+  ['dynamic_5fstep_5fconf_5fmax_5flen_30',['dynamic_step_CONF_MAX_LEN',['../structconfig__t.html#a21423a45fbc29765788f3f6433c46c86',1,'config_t']]]
 ];

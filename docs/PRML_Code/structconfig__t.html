@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>PRML_Code_Documents: E:/GitHub/PRML_Code/src/hw4/main.c File Reference</title>
+<title>PRML_Code_Documents: config_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -101,100 +101,143 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44461c01905a8c41fbd74b57f1d7b44c.html">hw4</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">main.c File Reference</div></div>
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">config_t Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Basic demonstration for Supervised Learning Algorithm.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="config__read_8h_source.html">./lib/config_read.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for main.c:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hw4_2main_8c__incl.svg" width="346" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw4_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
-<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">main function  <br /></td></tr>
-<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a25ce4b69d296fc9a3324b494542c2420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__t.html">config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw4_2main_8c.html#a25ce4b69d296fc9a3324b494542c2420">config</a></td></tr>
-<tr class="separator:a25ce4b69d296fc9a3324b494542c2420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bd065a61c9161e555618218fcea571"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw4_2main_8c.html#a16bd065a61c9161e555618218fcea571">config_line1</a></td></tr>
-<tr class="separator:a16bd065a61c9161e555618218fcea571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<p>This code is heavily referenced from <a href="https://stackoverflow.com/questions/48413430/c-code-to-read-config-file-and-parse-directives">https://stackoverflow.com/questions/48413430/c-code-to-read-config-file-and-parse-directives</a>.  
+ <a href="structconfig__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="config__read_8h_source.html">config_read.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a625f373a2c501739208f00e118d5f3ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#a625f373a2c501739208f00e118d5f3ec">initial_step</a></td></tr>
+<tr class="memdesc:a625f373a2c501739208f00e118d5f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">learning rate  <br /></td></tr>
+<tr class="separator:a625f373a2c501739208f00e118d5f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb8ea267f455a4894a81439ece7f95d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#a6bb8ea267f455a4894a81439ece7f95d">dynamic_step</a></td></tr>
+<tr class="memdesc:a6bb8ea267f455a4894a81439ece7f95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dynamic learning rate or not  <br /></td></tr>
+<tr class="separator:a6bb8ea267f455a4894a81439ece7f95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a8fff23a1eb2eb595658fd12cc4b2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#a30a8fff23a1eb2eb595658fd12cc4b2d">line_cnt</a></td></tr>
+<tr class="memdesc:a30a8fff23a1eb2eb595658fd12cc4b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of lines in config file  <br /></td></tr>
+<tr class="separator:a30a8fff23a1eb2eb595658fd12cc4b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c324073bb7952da7b67ecdb1ef0b77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#af1c324073bb7952da7b67ecdb1ef0b77">initial_step_CONF_MAX_LEN</a></td></tr>
+<tr class="memdesc:af1c324073bb7952da7b67ecdb1ef0b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of initial_step in config file.  <br /></td></tr>
+<tr class="separator:af1c324073bb7952da7b67ecdb1ef0b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21423a45fbc29765788f3f6433c46c86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#a21423a45fbc29765788f3f6433c46c86">dynamic_step_CONF_MAX_LEN</a></td></tr>
+<tr class="memdesc:a21423a45fbc29765788f3f6433c46c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of dynamic_step in config file.  <br /></td></tr>
+<tr class="separator:a21423a45fbc29765788f3f6433c46c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e0567b906f25588b296a06d616c093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig__t.html#a85e0567b906f25588b296a06d616c093">line_cnt_CONF_MAX_LEN</a></td></tr>
+<tr class="memdesc:a85e0567b906f25588b296a06d616c093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of line_cnt in config file.  <br /></td></tr>
+<tr class="separator:a85e0567b906f25588b296a06d616c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Basic demonstration for Supervised Learning Algorithm. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+<div class="textblock"><p>This code is heavily referenced from <a href="https://stackoverflow.com/questions/48413430/c-code-to-read-config-file-and-parse-directives">https://stackoverflow.com/questions/48413430/c-code-to-read-config-file-and-parse-directives</a>. </p>
+<p>Data structure for config file general settings </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a6bb8ea267f455a4894a81439ece7f95d" name="a6bb8ea267f455a4894a81439ece7f95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb8ea267f455a4894a81439ece7f95d">&#9670;&#160;</a></span>dynamic_step</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">bool dynamic_step</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>main function </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>dynamic learning rate or not </p>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a25ce4b69d296fc9a3324b494542c2420" name="a25ce4b69d296fc9a3324b494542c2420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25ce4b69d296fc9a3324b494542c2420">&#9670;&#160;</a></span>config</h2>
+<a id="a21423a45fbc29765788f3f6433c46c86" name="a21423a45fbc29765788f3f6433c46c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21423a45fbc29765788f3f6433c46c86">&#9670;&#160;</a></span>dynamic_step_CONF_MAX_LEN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structconfig__t.html">config_t</a> config</td>
+          <td class="memname">int dynamic_step_CONF_MAX_LEN</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Maximum length of dynamic_step in config file. </p>
+
 </div>
 </div>
-<a id="a16bd065a61c9161e555618218fcea571" name="a16bd065a61c9161e555618218fcea571"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16bd065a61c9161e555618218fcea571">&#9670;&#160;</a></span>config_line1</h2>
+<a id="a625f373a2c501739208f00e118d5f3ec" name="a625f373a2c501739208f00e118d5f3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625f373a2c501739208f00e118d5f3ec">&#9670;&#160;</a></span>initial_step</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a> config_line1</td>
+          <td class="memname">double initial_step</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>learning rate </p>
+
 </div>
 </div>
+<a id="af1c324073bb7952da7b67ecdb1ef0b77" name="af1c324073bb7952da7b67ecdb1ef0b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c324073bb7952da7b67ecdb1ef0b77">&#9670;&#160;</a></span>initial_step_CONF_MAX_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int initial_step_CONF_MAX_LEN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of initial_step in config file. </p>
+
+</div>
+</div>
+<a id="a30a8fff23a1eb2eb595658fd12cc4b2d" name="a30a8fff23a1eb2eb595658fd12cc4b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a8fff23a1eb2eb595658fd12cc4b2d">&#9670;&#160;</a></span>line_cnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int line_cnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of lines in config file </p>
+
+</div>
+</div>
+<a id="a85e0567b906f25588b296a06d616c093" name="a85e0567b906f25588b296a06d616c093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e0567b906f25588b296a06d616c093">&#9670;&#160;</a></span>line_cnt_CONF_MAX_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int line_cnt_CONF_MAX_LEN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of line_cnt in config file. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>E:/GitHub/PRML_Code/src/hw4/lib/<a class="el" href="config__read_8h_source.html">config_read.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

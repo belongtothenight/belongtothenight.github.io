@@ -7,5 +7,6 @@ var searchData=
   ['data_5ftest_5fmean_4',['data_test_mean',['../namespacedata__gen.html#a9b6b9e7c40c28954d0f9806f988ca42a',1,'data_gen']]],
   ['data_5ftest_5fstd_5',['data_test_std',['../namespacedata__gen.html#a18bbb371d8e77f5a59fc61a90f5c32c3',1,'data_gen']]],
   ['decimal_6',['decimal',['../namespacedata__gen.html#af560a38dbf20703219e1d31e7a5571b0',1,'data_gen']]],
-  ['dynamic_5fstep_7',['dynamic_step',['../structconfig.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config']]]
+  ['dynamic_5fstep_7',['dynamic_step',['../structconfig__t.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config_t']]],
+  ['dynamic_5fstep_5fconf_5fmax_5flen_8',['dynamic_step_CONF_MAX_LEN',['../structconfig__t.html#a21423a45fbc29765788f3f6433c46c86',1,'config_t']]]
 ];
