@@ -1,6 +1,6 @@
 # PRML Code Docs
 
-Holds code for CYCUEE Pattern Recognition and Machine Learning course. Go to ```./src``` to see more.
+Holds code for CYCUEE Pattern Recognition and Machine Learning course. Go to [source](https://github.com/belongtothenight/PRML_Code/) to see more.
 
 Heads to [PRML Code Documentation](https://belongtothenight.github.io/PRML_Code/) for details.
 
