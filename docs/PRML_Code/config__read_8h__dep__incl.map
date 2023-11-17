@@ -1,7 +1,13 @@
 <map id="E:/GitHub/PRML_Code/src/hw4/lib/config_read.h" name="E:/GitHub/PRML_Code/src/hw4/lib/config_read.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,250,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="177,5,333,64"/>
 <area shape="rect" id="Node000002" href="$config__read_8c.html" title=" " alt="" coords="5,112,161,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,78,109,113,105,110,136,74"/>
-<area shape="rect" id="Node000003" href="$hw4_2main_8c.html" title="Basic demonstration for Supervised Learning Algorithm." alt="" coords="185,120,341,163"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,74,247,118,243,122,205,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,75,131,114,129,109,194,70"/>
+<area shape="rect" id="Node000003" href="$plot__iter_8c.html" title=" " alt="" coords="144,219,299,261"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,79,226,113,220,170,222,218,217,218,215,169,220,111,231,77"/>
+<area shape="rect" id="Node000004" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="235,120,390,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,77,304,119,299,121,276,79"/>
+<area shape="rect" id="Node000005" href="$hw4_2main_8c.html" title="Basic demonstration for Supervised Learning Algorithm." alt="" coords="336,219,491,261"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="348,64,379,84,404,111,416,138,422,167,420,218,415,218,416,167,411,139,399,113,375,88,345,68"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="285,176,243,220,239,217,281,172"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="347,172,394,216,390,220,343,176"/>
 </map>

@@ -113,18 +113,20 @@ Development Steps</h1>
 <ol type="1">
 <li>Code completion: <code>./runner.ps1 -p hw3</code> or <code>./runner.ps1 -p hw3 -nc</code></li>
 <li>Evaluate documentation:<ol type="a">
-<li>Start python http server: <code>./runner.ps1 -p hw3 -spsd</code></li>
-<li>Open document on http server: <code>./runner.ps1 -p hw3 -spsd -odw</code></li>
+<li>Start python http server: <code>./runner.ps1 -p hw3 -gdoc -spsd</code></li>
+<li>Open document on http server: <code>./runner.ps1 -p hw3 -gdoc -spsd -odw</code></li>
 </ol>
 </li>
 <li>Deploy documentation to github pages: <code>./runner.ps1 -p hw3 -dgp</code></li>
+<li>Full pipeline: <code>./runner.ps1 -p hw3 -gdoc -spsd -odw -dgp</code></li>
 </ol>
 <h1><a class="anchor" id="options"></a>
 Options</h1>
-<div class="fragment"><div class="line">Usage: runner.ps1 -p &lt;project&gt; [-h] [-nc] [-spsd] [-odw]</div>
+<div class="fragment"><div class="line">Usage: runner.ps1 -p &lt;project&gt; [-h] [-nc] [-gdoc] [-spsd] [-odw] [-dgp]</div>
 <div class="line">  -p &lt;program&gt; : project to run</div>
 <div class="line">  -h           : help</div>
 <div class="line">  -nc          : no cleaning</div>
+<div class="line">  -gdoc        : generate documentation</div>
 <div class="line">  -spsd        : start python simple http server for documentation</div>
 <div class="line">  -odw         : open documentation in web browser (firefox)</div>
 <div class="line">  -dgp         : deploy to github pages (https://belongtothenight.github.io)</div>

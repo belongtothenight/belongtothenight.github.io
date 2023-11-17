@@ -126,7 +126,7 @@ Include dependency graph for config_read.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="config__read_8h__dep__incl.svg" width="347" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="config__read_8h__dep__incl.svg" width="498" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="config__read_8h_source.html">Go to the source code of this file.</a></p>
@@ -142,21 +142,33 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a58d2c02befc49b94750769b239571470"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a58d2c02befc49b94750769b239571470">CONFIG_LINE_MAX_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
-<tr class="memdesc:a58d2c02befc49b94750769b239571470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum size of config file.  <br /></td></tr>
+<tr class="memitem:a58d2c02befc49b94750769b239571470"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a58d2c02befc49b94750769b239571470">CONFIG_LINE_MAX_SIZE</a>&#160;&#160;&#160;(256)</td></tr>
+<tr class="memdesc:a58d2c02befc49b94750769b239571470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum size of config file line (changing number small can take more config lines, weird)  <br /></td></tr>
 <tr class="separator:a58d2c02befc49b94750769b239571470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070202f8e3cae5d0938a8c7035dee219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a070202f8e3cae5d0938a8c7035dee219">MAX_LINE_CNT</a>&#160;&#160;&#160;(4)</td></tr>
 <tr class="memdesc:a070202f8e3cae5d0938a8c7035dee219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of specified lines in config file.  <br /></td></tr>
 <tr class="separator:a070202f8e3cae5d0938a8c7035dee219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4e7c0319a3fcb02846f59c799a40f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a1f4e7c0319a3fcb02846f59c799a40f4">CONFIG_GLOBAL_SET_NUM</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="memitem:a1f4e7c0319a3fcb02846f59c799a40f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a1f4e7c0319a3fcb02846f59c799a40f4">CONFIG_GLOBAL_SET_NUM</a>&#160;&#160;&#160;(6)</td></tr>
 <tr class="memdesc:a1f4e7c0319a3fcb02846f59c799a40f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of global settings in config file.  <br /></td></tr>
 <tr class="separator:a1f4e7c0319a3fcb02846f59c799a40f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4c370039ca893511b150f559062ee1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#aac4c370039ca893511b150f559062ee1">CONFIG_LINE_SET_NUM</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="memdesc:aac4c370039ca893511b150f559062ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of each line settings in config file.  <br /></td></tr>
+<tr class="separator:aac4c370039ca893511b150f559062ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a152d3700bb1252cc126ebac7513acd56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a152d3700bb1252cc126ebac7513acd56">CONFIG_READ_STATUS_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="memdesc:a152d3700bb1252cc126ebac7513acd56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success.  <br /></td></tr>
 <tr class="separator:a152d3700bb1252cc126ebac7513acd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc82354805cc6c207dc7ea3a3b0a8e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a0cc82354805cc6c207dc7ea3a3b0a8e8">CONFIG_READ_STATUS_FAILURE</a>&#160;&#160;&#160;(-1)</td></tr>
 <tr class="memdesc:a0cc82354805cc6c207dc7ea3a3b0a8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can't open file.  <br /></td></tr>
 <tr class="separator:a0cc82354805cc6c207dc7ea3a3b0a8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae3500aff4169270fcd5389a152008b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a2ae3500aff4169270fcd5389a152008b">DISPLAY_CONFIG_READ_BUF</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a2ae3500aff4169270fcd5389a152008b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display config read or not.  <br /></td></tr>
+<tr class="separator:a2ae3500aff4169270fcd5389a152008b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86dd7b112874963c5417083b1db12d7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a86dd7b112874963c5417083b1db12d7b">DISPLAY_CONFIG_PARSING_BUF</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a86dd7b112874963c5417083b1db12d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display config parsing or not.  <br /></td></tr>
+<tr class="separator:a86dd7b112874963c5417083b1db12d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4f19630b4e5d9cb045999d206f62ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#aac4f19630b4e5d9cb045999d206f62ae">DISPLAY_CONFIG_LINE_PARSING_BUF</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:aac4f19630b4e5d9cb045999d206f62ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display config line parsing or not.  <br /></td></tr>
+<tr class="separator:aac4f19630b4e5d9cb045999d206f62ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -175,15 +187,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a623490c18e0d39a3fcccf7a82baf26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a9a623490c18e0d39a3fcccf7a82baf26">config_line_print</a> (<a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line)</td></tr>
 <tr class="memdesc:a9a623490c18e0d39a3fcccf7a82baf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct.  <br /></td></tr>
 <tr class="separator:a9a623490c18e0d39a3fcccf7a82baf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d2e1b83b383e646097360169836915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#ab0d2e1b83b383e646097360169836915">config_all_print</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
+<tr class="memdesc:ab0d2e1b83b383e646097360169836915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all structs available.  <br /></td></tr>
+<tr class="separator:ab0d2e1b83b383e646097360169836915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#a1bc2619d7b52c203fc2a5aed8b654794">config_parse</a> (char *buf, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:a1bc2619d7b52c203fc2a5aed8b654794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a>.  <br /></td></tr>
 <tr class="separator:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#ae498418f516c5eb1139fcd7c4b8fc74e">config_line_parse</a> (char *buf, <a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line, int *line_cnt)</td></tr>
 <tr class="memdesc:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a>.  <br /></td></tr>
 <tr class="separator:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdeeb3a68b93280096cd6f717cada7be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#acdeeb3a68b93280096cd6f717cada7be">config_read</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*config_line)[], char *filename)</td></tr>
-<tr class="memdesc:acdeeb3a68b93280096cd6f717cada7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read config file and parse directives.  <br /></td></tr>
-<tr class="separator:acdeeb3a68b93280096cd6f717cada7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8h.html#adc9bbcf7cf5e0d6b34d2847af9cf079c">config_read</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], char *filename)</td></tr>
+<tr class="memdesc:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read config file and parse directives.  <br /></td></tr>
+<tr class="separator:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>References:</p><ol type="1">
@@ -202,7 +217,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONFIG_GLOBAL_SET_NUM&#160;&#160;&#160;(3)</td>
+          <td class="memname">#define CONFIG_GLOBAL_SET_NUM&#160;&#160;&#160;(6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,12 +233,28 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONFIG_LINE_MAX_SIZE&#160;&#160;&#160;(1024)</td>
+          <td class="memname">#define CONFIG_LINE_MAX_SIZE&#160;&#160;&#160;(256)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum size of config file. </p>
+<p>Maximum size of config file line (changing number small can take more config lines, weird) </p>
+
+</div>
+</div>
+<a id="aac4c370039ca893511b150f559062ee1" name="aac4c370039ca893511b150f559062ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4c370039ca893511b150f559062ee1">&#9670;&#160;</a></span>CONFIG_LINE_SET_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_LINE_SET_NUM&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of each line settings in config file. </p>
 
 </div>
 </div>
@@ -259,6 +290,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aac4f19630b4e5d9cb045999d206f62ae" name="aac4f19630b4e5d9cb045999d206f62ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4f19630b4e5d9cb045999d206f62ae">&#9670;&#160;</a></span>DISPLAY_CONFIG_LINE_PARSING_BUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISPLAY_CONFIG_LINE_PARSING_BUF&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display config line parsing or not. </p>
+
+</div>
+</div>
+<a id="a86dd7b112874963c5417083b1db12d7b" name="a86dd7b112874963c5417083b1db12d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86dd7b112874963c5417083b1db12d7b">&#9670;&#160;</a></span>DISPLAY_CONFIG_PARSING_BUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISPLAY_CONFIG_PARSING_BUF&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display config parsing or not. </p>
+
+</div>
+</div>
+<a id="a2ae3500aff4169270fcd5389a152008b" name="a2ae3500aff4169270fcd5389a152008b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae3500aff4169270fcd5389a152008b">&#9670;&#160;</a></span>DISPLAY_CONFIG_READ_BUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISPLAY_CONFIG_READ_BUF&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display config read or not. </p>
+
+</div>
+</div>
 <a id="a070202f8e3cae5d0938a8c7035dee219" name="a070202f8e3cae5d0938a8c7035dee219"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a070202f8e3cae5d0938a8c7035dee219">&#9670;&#160;</a></span>MAX_LINE_CNT</h2>
 
@@ -276,6 +355,49 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab0d2e1b83b383e646097360169836915" name="ab0d2e1b83b383e646097360169836915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d2e1b83b383e646097360169836915">&#9670;&#160;</a></span>config_all_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void config_all_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print all structs available. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to a list of <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> structs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af8f0d0a9416fadc92a39cb3703c3c642" name="af8f0d0a9416fadc92a39cb3703c3c642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8f0d0a9416fadc92a39cb3703c3c642">&#9670;&#160;</a></span>config_init()</h2>
 
@@ -497,8 +619,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acdeeb3a68b93280096cd6f717cada7be" name="acdeeb3a68b93280096cd6f717cada7be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdeeb3a68b93280096cd6f717cada7be">&#9670;&#160;</a></span>config_read()</h2>
+<a id="adc9bbcf7cf5e0d6b34d2847af9cf079c" name="adc9bbcf7cf5e0d6b34d2847af9cf079c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9bbcf7cf5e0d6b34d2847af9cf079c">&#9670;&#160;</a></span>config_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +635,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
-          <td class="paramname"><em>config_line</em>[], </td>
+          <td class="paramname"><em>config_lines</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
