@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['input_5fstruct_0',['input_struct',['../structinput__struct.html',1,'']]],
-  ['intersection_1',['intersection',['../structintersection.html',1,'']]]
+  ['history_5ft_0',['history_t',['../structhistory__t.html',1,'']]]
 ];

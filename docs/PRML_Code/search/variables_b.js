@@ -1,7 +1,16 @@
 var searchData=
 [
-  ['pan_5fdiff_0',['pan_diff',['../structdata__t.html#a9c246be3e2d2e257b8f608ac720daf37',1,'data_t']]],
-  ['pan_5frange_1',['pan_range',['../structdata__t.html#ac2ac9931a30e87b235e6bbc8f6b933d5',1,'data_t']]],
-  ['px_5farr_2',['pX_arr',['../structinput__struct.html#aecfa269db0e0f7dcf6d6aede4a597a9f',1,'input_struct']]],
-  ['py_5farr_3',['pY_arr',['../structinput__struct.html#a3290d23ca47650be0df93c1611b1b224',1,'input_struct']]]
+  ['max_0',['max',['../structdataset.html#a306b5ca364bf842a8ff5bbfc0b4d4a4b',1,'dataset']]],
+  ['mean_1',['mean',['../structdataset.html#a976925cd66ff0dcd419628463f580f1c',1,'dataset']]],
+  ['mean_5foverlapping_5fbboxes_2',['mean_overlapping_bboxes',['../namespacetrain__frcnn.html#ab16624b510ddf5781f5ca29b0bcc0d18',1,'train_frcnn']]],
+  ['metrics_3',['metrics',['../namespacetrain__frcnn.html#abcce662da2a75360795281c4d193ac56',1,'train_frcnn']]],
+  ['min_4',['min',['../structdataset.html#ad2e88d75f808e6d4e78d48bceb10c336',1,'dataset']]],
+  ['min_5ferror_5',['min_error',['../structintersection.html#ad958bc47a2a3d0dcc5f81359b2d22635',1,'intersection']]],
+  ['model_5fall_6',['model_all',['../namespacetrain__frcnn.html#ac54aa7a922342503e4b06386251443ef',1,'train_frcnn']]],
+  ['model_5fclassifier_7',['model_classifier',['../namespacetest__frcnn.html#a449d9ae4a4bbf41d089b1c9b6636b5da',1,'test_frcnn.model_classifier'],['../namespacetrain__frcnn.html#a449d9ae4a4bbf41d089b1c9b6636b5da',1,'train_frcnn.model_classifier']]],
+  ['model_5fclassifier_5fonly_8',['model_classifier_only',['../namespacetest__frcnn.html#a138a2d17c44a9cbb4141cef12f54a74e',1,'test_frcnn']]],
+  ['model_5fpath_9',['model_path',['../classkeras__frcnn_1_1config_1_1_config.html#a4d5bb0c360b13429f65cd327c8d0aa12',1,'keras_frcnn.config.Config.model_path'],['../namespacetest__frcnn.html#a4d5bb0c360b13429f65cd327c8d0aa12',1,'test_frcnn.model_path'],['../namespacetrain__frcnn.html#a4d5bb0c360b13429f65cd327c8d0aa12',1,'train_frcnn.model_path']]],
+  ['model_5fpath_5fregex_10',['model_path_regex',['../namespacetrain__frcnn.html#a8bd55e7ad00c7747317671f9c392d2a0',1,'train_frcnn']]],
+  ['model_5frpn_11',['model_rpn',['../namespacetest__frcnn.html#a005e2b7394511f344aa0289dbfa444c8',1,'test_frcnn.model_rpn'],['../namespacetrain__frcnn.html#a005e2b7394511f344aa0289dbfa444c8',1,'train_frcnn.model_rpn']]],
+  ['mu_12',['mu',['../structnorm__dist.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'norm_dist::mu'],['../structdataset.html#a4df8d1d064e0269c44c34fd4a7a3b705',1,'dataset::mu']]]
 ];

@@ -114,31 +114,45 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="config__read_8h_source.html">config_read.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="libc_2output__format_8h_source.html">../../libc/output_format.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for config_read.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="config__read_8c__incl.svg" width="346" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="config__read_8c__incl.svg" width="496" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f83b2628aa3adcd77ad56b342ce5876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a8f83b2628aa3adcd77ad56b342ce5876">config_init</a> (<a class="el" href="structconfig__t.html">config_t</a> *<a class="el" href="hw4_2main_8c.html#a25ce4b69d296fc9a3324b494542c2420">config</a>, int initial_step_CONF_MAX_LEN, int dynamic_step_CONF_MAX_LEN, int line_cnt_CONF_MAX_LEN)</td></tr>
-<tr class="memdesc:a8f83b2628aa3adcd77ad56b342ce5876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct to default values.  <br /></td></tr>
-<tr class="separator:a8f83b2628aa3adcd77ad56b342ce5876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4606ceeb532453b95c7945875c54b9ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a4606ceeb532453b95c7945875c54b9ac">config_line_init</a> (<a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line, int line_param1_CONF_MAX_LEN, int line_param2_CONF_MAX_LEN, int line_param3_CONF_MAX_LEN)</td></tr>
-<tr class="memdesc:a4606ceeb532453b95c7945875c54b9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct to default values.  <br /></td></tr>
-<tr class="separator:a4606ceeb532453b95c7945875c54b9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfe55a77d96596f1374264d53ca519f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a7cfe55a77d96596f1374264d53ca519f">config_print</a> (<a class="el" href="structconfig__t.html">config_t</a> *<a class="el" href="hw4_2main_8c.html#a25ce4b69d296fc9a3324b494542c2420">config</a>)</td></tr>
-<tr class="memdesc:a7cfe55a77d96596f1374264d53ca519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct.  <br /></td></tr>
+<tr class="memitem:a5a6c3bb2e53ad9976c11c87b65664ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a5a6c3bb2e53ad9976c11c87b65664ce8">config_read_status_print</a> (int config_read_status, char *message)</td></tr>
+<tr class="memdesc:a5a6c3bb2e53ad9976c11c87b65664ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print config_read_status.  <br /></td></tr>
+<tr class="separator:a5a6c3bb2e53ad9976c11c87b65664ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f0d0a9416fadc92a39cb3703c3c642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#af8f0d0a9416fadc92a39cb3703c3c642">config_init</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
+<tr class="memdesc:af8f0d0a9416fadc92a39cb3703c3c642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct to default values.  <br /></td></tr>
+<tr class="separator:af8f0d0a9416fadc92a39cb3703c3c642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81edb0c27e85840c921755c5a9373b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#af81edb0c27e85840c921755c5a9373b7">config_line_init</a> (<a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line)</td></tr>
+<tr class="memdesc:af81edb0c27e85840c921755c5a9373b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct to default values.  <br /></td></tr>
+<tr class="separator:af81edb0c27e85840c921755c5a9373b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfe55a77d96596f1374264d53ca519f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a7cfe55a77d96596f1374264d53ca519f">config_print</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
+<tr class="memdesc:a7cfe55a77d96596f1374264d53ca519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct.  <br /></td></tr>
 <tr class="separator:a7cfe55a77d96596f1374264d53ca519f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a623490c18e0d39a3fcccf7a82baf26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a9a623490c18e0d39a3fcccf7a82baf26">config_line_print</a> (<a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line)</td></tr>
 <tr class="memdesc:a9a623490c18e0d39a3fcccf7a82baf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct.  <br /></td></tr>
 <tr class="separator:a9a623490c18e0d39a3fcccf7a82baf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a1bc2619d7b52c203fc2a5aed8b654794">config_parse</a> (char *buf, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
+<tr class="memdesc:a1bc2619d7b52c203fc2a5aed8b654794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a>.  <br /></td></tr>
+<tr class="separator:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#ae498418f516c5eb1139fcd7c4b8fc74e">config_line_parse</a> (char *buf, <a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line, int *line_cnt)</td></tr>
+<tr class="memdesc:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a>.  <br /></td></tr>
+<tr class="separator:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdeeb3a68b93280096cd6f717cada7be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#acdeeb3a68b93280096cd6f717cada7be">config_read</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*config_line)[], char *filename)</td></tr>
+<tr class="memdesc:acdeeb3a68b93280096cd6f717cada7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read config file and parse directives.  <br /></td></tr>
+<tr class="separator:acdeeb3a68b93280096cd6f717cada7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8f83b2628aa3adcd77ad56b342ce5876" name="a8f83b2628aa3adcd77ad56b342ce5876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f83b2628aa3adcd77ad56b342ce5876">&#9670;&#160;</a></span>config_init()</h2>
+<a id="af8f0d0a9416fadc92a39cb3703c3c642" name="af8f0d0a9416fadc92a39cb3703c3c642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f0d0a9416fadc92a39cb3703c3c642">&#9670;&#160;</a></span>config_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,49 +161,30 @@ Functions</h2></td></tr>
           <td class="memname">void config_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>initial_step_CONF_MAX_LEN</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dynamic_step_CONF_MAX_LEN</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line_cnt_CONF_MAX_LEN</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct to default values. </p>
+<p>Set <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct to default values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct </td></tr>
-    <tr><td class="paramname">initial_step_CONF_MAX_LEN</td><td>Maximum length of initial_step in config file </td></tr>
-    <tr><td class="paramname">dynamic_step_CONF_MAX_LEN</td><td>Maximum length of dynamic_step in config file </td></tr>
-    <tr><td class="paramname">line_cnt_CONF_MAX_LEN</td><td>Maximum length of line_cnt in config file </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4606ceeb532453b95c7945875c54b9ac" name="a4606ceeb532453b95c7945875c54b9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4606ceeb532453b95c7945875c54b9ac">&#9670;&#160;</a></span>config_line_init()</h2>
+<a id="af81edb0c27e85840c921755c5a9373b7" name="af81edb0c27e85840c921755c5a9373b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81edb0c27e85840c921755c5a9373b7">&#9670;&#160;</a></span>config_line_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,25 +193,51 @@ Functions</h2></td></tr>
           <td class="memname">void config_line_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td>
+          <td class="paramname"><em>config_line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct to default values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_line</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae498418f516c5eb1139fcd7c4b8fc74e" name="ae498418f516c5eb1139fcd7c4b8fc74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae498418f516c5eb1139fcd7c4b8fc74e">&#9670;&#160;</a></span>config_line_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int config_line_parse </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td>
           <td class="paramname"><em>config_line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line_param1_CONF_MAX_LEN</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line_param2_CONF_MAX_LEN</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line_param3_CONF_MAX_LEN</em>&#160;</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>line_cnt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,13 +247,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct to default values. </p>
+<p>Parse config file and assign values to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">buf</td><td>Pointer to read buffer </td></tr>
     <tr><td class="paramname">config_line</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
-    <tr><td class="paramname">line_param1_CONF_MAX_LEN</td><td>Maximum length of a_x1 in config file </td></tr>
-    <tr><td class="paramname">line_param2_CONF_MAX_LEN</td><td>Maximum length of b_y1 in config file </td></tr>
-    <tr><td class="paramname">line_param3_CONF_MAX_LEN</td><td>Maximum length of c_1 in config file </td></tr>
+    <tr><td class="paramname">line_cnt</td><td>Pointer to line_cnt </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">config_read_status</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -262,6 +288,55 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bc2619d7b52c203fc2a5aed8b654794" name="a1bc2619d7b52c203fc2a5aed8b654794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc2619d7b52c203fc2a5aed8b654794">&#9670;&#160;</a></span>config_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int config_parse </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse config file and assign values to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Pointer to read buffer </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">config_read_status</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -281,10 +356,103 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct. </p>
+<p>Print <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="This code is heavily referenced from https://stackoverflow.com/questions/48413430/c-code-to-read-conf...">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdeeb3a68b93280096cd6f717cada7be" name="acdeeb3a68b93280096cd6f717cada7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdeeb3a68b93280096cd6f717cada7be">&#9670;&#160;</a></span>config_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int config_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_line</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read config file and parse directives. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_line</td><td>Pointer to a list of <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
+    <tr><td class="paramname">filename</td><td>Name of config file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">config_read_status</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a6c3bb2e53ad9976c11c87b65664ce8" name="a5a6c3bb2e53ad9976c11c87b65664ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6c3bb2e53ad9976c11c87b65664ce8">&#9670;&#160;</a></span>config_read_status_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void config_read_status_print </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>config_read_status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print config_read_status. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_read_status</td><td>config_read_status </td></tr>
+    <tr><td class="paramname">message</td><td>Message to print </td></tr>
   </table>
   </dd>
 </dl>

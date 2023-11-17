@@ -1,9 +1,23 @@
 var searchData=
 [
-  ['normal_5fsplit_5fcount_0',['normal_split_count',['../structdataset.html#ade50175db1f8b8849d43f3438f003ae7',1,'dataset']]],
-  ['normal_5fsplit_5fdata_1',['normal_split_data',['../structdataset.html#a050e1a41d229064c76d744ecd23c90bd',1,'dataset']]],
-  ['normal_5fsplit_5fpoints_2',['normal_split_points',['../structdataset.html#a81895d4cdae19743b5667b0ae66d9d9b',1,'dataset']]],
-  ['normal_5fsplit_5fpoints_5fcenter_3',['normal_split_points_center',['../structdataset.html#aebf777940059ca94314f5741459df9a3',1,'dataset']]],
-  ['num_5fcols_4',['num_cols',['../structdata__t.html#aa018f449152d3670dbaa863f46a9e564',1,'data_t::num_cols'],['../structcsv__t.html#aa018f449152d3670dbaa863f46a9e564',1,'csv_t::num_cols']]],
-  ['num_5frows_5',['num_rows',['../structdata__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'data_t::num_rows'],['../structcsv__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'csv_t::num_rows']]]
+  ['im_5fsize_0',['im_size',['../classkeras__frcnn_1_1config_1_1_config.html#aacc74bb7fb80fdc3943bf85979f4ea94',1,'keras_frcnn::config::Config']]],
+  ['image_1',['image',['../namespacecopy__img.html#a42cb5f5737262947250c709931232c69',1,'copy_img.image'],['../namespaceannotate.html#a42cb5f5737262947250c709931232c69',1,'annotate.image']]],
+  ['img_2',['img',['../namespacetest__frcnn.html#a86d0d51ceb4bc3bd26707520f257a5a4',1,'test_frcnn']]],
+  ['img_5fchannel_5fmean_3',['img_channel_mean',['../classkeras__frcnn_1_1config_1_1_config.html#a60d23ef606ad03b4e8ef2383cffcd547',1,'keras_frcnn::config::Config']]],
+  ['img_5fdata_4',['img_data',['../namespacetrain__frcnn.html#a03817025b73a34e8d9554d2ccdbe91fc',1,'train_frcnn']]],
+  ['img_5finput_5',['img_input',['../namespacetest__frcnn.html#a4d9a3ab7825cc668a479442921d1f69a',1,'test_frcnn.img_input'],['../namespacetrain__frcnn.html#a4d9a3ab7825cc668a479442921d1f69a',1,'train_frcnn.img_input']]],
+  ['img_5fpath_6',['img_path',['../namespacetest__frcnn.html#aa99ef9c2bed892ec6273c7b42726d0d2',1,'test_frcnn']]],
+  ['img_5fscaling_5ffactor_7',['img_scaling_factor',['../classkeras__frcnn_1_1config_1_1_config.html#a38f35ebf23493e0484280a4003ae1d6e',1,'keras_frcnn::config::Config']]],
+  ['index_8',['index',['../namespaceannotate.html#a6784e1c334dfceb8f017667c0b0f6a3e',1,'annotate']]],
+  ['initial_5fstep_9',['initial_step',['../structconfig__t.html#a625f373a2c501739208f00e118d5f3ec',1,'config_t']]],
+  ['initial_5fweights_10',['initial_weights',['../classkeras__frcnn_1_1_fixed_batch_normalization_1_1_fixed_batch_normalization.html#aa7f9540af68821b2780b0a2ba0188c6c',1,'keras_frcnn::FixedBatchNormalization::FixedBatchNormalization']]],
+  ['input_5fshape_5ffeatures_11',['input_shape_features',['../namespacetest__frcnn.html#afa01fd7982fb4a7822a467dc8d953454',1,'test_frcnn']]],
+  ['input_5fshape_5fimg_12',['input_shape_img',['../namespacetrain__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'train_frcnn.input_shape_img'],['../namespacetest__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'test_frcnn.input_shape_img']]],
+  ['input_5fspec_13',['input_spec',['../classkeras__frcnn_1_1_fixed_batch_normalization_1_1_fixed_batch_normalization.html#a16b1387c1f70f8ac7b190e6df130a00c',1,'keras_frcnn::FixedBatchNormalization::FixedBatchNormalization']]],
+  ['integral_14',['integral',['../structnorm__dist.html#a1174af01b8a329a6d465ea6e0951b3e5',1,'norm_dist']]],
+  ['integral_5fstep_15',['integral_step',['../structnorm__dist.html#a57f79540f91837eb36efc6b7d2938e69',1,'norm_dist']]],
+  ['inv_5fmap_16',['inv_map',['../namespacetrain__frcnn.html#a602791b5bd4545560840a63953a749de',1,'train_frcnn']]],
+  ['ious_17',['IouS',['../namespacetrain__frcnn.html#abc0e49a2654f888bb48ff80b01df1cd1',1,'train_frcnn']]],
+  ['it_18',['it',['../classkeras__frcnn_1_1data__generators_1_1threadsafe__iter.html#abe6ae68f2bb310ea30b1fe389e0418d6',1,'keras_frcnn::data_generators::threadsafe_iter']]],
+  ['iter_5fnum_19',['iter_num',['../namespacetrain__frcnn.html#ae086584b2dd4fd8aeba9fab8298fcc17',1,'train_frcnn']]]
 ];

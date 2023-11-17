@@ -1,7 +1,23 @@
 var searchData=
 [
-  ['x1_0',['x1',['../structintersection.html#a3389d8b95846602e8f94cc15f41e48e9',1,'intersection']]],
-  ['x2_1',['x2',['../structintersection.html#a24d6ffb6e8780eef0c81cd97e3f4fdaf',1,'intersection']]],
-  ['x_5fmax_2',['x_max',['../structnorm__dist.html#a73fc13d83638687d92d5ccf9e4fe1722',1,'norm_dist']]],
-  ['x_5fmin_3',['x_min',['../structnorm__dist.html#ab56799f110a6fbd87dc59c9c171516dc',1,'norm_dist']]]
+  ['save_0',['save',['../namespacedata__gen.html#afe343e9c5415974b74f2804f52eaaaab',1,'data_gen']]],
+  ['sel_5fsamples_1',['sel_samples',['../namespacetrain__frcnn.html#a11e4dcca6886be7a3197b995d30cabab',1,'train_frcnn']]],
+  ['selected_5fneg_5fsamples_2',['selected_neg_samples',['../namespacetrain__frcnn.html#ada9e9a550f44fb88455a3202f908e331',1,'train_frcnn']]],
+  ['selected_5fpos_5fsamples_3',['selected_pos_samples',['../namespacetrain__frcnn.html#a56c4465bc4b5b3309653b31fd9b2ca38',1,'train_frcnn']]],
+  ['sep_4',['sep',['../namespaceannotate.html#a46420880a743b84984d25cc134101880',1,'annotate']]],
+  ['sess_5',['sess',['../namespacetest__frcnn.html#a8436e84ed5a4df73866d1ee9957dff9d',1,'test_frcnn']]],
+  ['shape_6',['shape',['../hw3_2main_8c.html#a24808fc4f36b4f36490fca7050b274bd',1,'main.c']]],
+  ['shared_5flayers_7',['shared_layers',['../namespacetrain__frcnn.html#ad9313bd56f057674582a82ad214248ee',1,'train_frcnn.shared_layers'],['../namespacetest__frcnn.html#ad9313bd56f057674582a82ad214248ee',1,'test_frcnn.shared_layers']]],
+  ['sigma_8',['sigma',['../structnorm__dist.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'norm_dist::sigma'],['../structdataset.html#ae11aeeb83e22b5b7f1e6b4347eb1daa6',1,'dataset::sigma']]],
+  ['size_9',['size',['../structdataset.html#a439227feff9d7f55384e8780cfc2eb82',1,'dataset']]],
+  ['split_5fcount_10',['split_count',['../structdataset.html#a977d21361cc17e296e74db944d4bbee5',1,'dataset']]],
+  ['split_5fdata_11',['split_data',['../structdataset.html#aefdbfe3890b57ce08ec1a6325294e141',1,'dataset']]],
+  ['split_5fpoints_12',['split_points',['../structdataset.html#ae1394b6d375669b7e43e07d9e47395f7',1,'dataset']]],
+  ['split_5fpoints_5fcenter_13',['split_points_center',['../structdataset.html#a34b07c81137c3516d4d31b788cbb4be6',1,'dataset']]],
+  ['split_5fstep_14',['split_step',['../structdataset.html#a03ee295ca49fe44b3106146f90e99186',1,'dataset']]],
+  ['st_15',['st',['../namespacetest__frcnn.html#aa7fb9c5914aae67a233da6a7046b1586',1,'test_frcnn']]],
+  ['start_5ftime_16',['start_time',['../namespacetrain__frcnn.html#a2530c3908f0179486a4c2255f792e27a',1,'train_frcnn']]],
+  ['std_5fscaling_17',['std_scaling',['../classkeras__frcnn_1_1config_1_1_config.html#a9b264e15312244c8afaa6eb42cc8df32',1,'keras_frcnn::config::Config']]],
+  ['step_18',['step',['../structintersection.html#a863c86bdfd96bf9c461846689c2614aa',1,'intersection']]],
+  ['supports_5fmasking_19',['supports_masking',['../classkeras__frcnn_1_1_fixed_batch_normalization_1_1_fixed_batch_normalization.html#aede9752b1cfc37f692702795696767b3',1,'keras_frcnn::FixedBatchNormalization::FixedBatchNormalization']]]
 ];

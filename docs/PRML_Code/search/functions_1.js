@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['distance_5feuclidean_0',['distance_euclidean',['../distance_8c.html#a3960398b1c206abfd95689dce8795293',1,'distance_euclidean(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a3960398b1c206abfd95689dce8795293',1,'distance_euclidean(float x1, float y1, float x2, float y2):&#160;distance.c']]],
-  ['distance_5fhamming_1',['distance_hamming',['../distance_8c.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#afeaeb451768fb0040b09da228cf19e11',1,'distance_hamming(float x1, float y1, float x2, float y2):&#160;distance.c']]],
-  ['distance_5fmanhattan_2',['distance_manhattan',['../distance_8c.html#a5c600c899c9e211c724bfafe7761454f',1,'distance_manhattan(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a5c600c899c9e211c724bfafe7761454f',1,'distance_manhattan(float x1, float y1, float x2, float y2):&#160;distance.c']]],
-  ['distance_5fminkowski_3',['distance_minkowski',['../distance_8c.html#a404d4d9cd331a8ef16ceceac461cb5c9',1,'distance_minkowski(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a404d4d9cd331a8ef16ceceac461cb5c9',1,'distance_minkowski(float x1, float y1, float x2, float y2):&#160;distance.c']]],
-  ['distance_5fstraightline_4',['distance_straightline',['../distance_8c.html#a420f969ff46782dbe89344950bc0f644',1,'distance_straightline(float x1, float y1, float x2, float y2):&#160;distance.c'],['../distance_8h.html#a420f969ff46782dbe89344950bc0f644',1,'distance_straightline(float x1, float y1, float x2, float y2):&#160;distance.c']]]
+  ['apply_5fregr_0',['apply_regr',['../namespacekeras__frcnn_1_1roi__helpers.html#a9fb049f5f146febf72ef04e18e7decbe',1,'keras_frcnn::roi_helpers']]],
+  ['apply_5fregr_5fnp_1',['apply_regr_np',['../namespacekeras__frcnn_1_1roi__helpers.html#a070dd6912205ddcbbaa5dc3e571026eb',1,'keras_frcnn::roi_helpers']]],
+  ['augment_2',['augment',['../namespacekeras__frcnn_1_1data__augment.html#a61119d1f7c49705d462faec347efe71f',1,'keras_frcnn::data_augment']]]
 ];

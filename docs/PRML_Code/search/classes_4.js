@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['norm_5fdist_0',['norm_dist',['../structnorm__dist.html',1,'']]]
+  ['input_5fstruct_0',['input_struct',['../structinput__struct.html',1,'']]],
+  ['intersection_1',['intersection',['../structintersection.html',1,'']]]
 ];
