@@ -11,10 +11,12 @@ var searchData=
   ['fixedbatchnormalization_8',['FixedBatchNormalization',['../classkeras__frcnn_1_1_fixed_batch_normalization_1_1_fixed_batch_normalization.html',1,'keras_frcnn::FixedBatchNormalization']]],
   ['fixedbatchnormalization_2epy_9',['FixedBatchNormalization.py',['../frcnn__chicken__1_2keras__frcnn_2_fixed_batch_normalization_8py.html',1,'(Global Namespace)'],['../src_2keras__frcnn_2_fixed_batch_normalization_8py.html',1,'(Global Namespace)'],['../frcnn__chicken__bak_2keras__frcnn_2_fixed_batch_normalization_8py.html',1,'(Global Namespace)']]],
   ['fmt_10',['fmt',['../namespacedata__gen.html#a36910ddc19d1bf237b12507db74f71a2',1,'data_gen']]],
-  ['format_11',['format',['../hw3_2main_8c.html#a3337ad9b7505caffa238fb4f53cd0850',1,'main.c']]],
-  ['format_5fimg_12',['format_img',['../namespacetest__frcnn.html#a83ab445de2cfd4aa104055fe72469852',1,'test_frcnn']]],
-  ['format_5fimg_5fchannels_13',['format_img_channels',['../namespacetest__frcnn.html#aa02117ca538f54152add2f78b69ef621',1,'test_frcnn']]],
-  ['format_5fimg_5fsize_14',['format_img_size',['../namespacetest__frcnn.html#a1c43011192fabbecdefa565468d9b839',1,'test_frcnn']]],
-  ['frcnn_15',['FRCNN',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw5_2readme.html',1,'']]],
-  ['free_5fnorm_5fdist_16',['free_norm_dist',['../hw2_2lib_2normal__distribution_8c.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../libc_2normal__distribution_8h.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c']]]
+  ['font_11',['font',['../structconfig__t.html#a735dd06ea7b2d178b46857d3d228db93',1,'config_t']]],
+  ['font_5fsize_12',['font_size',['../structconfig__t.html#a27103c40c4ecedf634683098d738ffbb',1,'config_t']]],
+  ['format_13',['format',['../hw3_2main_8c.html#a3337ad9b7505caffa238fb4f53cd0850',1,'main.c']]],
+  ['format_5fimg_14',['format_img',['../namespacetest__frcnn.html#a83ab445de2cfd4aa104055fe72469852',1,'test_frcnn']]],
+  ['format_5fimg_5fchannels_15',['format_img_channels',['../namespacetest__frcnn.html#aa02117ca538f54152add2f78b69ef621',1,'test_frcnn']]],
+  ['format_5fimg_5fsize_16',['format_img_size',['../namespacetest__frcnn.html#a1c43011192fabbecdefa565468d9b839',1,'test_frcnn']]],
+  ['frcnn_17',['FRCNN',['../md__e_1_2_git_hub_2_p_r_m_l___code_2src_2hw5_2readme.html',1,'']]],
+  ['free_5fnorm_5fdist_18',['free_norm_dist',['../hw2_2lib_2normal__distribution_8c.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../hw2_2lib_2normal__distribution_8h.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../libc_2normal__distribution_8c.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c'],['../libc_2normal__distribution_8h.html#accd65b552568ca00244eebad98fd898a',1,'free_norm_dist(input_struct *pInput_struct, char *name):&#160;normal_distribution.c']]]
 ];
