@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 520;
+var viewWidth = 791;
 var viewHeight = 268;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,10 +58,10 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="331.5,-260 215,-260 215,-216 331.5,-216 331.5,-260"/>
-<text text-anchor="start" x="223" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
-<text text-anchor="start" x="223" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/config</text>
-<text text-anchor="middle" x="273.25" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">_read.h</text>
+<polygon fill="#999999" stroke="#666666" points="448.5,-260 332,-260 332,-216 448.5,-216 448.5,-260"/>
+<text text-anchor="start" x="340" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="start" x="340" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/config</text>
+<text text-anchor="middle" x="390.25" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">_read.h</text>
 </a>
 </g>
 </g>
@@ -80,8 +80,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M203.96,-211.86C175.89,-201.68 143.82,-190.04 116.93,-180.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="202.48,-215.05 213.08,-215.17 204.87,-208.47 202.48,-215.05"/>
+<path fill="none" stroke="#63b8ff" d="M320.43,-223.04C267.91,-212.21 194.28,-196.34 130.25,-180 125.83,-178.87 121.28,-177.66 116.71,-176.41"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="319.66,-226.45 330.16,-225.03 321.06,-219.59 319.66,-226.45"/>
 </a>
 </g>
 </g>
@@ -99,8 +99,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M258.53,-205.2C255.15,-197.1 251.81,-188.33 249.25,-180 240.81,-152.51 235.17,-119.35 232.35,-100.37"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="255.3,-206.55 262.49,-214.34 261.73,-203.77 255.3,-206.55"/>
+<path fill="none" stroke="#63b8ff" d="M359.52,-207.81C325.77,-175.75 272.85,-125.47 246.41,-100.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="356.91,-210.15 366.57,-214.5 361.73,-205.08 356.91,-210.15"/>
 </a>
 </g>
 </g>
@@ -108,9 +108,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="iter_8h.html" target="_top" xlink:title="Iterate through points and fine the point closest to the intersection of lines.">
-<polygon fill="white" stroke="#666666" points="374.5,-174 258,-174 258,-142 374.5,-142 374.5,-174"/>
-<text text-anchor="start" x="266" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
-<text text-anchor="middle" x="316.25" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/iter.h</text>
+<polygon fill="white" stroke="#666666" points="558.5,-174 442,-174 442,-142 558.5,-142 558.5,-174"/>
+<text text-anchor="start" x="450" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="500.25" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/iter.h</text>
 </a>
 </g>
 </g>
@@ -118,46 +118,46 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M290.54,-205.63C296.54,-194.76 302.98,-183.07 307.92,-174.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="287.49,-203.91 285.73,-214.36 293.62,-207.29 287.49,-203.91"/>
+<path fill="none" stroke="#63b8ff" d="M429.26,-209.34C445.84,-197.58 464.55,-184.31 478.6,-174.35"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="427.68,-206.17 421.54,-214.81 431.72,-211.88 427.68,-206.17"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="plot__iter_8c.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="368.5,-32 252,-32 252,0 368.5,0 368.5,-32"/>
-<text text-anchor="start" x="260" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
-<text text-anchor="middle" x="310.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_iter.c</text>
+<g id="a_Node000005"><a xlink:href="plot__cost_8c.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="423.5,-100 307,-100 307,-68 423.5,-68 423.5,-100"/>
+<text text-anchor="start" x="315" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="365.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_cost.c</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge10_Node000001_Node000005" class="edge">
+<g id="edge13_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge10_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M232.24,-208.68C188.19,-174.72 128.86,-116.33 163.25,-68 183.3,-39.83 220.05,-27.08 251.78,-21.37"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="230.06,-211.42 240.16,-214.64 234.27,-205.83 230.06,-211.42"/>
+<g id="a_edge13_Node000001_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M384.9,-204.49C379.62,-172.37 371.77,-124.62 367.78,-100.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="381.4,-204.75 386.48,-214.05 388.31,-203.62 381.4,-204.75"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="plot__iter_8h.html" target="_top" xlink:title="Create a gnuplot drawing API for iter.h.">
-<polygon fill="white" stroke="#666666" points="498.5,-100 382,-100 382,-68 498.5,-68 498.5,-100"/>
-<text text-anchor="start" x="390" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
-<text text-anchor="middle" x="440.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_iter.h</text>
+<g id="a_Node000006"><a xlink:href="plot__cost_8h.html" target="_top" xlink:title="Function prototypes for plotting cost function.">
+<polygon fill="white" stroke="#666666" points="558.5,-100 442,-100 442,-68 558.5,-68 558.5,-100"/>
+<text text-anchor="start" x="450" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="500.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_cost.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge11_Node000001_Node000006" class="edge">
+<g id="edge14_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge11_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M339.02,-210.42C354.64,-202.17 370.46,-192.02 383.25,-180 407.92,-156.82 425.61,-120.61 434.26,-100.24"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="337.53,-207.26 330.18,-214.89 340.68,-213.5 337.53,-207.26"/>
+<g id="a_edge14_Node000001_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M399.27,-204.64C406.22,-183.62 417.35,-156.43 433.25,-136 444.38,-121.69 460.45,-109.28 474.06,-100.28"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="395.94,-203.57 396.29,-214.16 402.62,-205.66 395.94,-203.57"/>
 </a>
 </g>
 </g>
@@ -165,18 +165,56 @@ var sectionId = 'dynsection-1';
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="hw4_2main_8c.html" target="_top" xlink:title="Basic demonstration for Supervised Learning Algorithm.">
-<polygon fill="white" stroke="#666666" points="503.5,-32 387,-32 387,0 503.5,0 503.5,-32"/>
-<text text-anchor="start" x="395" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
-<text text-anchor="middle" x="445.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/main.c</text>
+<polygon fill="white" stroke="#666666" points="596.5,-32 480,-32 480,0 596.5,0 596.5,-32"/>
+<text text-anchor="start" x="488" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="538.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/main.c</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge12_Node000001_Node000007" class="edge">
+<g id="edge17_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge12_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M342.65,-219.77C400.18,-201.17 477.2,-165.04 507.25,-100 513.22,-87.09 513.32,-80.86 507.25,-68 500.17,-53 486.27,-40.93 473.43,-32.3"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="341.74,-216.39 333.24,-222.7 343.82,-223.07 341.74,-216.39"/>
+<g id="a_edge17_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M320.9,-216.87C234.96,-188.57 106.38,-133.13 163.25,-68 203.6,-21.79 384.64,-15.86 479.63,-16.03"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="319.64,-220.15 330.23,-219.89 321.79,-213.48 319.64,-220.15"/>
+</a>
+</g>
+</g>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="plot__iter_8c.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="768.5,-32 652,-32 652,0 768.5,0 768.5,-32"/>
+<text text-anchor="start" x="660" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="710.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_iter.c</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge15_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge15_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M460.35,-236.5C552.73,-231.51 711.22,-206.84 777.25,-100 784.73,-87.9 783.57,-80.74 777.25,-68 769.72,-52.81 755.26,-40.91 741.69,-32.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="460.21,-233.01 450.39,-236.97 460.54,-240 460.21,-233.01"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="plot__iter_8h.html" target="_top" xlink:title="Create a gnuplot drawing API for iter.h.">
+<polygon fill="white" stroke="#666666" points="768.5,-100 652,-100 652,-68 768.5,-68 768.5,-100"/>
+<text text-anchor="start" x="660" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">E:/GitHub/PRML_Code</text>
+<text text-anchor="middle" x="710.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/hw4/lib/plot_iter.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge16_Node000001_Node000009" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<g id="a_edge16_Node000001_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M459.82,-219.4C493.16,-209.77 533.15,-196.43 567.25,-180 614.51,-157.23 664.38,-120.87 690.93,-100.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="458.92,-216.01 450.25,-222.11 460.82,-222.75 458.92,-216.01"/>
 </a>
 </g>
 </g>
@@ -184,8 +222,8 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000003" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge4_Node000004_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M289.33,-134.46C276.14,-123.42 260.59,-110.4 248.76,-100.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="286.94,-137.02 296.85,-140.76 291.43,-131.66 286.94,-137.02"/>
+<path fill="none" stroke="#63b8ff" d="M431.35,-138.63C387.01,-126.8 330.05,-111.61 288.08,-100.42"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="430.3,-141.97 440.87,-141.16 432.11,-135.21 430.3,-141.97"/>
 </a>
 </g>
 </g>
@@ -193,8 +231,8 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge5_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M315.11,-130.42C313.87,-101.35 311.91,-55.78 310.9,-32.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="311.61,-130.4 315.53,-140.24 318.6,-130.1 311.61,-130.4"/>
+<path fill="none" stroke="#63b8ff" d="M461.21,-136.18C439.8,-124.76 413.73,-110.85 394.16,-100.42"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="459.48,-139.22 469.95,-140.84 462.78,-133.05 459.48,-139.22"/>
 </a>
 </g>
 </g>
@@ -202,35 +240,62 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
 <g id="a_edge6_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M352.65,-135.86C372.21,-124.51 395.89,-110.76 413.69,-100.42"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="351.05,-132.75 344.16,-140.79 354.57,-138.8 351.05,-132.75"/>
+<path fill="none" stroke="#63b8ff" d="M500.25,-130.49C500.25,-120.3 500.25,-109.03 500.25,-100.25"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="496.75,-130.22 500.25,-140.22 503.75,-130.22 496.75,-130.22"/>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
-<g id="edge9_Node000004_Node000007" class="edge">
+<g id="edge12_Node000004_Node000007" class="edge">
 <title>Node4&#45;&gt;Node7</title>
-<g id="a_edge9_Node000004_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M329.04,-131.62C339.34,-112.75 355.06,-87.06 373.25,-68 386.58,-54.04 404.23,-41.46 418.72,-32.3"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="326.06,-129.77 324.47,-140.25 332.25,-133.05 326.06,-129.77"/>
+<g id="a_edge12_Node000004_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M537,-135.07C548.94,-125.87 560.77,-114.03 567.25,-100 577.82,-77.14 562.71,-49.27 550.64,-32.34"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="535.25,-132.02 529.17,-140.69 539.34,-137.7 535.25,-132.02"/>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge7_Node000006_Node000005" class="edge">
-<title>Node6&#45;&gt;Node5</title>
-<g id="a_edge7_Node000006_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M399.55,-62.34C380.46,-52.65 358.11,-41.3 340.54,-32.38"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="397.92,-65.43 408.42,-66.84 401.09,-59.19 397.92,-65.43"/>
+<!-- Node4&#45;&gt;Node8 -->
+<g id="edge8_Node000004_Node000008" class="edge">
+<title>Node4&#45;&gt;Node8</title>
+<g id="a_edge8_Node000004_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M532.5,-135.5C575.21,-107.03 649.52,-57.49 687.09,-32.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="530.76,-132.45 524.38,-140.91 534.64,-138.28 530.76,-132.45"/>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node9 -->
+<g id="edge9_Node000004_Node000009" class="edge">
+<title>Node4&#45;&gt;Node9</title>
+<g id="a_edge9_Node000004_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M556.05,-137.87C590.2,-126.16 633.32,-111.38 665.27,-100.42"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="555.06,-134.51 546.73,-141.06 557.33,-141.13 555.06,-134.51"/>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge8_Node000006_Node000007" class="edge">
+<g id="edge7_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<g id="a_edge8_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M442.27,-56.31C442.89,-48.12 443.55,-39.38 444.1,-32.22"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="438.79,-55.95 441.52,-66.18 445.77,-56.48 438.79,-55.95"/>
+<g id="a_edge7_Node000006_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M514.79,-57.74C519.75,-49.14 525.13,-39.79 529.48,-32.22"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="511.78,-55.97 509.82,-66.38 517.84,-59.46 511.78,-55.97"/>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node7 -->
+<g id="edge11_Node000009_Node000007" class="edge">
+<title>Node9&#45;&gt;Node7</title>
+<g id="a_edge11_Node000009_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M659.23,-63.42C633.49,-53.54 602.7,-41.73 578.62,-32.49"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="657.92,-66.67 668.51,-66.98 660.43,-60.13 657.92,-66.67"/>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge10_Node000009_Node000008" class="edge">
+<title>Node9&#45;&gt;Node8</title>
+<g id="a_edge10_Node000009_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M710.25,-56.31C710.25,-48.12 710.25,-39.38 710.25,-32.22"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="706.75,-56.18 710.25,-66.18 713.75,-56.18 706.75,-56.18"/>
 </a>
 </g>
 </g>

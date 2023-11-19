@@ -1,21 +1,28 @@
 <map id="E:/GitHub/PRML_Code/src/hw4/lib/config_read.h" name="E:/GitHub/PRML_Code/src/hw4/lib/config_read.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="292,5,447,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="448,5,603,64"/>
 <area shape="rect" id="Node000002" href="$config__read_8c.html" title=" " alt="" coords="5,112,161,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,72,162,114,160,109,276,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="433,57,180,115,162,119,160,114,178,109,432,52"/>
 <area shape="rect" id="Node000003" href="$iter_8c.html" title=" " alt="" coords="235,219,390,261"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="353,79,340,113,326,170,318,219,313,218,321,169,335,111,348,77"/>
-<area shape="rect" id="Node000004" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="349,120,505,163"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="395,77,418,119,414,121,390,79"/>
-<area shape="rect" id="Node000005" href="$plot__iter_8c.html" title=" " alt="" coords="341,309,497,352"/>
-<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="317,76,271,115,232,162,219,187,212,211,214,236,225,260,248,284,277,301,309,313,342,321,340,326,308,318,275,306,245,288,221,263,209,237,207,211,214,185,228,159,267,111,313,72"/>
-<area shape="rect" id="Node000006" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="515,219,670,261"/>
-<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="459,69,490,88,518,110,541,136,561,165,587,217,582,220,556,168,537,139,515,114,487,92,456,74"/>
-<area shape="rect" id="Node000007" href="$hw4_2main_8c.html" title="Basic demonstration for Supervised Learning Algorithm." alt="" coords="521,309,677,352"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="463,56,524,80,587,113,617,134,643,159,666,186,684,218,690,240,684,262,664,290,638,311,635,307,660,286,679,260,685,240,679,220,662,189,639,162,613,139,584,118,522,85,461,61"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="393,175,339,220,335,216,389,171"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="428,178,423,309,417,309,423,178"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="477,169,558,216,556,220,474,173"/>
-<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="446,175,472,217,505,260,534,285,565,307,562,311,531,290,501,263,467,220,442,178"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="539,271,461,311,458,306,537,267"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="598,277,600,309,595,309,592,277"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="487,77,336,220,332,216,483,73"/>
+<area shape="rect" id="Node000004" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="595,120,750,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="579,71,645,117,642,122,576,75"/>
+<area shape="rect" id="Node000005" href="$plot__cost_8c.html" title=" " alt="" coords="415,219,570,261"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="521,80,498,219,493,218,516,79"/>
+<area shape="rect" id="Node000006" href="$plot__cost_8h.html" title="Function prototypes for plotting cost function." alt="" coords="595,219,750,261"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="540,78,558,124,585,169,611,195,639,216,636,220,607,199,581,172,553,126,535,80"/>
+<area shape="rect" id="Node000007" href="$hw4_2main_8c.html" title="Basic demonstration for Supervised Learning Algorithm." alt="" coords="645,309,801,352"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="434,65,342,100,298,122,258,146,228,172,210,200,207,214,208,229,214,244,225,259,253,280,295,296,347,308,407,317,533,326,645,328,645,333,533,331,406,322,346,313,293,301,250,284,221,263,209,246,203,230,202,214,205,198,224,169,255,142,295,117,340,95,432,60"/>
+<area shape="rect" id="Node000008" href="$plot__iter_8c.html" title=" " alt="" coords="875,309,1030,352"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="619,34,725,45,784,57,844,74,903,98,957,129,1005,168,1044,217,1051,240,1044,263,1023,290,996,311,993,307,1019,287,1039,260,1046,240,1039,220,1001,172,954,133,901,103,843,79,783,62,724,51,619,39"/>
+<area shape="rect" id="Node000009" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="875,219,1030,261"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="619,57,691,80,763,110,810,135,856,164,928,216,925,220,853,168,808,140,761,114,689,85,618,62"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="581,170,390,221,389,216,580,165"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="622,173,532,220,530,216,619,168"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="675,178,675,218,670,218,670,178"/>
+<area shape="poly" id="edge12_Node000004_Node000007" title=" " alt="" coords="723,170,746,191,764,218,769,242,764,268,754,291,742,310,737,307,749,288,759,266,764,242,759,220,742,195,720,174"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="717,169,923,307,920,311,714,174"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="748,166,893,216,892,221,746,171"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="694,274,714,308,709,310,689,276"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="885,270,778,311,776,306,883,265"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="955,277,955,309,950,309,950,277"/>
 </map>

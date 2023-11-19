@@ -1,26 +1,27 @@
 <map id="E:/GitHub/PRML_Code/src/hw4/lib/plot_iter.c" name="E:/GitHub/PRML_Code/src/hw4/lib/plot_iter.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,263,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,320,66,347"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,51,105,72,71,98,40,131,22,171,16,207,17,243,29,305,24,306,12,243,11,206,17,170,35,128,67,94,102,67,138,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="277,320,341,347"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,47,300,304,296,306,191,49"/>
-<area shape="rect" id="Node000004" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="102,96,180,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,50,157,83,153,81,171,47"/>
-<area shape="rect" id="Node000005" href="$config__read_8h.html" title=" " alt="" coords="157,245,255,272"/>
-<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="190,48,194,96,206,230,201,230,189,96,184,48"/>
-<area shape="rect" id="Node000008" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="32,171,82,197"/>
-<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="148,51,118,71,92,98,76,127,65,156,60,155,71,124,88,94,115,67,145,46"/>
-<area shape="rect" id="Node000009" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="331,96,490,123"/>
-<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="244,46,361,88,360,93,242,51"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="137,124,67,273,51,307,46,305,62,271,133,122"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="149,122,197,230,192,232,144,124"/>
-<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="128,125,85,162,81,158,124,121"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="177,275,81,316,79,311,175,270"/>
-<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="226,270,280,308,277,313,223,275"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="90,320,165,347"/>
-<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="194,275,154,311,150,307,191,271"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="189,320,253,347"/>
-<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="211,272,218,304,213,305,206,273"/>
-<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="58,198,42,305,37,304,52,197"/>
-<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="84,195,168,236,166,241,81,200"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,5,251,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="12,320,73,347"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,51,98,71,63,98,33,132,13,171,8,207,12,243,21,277,32,305,27,307,16,279,7,244,3,207,8,170,29,129,60,95,95,67,129,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="284,320,348,347"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,47,278,244,306,305,301,307,274,246,181,49"/>
+<area shape="rect" id="Node000004" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="97,96,175,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,50,151,83,146,81,161,47"/>
+<area shape="rect" id="Node000005" href="$config__read_8h.html" title=" " alt="" coords="131,245,229,272"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="181,48,189,96,191,168,186,230,181,230,185,168,184,96,176,49"/>
+<area shape="rect" id="Node000008" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="23,171,73,197"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="141,51,113,72,87,98,70,127,58,157,53,155,65,125,83,94,109,68,137,46"/>
+<area shape="rect" id="Node000009" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="355,96,514,123"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="241,46,380,88,378,94,240,51"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="133,124,56,307,51,304,128,122"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="148,122,298,306,294,310,144,125"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="142,122,174,229,169,231,137,124"/>
+<area shape="poly" id="edge11_Node000004_Node000008" title=" " alt="" coords="122,125,76,163,73,159,119,121"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="157,275,81,315,79,310,155,270"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="205,270,280,310,278,315,202,275"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="185,320,260,347"/>
+<area shape="poly" id="edge9_Node000005_Node000006" title=" " alt="" coords="190,271,210,305,205,308,185,274"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="97,320,161,347"/>
+<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="173,274,149,309,144,306,169,271"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="50,198,46,305,41,304,45,198"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="72,196,145,235,143,240,70,200"/>
 </map>

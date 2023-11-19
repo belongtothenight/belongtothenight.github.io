@@ -1,29 +1,31 @@
 <map id="E:/GitHub/PRML_Code/src/libc/output_format.h" name="E:/GitHub/PRML_Code/src/libc/output_format.h">
-<area shape="rect" id="Node000001" title="Output format struct for color printing (charactors)" alt="" coords="814,5,976,48"/>
+<area shape="rect" id="Node000001" title="Output format struct for color printing (charactors)" alt="" coords="905,5,1066,48"/>
 <area shape="rect" id="Node000002" href="$hw3_2lib_2data__plot_8c.html" title=" " alt="" coords="5,104,161,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="799,33,673,39,517,51,344,70,173,99,143,106,142,101,172,93,344,65,516,46,673,34,799,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="889,32,749,37,570,48,371,68,173,99,143,106,141,101,172,93,370,62,569,42,749,31,889,27"/>
 <area shape="rect" id="Node000003" href="$hw3_2lib_2data__proc_8c.html" title=" " alt="" coords="185,104,344,147"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="799,38,595,59,475,77,357,99,327,106,326,101,356,93,474,71,594,54,799,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="890,35,647,56,501,74,357,99,327,106,326,101,356,93,500,68,646,50,889,30"/>
 <area shape="rect" id="Node000004" href="$read__csv_8c.html" title=" " alt="" coords="368,104,523,147"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="799,46,674,69,537,99,510,106,509,101,536,93,673,63,798,41"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="890,41,724,63,537,99,509,106,508,101,536,93,724,58,889,36"/>
 <area shape="rect" id="Node000005" href="$hw3_2main_8c.html" title="Main function of hw3 &#45; 2 dimensional shape classification." alt="" coords="548,104,703,147"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="824,56,684,106,682,101,822,51"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="890,54,717,99,692,106,690,101,716,93,889,48"/>
 <area shape="rect" id="Node000006" href="$config__read_8c.html" title=" " alt="" coords="728,96,883,155"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="868,61,834,97,830,94,864,58"/>
-<area shape="rect" id="Node000007" href="$plot__iter_8c.html" title=" " alt="" coords="908,104,1063,147"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="927,58,968,102,965,106,923,61"/>
-<area shape="rect" id="Node000008" href="$libc_2normal__distribution_8c.html" title=" " alt="" coords="1005,203,1196,245"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="992,42,1038,62,1059,77,1077,94,1093,120,1101,150,1105,202,1099,202,1096,151,1088,122,1073,98,1055,81,1035,67,990,47"/>
-<area shape="rect" id="Node000009" href="$libc_2normal__distribution_8h.html" title="Normal distribution functions." alt="" coords="1138,104,1329,147"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="983,50,1162,101,1160,106,981,55"/>
-<area shape="rect" id="Node000012" href="$libc_2output__format_8c.html" title=" " alt="" coords="1353,104,1514,147"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="991,36,1156,59,1342,93,1371,101,1369,106,1341,99,1155,64,990,41"/>
-<area shape="rect" id="Node000013" href="$signal__handler_8c.html" title=" " alt="" coords="1539,104,1704,147"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="991,30,1236,51,1382,69,1528,93,1559,101,1557,106,1526,99,1381,74,1235,56,991,36"/>
-<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="1195,158,1131,204,1127,200,1192,154"/>
-<area shape="rect" id="Node000010" href="$libc_2decision__boundary_8c.html" title=" " alt="" coords="1204,293,1394,336"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1241,162,1249,202,1261,244,1287,292,1282,294,1257,246,1243,203,1236,163"/>
-<area shape="rect" id="Node000011" href="$libc_2decision__boundary_8h.html" title="The decision boundary header file to calculate the intersection of two normal distributions." alt="" coords="1271,203,1461,245"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1275,154,1339,200,1336,204,1272,158"/>
-<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="1343,259,1317,295,1312,291,1339,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="935,58,860,98,858,93,933,53"/>
+<area shape="rect" id="Node000007" href="$plot__cost_8c.html" title=" " alt="" coords="908,104,1063,147"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="988,63,988,104,983,104,983,63"/>
+<area shape="rect" id="Node000008" href="$plot__iter_8c.html" title=" " alt="" coords="1088,104,1243,147"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1039,53,1128,101,1126,106,1036,58"/>
+<area shape="rect" id="Node000009" href="$libc_2normal__distribution_8c.html" title=" " alt="" coords="1185,203,1376,245"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1082,39,1185,61,1228,76,1257,94,1273,120,1282,149,1285,202,1280,202,1277,150,1269,122,1253,98,1226,81,1184,66,1081,44"/>
+<area shape="rect" id="Node000010" href="$libc_2normal__distribution_8h.html" title="Normal distribution functions." alt="" coords="1318,104,1509,147"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1082,46,1300,93,1331,101,1330,106,1298,99,1081,51"/>
+<area shape="rect" id="Node000013" href="$libc_2output__format_8c.html" title=" " alt="" coords="1533,104,1694,147"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="1082,33,1285,54,1404,71,1522,93,1552,101,1551,106,1521,99,1403,77,1285,60,1081,38"/>
+<area shape="rect" id="Node000014" href="$signal__handler_8c.html" title=" " alt="" coords="1719,104,1884,147"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="1082,29,1208,35,1364,47,1536,66,1708,93,1739,101,1738,106,1706,99,1535,71,1364,52,1207,40,1082,34"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="1375,158,1311,204,1307,200,1372,154"/>
+<area shape="rect" id="Node000011" href="$libc_2decision__boundary_8c.html" title=" " alt="" coords="1384,293,1574,336"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1421,162,1429,202,1441,244,1467,292,1462,294,1437,246,1423,203,1416,163"/>
+<area shape="rect" id="Node000012" href="$libc_2decision__boundary_8h.html" title="The decision boundary header file to calculate the intersection of two normal distributions." alt="" coords="1451,203,1641,245"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1455,154,1519,200,1516,204,1452,158"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="1523,259,1497,295,1492,291,1519,256"/>
 </map>

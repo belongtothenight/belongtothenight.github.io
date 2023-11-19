@@ -1,0 +1,21 @@
+<map id="E:/GitHub/PRML_Code/src/hw4/lib/plot_cost.c" name="E:/GitHub/PRML_Code/src/hw4/lib/plot_cost.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,5,268,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,245,66,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,51,119,71,92,98,72,130,58,166,42,230,37,229,53,164,68,128,88,94,116,67,146,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="277,245,341,272"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,47,298,230,293,233,198,50"/>
+<area shape="rect" id="Node000004" href="$config__read_8h.html" title=" " alt="" coords="124,171,222,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,49,179,155,173,155,185,48"/>
+<area shape="rect" id="Node000007" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="102,96,153,123"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="176,50,149,85,145,82,172,47"/>
+<area shape="rect" id="Node000008" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="297,96,457,123"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="239,46,335,87,332,92,237,51"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="150,200,74,240,72,235,148,196"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="198,196,273,235,270,240,195,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="90,245,165,272"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="167,199,146,233,141,231,163,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="189,245,253,272"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="183,196,206,231,202,234,179,199"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="122,125,54,233,49,231,117,122"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="138,122,159,156,155,159,133,125"/>
+</map>
