@@ -1,5 +1,13 @@
 <map id="E:/GitHub/PRML_Code/src/hw4/lib/iter.h" name="E:/GitHub/PRML_Code/src/hw4/lib/iter.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,161,48"/>
+<area shape="rect" id="Node000001" title="Iterate through points and fine the point closest to the intersection of lines." alt="" coords="177,5,333,48"/>
 <area shape="rect" id="Node000002" href="$iter_8c.html" title=" " alt="" coords="5,96,161,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,64,86,96,80,96,80,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,58,124,98,122,93,200,53"/>
+<area shape="rect" id="Node000003" href="$plot__iter_8c.html" title=" " alt="" coords="144,187,299,229"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,63,226,97,220,144,222,186,217,186,215,144,220,95,233,61"/>
+<area shape="rect" id="Node000004" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="235,96,390,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,59,301,94,297,97,274,62"/>
+<area shape="rect" id="Node000005" href="$hw4_2main_8c.html" title="Basic demonstration for Supervised Learning Algorithm." alt="" coords="336,187,491,229"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="348,51,379,69,404,94,415,117,420,142,420,186,414,186,415,142,410,119,399,98,375,73,346,56"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="282,152,244,188,241,184,278,148"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="349,147,392,184,388,188,345,151"/>
 </map>

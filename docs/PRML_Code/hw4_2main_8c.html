@@ -119,10 +119,12 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="config__read_8h_source.html">./lib/config_read.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="plot__iter_8h_source.html">./lib/plot_iter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="iter_8h_source.html">./lib/iter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="signal__handler_8h_source.html">../libc/signal_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hw4_2main_8c__incl.svg" width="346" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="hw4_2main_8c__incl.svg" width="568" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -137,6 +139,8 @@ Variables</h2></td></tr>
 <tr class="separator:a25ce4b69d296fc9a3324b494542c2420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86dfd738fd3d0bc28a09ec5deeef9d2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a> [<a class="el" href="config__read_8h.html#a070202f8e3cae5d0938a8c7035dee219">MAX_LINE_CNT</a>]</td></tr>
 <tr class="separator:a86dfd738fd3d0bc28a09ec5deeef9d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5884265385ead2abf07afd3eb50e27ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structiter__history__t.html">iter_history_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a></td></tr>
+<tr class="separator:a5884265385ead2abf07afd3eb50e27ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic demonstration for Supervised Learning Algorithm. </p>
@@ -200,6 +204,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a> config_lines[<a class="el" href="config__read_8h.html#a070202f8e3cae5d0938a8c7035dee219">MAX_LINE_CNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5884265385ead2abf07afd3eb50e27ef" name="a5884265385ead2abf07afd3eb50e27ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5884265385ead2abf07afd3eb50e27ef">&#9670;&#160;</a></span>iter_history</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structiter__history__t.html">iter_history_t</a> iter_history</td>
         </tr>
       </table>
 </div><div class="memdoc">

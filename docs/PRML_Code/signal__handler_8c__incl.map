@@ -1,0 +1,12 @@
+<map id="E:/GitHub/PRML_Code/src/libc/signal_handler.c" name="E:/GitHub/PRML_Code/src/libc/signal_handler.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,5,233,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,66,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,51,68,89,65,85,119,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,171,183,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,49,133,84,130,103,131,122,141,155,136,157,126,123,125,103,128,83,138,48"/>
+<area shape="rect" id="Node000004" href="$signal__handler_8h.html" title="Defines custom signal handler. Ref:" alt="" coords="141,96,256,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,47,185,81,181,84,160,50"/>
+<area shape="rect" id="Node000005" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="280,96,391,123"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="199,46,294,87,291,92,197,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="192,125,169,159,165,156,188,122"/>
+</map>

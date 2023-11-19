@@ -107,22 +107,260 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">iter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Iterate through points and fine the point closest to the intersection of lines.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="config__read_8h_source.html">config_read.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for iter.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="iter_8h__incl.svg" width="167" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="iter_8h__incl.svg" width="350" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="iter_8h__dep__incl.svg" width="167" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="iter_8h__dep__incl.svg" width="498" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="iter_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiter__history__t.html">iter_history_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for iterate history.  <a href="structiter__history__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afe2b8aacbc09797d70855713edf21672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iter_8h.html#afe2b8aacbc09797d70855713edf21672">MAX_POINT_CNT</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memdesc:afe2b8aacbc09797d70855713edf21672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of points.  <br /></td></tr>
+<tr class="separator:afe2b8aacbc09797d70855713edf21672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a84530202056fd5873e983009dd36e3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iter_8h.html#a84530202056fd5873e983009dd36e3a5">iter_history_print</a> (<a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>)</td></tr>
+<tr class="memdesc:a84530202056fd5873e983009dd36e3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print iteration history.  <br /></td></tr>
+<tr class="separator:a84530202056fd5873e983009dd36e3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8568eb6b0fd8ac8b477e689589a6eeab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iter_8h.html#a8568eb6b0fd8ac8b477e689589a6eeab">iter_history_init</a> (<a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
+<tr class="memdesc:a8568eb6b0fd8ac8b477e689589a6eeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize iteration history.  <br /></td></tr>
+<tr class="separator:a8568eb6b0fd8ac8b477e689589a6eeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e253e4ba708d2dc8f4a7ac0c4dd293"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iter_8h.html#a27e253e4ba708d2dc8f4a7ac0c4dd293">iter_history_calculate_cost</a> (<a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
+<tr class="memdesc:a27e253e4ba708d2dc8f4a7ac0c4dd293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate latest point cost.  <br /></td></tr>
+<tr class="separator:a27e253e4ba708d2dc8f4a7ac0c4dd293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a833451ebd8bbf74323fd44cdcd06c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iter_8h.html#a6a833451ebd8bbf74323fd44cdcd06c7">iter_history_iterate</a> (<a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
+<tr class="memdesc:a6a833451ebd8bbf74323fd44cdcd06c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through points and fine the point closest to the intersection of lines.  <br /></td></tr>
+<tr class="separator:a6a833451ebd8bbf74323fd44cdcd06c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Iterate through points and fine the point closest to the intersection of lines. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="afe2b8aacbc09797d70855713edf21672" name="afe2b8aacbc09797d70855713edf21672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2b8aacbc09797d70855713edf21672">&#9670;&#160;</a></span>MAX_POINT_CNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_POINT_CNT&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of points. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a27e253e4ba708d2dc8f4a7ac0c4dd293" name="a27e253e4ba708d2dc8f4a7ac0c4dd293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e253e4ba708d2dc8f4a7ac0c4dd293">&#9670;&#160;</a></span>iter_history_calculate_cost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double iter_history_calculate_cost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate latest point cost. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">distance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8568eb6b0fd8ac8b477e689589a6eeab" name="a8568eb6b0fd8ac8b477e689589a6eeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8568eb6b0fd8ac8b477e689589a6eeab">&#9670;&#160;</a></span>iter_history_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iter_history_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize iteration history. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a833451ebd8bbf74323fd44cdcd06c7" name="a6a833451ebd8bbf74323fd44cdcd06c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a833451ebd8bbf74323fd44cdcd06c7">&#9670;&#160;</a></span>iter_history_iterate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iter_history_iterate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate through points and fine the point closest to the intersection of lines. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84530202056fd5873e983009dd36e3a5" name="a84530202056fd5873e983009dd36e3a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84530202056fd5873e983009dd36e3a5">&#9670;&#160;</a></span>iter_history_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iter_history_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print iteration history. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

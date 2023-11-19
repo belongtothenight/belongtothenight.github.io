@@ -1,7 +1,7 @@
 var searchData=
 [
   ['action_0',['action',['../namespacetrain__frcnn.html#a2f4ab7bf743142dae2e459aa18f9f1d4',1,'train_frcnn']]],
-  ['add_5fline_1',['add_line',['../plot__iter_8h.html#ab5d8132b9d81e8238d7df9b8fb96054f',1,'add_line(FILE *gnuplot, config_line_t *config_line):&#160;plot_iter.c'],['../plot__iter_8c.html#ab5d8132b9d81e8238d7df9b8fb96054f',1,'add_line(FILE *gnuplot, config_line_t *config_line):&#160;plot_iter.c']]],
+  ['add_5fline_1',['add_line',['../plot__iter_8h.html#a522245526af08b61f0e4eafb543a3d82',1,'add_line(FILE *gnuplot, config_t *config, config_line_t(*config_lines)[]):&#160;plot_iter.c'],['../plot__iter_8c.html#a522245526af08b61f0e4eafb543a3d82',1,'add_line(FILE *gnuplot, config_t *config, config_line_t(*config_lines)[]):&#160;plot_iter.c']]],
   ['all_5fdets_2',['all_dets',['../namespacetest__frcnn.html#aad5c1d9701b4dd936f21d1d5c9137617',1,'test_frcnn']]],
   ['all_5fimgs_3',['all_imgs',['../namespacetest__frcnn.html#a0a71594082f5754b1038070e3e5b3db5',1,'test_frcnn']]],
   ['allow_5fgrowth_4',['allow_growth',['../namespacetest__frcnn.html#a663cd52f73d999b506d4b55afd5e7382',1,'test_frcnn']]],

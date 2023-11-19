@@ -116,31 +116,35 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="plot__iter_8h_source.html">plot_iter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config__read_8h_source.html">config_read.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="iter_8h_source.html">iter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="libc_2output__format_8h_source.html">../../libc/output_format.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for plot_iter.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="plot__iter_8c__incl.svg" width="462" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="plot__iter_8c__incl.svg" width="495" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a375276264fa7a60098dd8555dd0b2f2f"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a375276264fa7a60098dd8555dd0b2f2f">iter_file_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
+<tr class="memdesc:a375276264fa7a60098dd8555dd0b2f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a temporary file to store iteration history.  <br /></td></tr>
+<tr class="separator:a375276264fa7a60098dd8555dd0b2f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea2342fb19638608896f5a4d7eb55b1"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#afea2342fb19638608896f5a4d7eb55b1">plot_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:afea2342fb19638608896f5a4d7eb55b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a gnuplot pipe.  <br /></td></tr>
 <tr class="separator:afea2342fb19638608896f5a4d7eb55b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d8132b9d81e8238d7df9b8fb96054f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#ab5d8132b9d81e8238d7df9b8fb96054f">add_line</a> (FILE *gnuplot, <a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line)</td></tr>
-<tr class="memdesc:ab5d8132b9d81e8238d7df9b8fb96054f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add line p1*x + p2*y = p3 to gnuplot.  <br /></td></tr>
-<tr class="separator:ab5d8132b9d81e8238d7df9b8fb96054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bc532985969a8be3d50e5bbaaefb1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a35bc532985969a8be3d50e5bbaaefb1c">plot_update</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
-<tr class="memdesc:a35bc532985969a8be3d50e5bbaaefb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the plot.  <br /></td></tr>
-<tr class="separator:a35bc532985969a8be3d50e5bbaaefb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522245526af08b61f0e4eafb543a3d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a522245526af08b61f0e4eafb543a3d82">add_line</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
+<tr class="memdesc:a522245526af08b61f0e4eafb543a3d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all lines p1*x + p2*y = p3 to gnuplot.  <br /></td></tr>
+<tr class="separator:a522245526af08b61f0e4eafb543a3d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c74b0d1cdc9d25e5c888a654b8551c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a9c74b0d1cdc9d25e5c888a654b8551c6">plot_update</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, FILE *iter_file)</td></tr>
+<tr class="memdesc:a9c74b0d1cdc9d25e5c888a654b8551c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the plot.  <br /></td></tr>
+<tr class="separator:a9c74b0d1cdc9d25e5c888a654b8551c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa129a1bbfcbf28719ed5933d35134824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#aa129a1bbfcbf28719ed5933d35134824">plot_close</a> (FILE *gnuplot)</td></tr>
 <tr class="memdesc:aa129a1bbfcbf28719ed5933d35134824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close gnuplot.  <br /></td></tr>
 <tr class="separator:aa129a1bbfcbf28719ed5933d35134824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab5d8132b9d81e8238d7df9b8fb96054f" name="ab5d8132b9d81e8238d7df9b8fb96054f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5d8132b9d81e8238d7df9b8fb96054f">&#9670;&#160;</a></span>add_line()</h2>
+<a id="a522245526af08b61f0e4eafb543a3d82" name="a522245526af08b61f0e4eafb543a3d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522245526af08b61f0e4eafb543a3d82">&#9670;&#160;</a></span>add_line()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,8 +158,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td>
-          <td class="paramname"><em>config_line</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,19 +175,50 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add line p1*x + p2*y = p3 to gnuplot. </p>
+<p>Add all lines p1*x + p2*y = p3 to gnuplot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gnuplot</td><td>The file pointer to the gnuplot pipe </td></tr>
-    <tr><td class="paramname">p1</td><td>The first parameter of the line </td></tr>
-    <tr><td class="paramname">p2</td><td>The second parameter of the line </td></tr>
-    <tr><td class="paramname">p3</td><td>The third parameter of the line </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> structs </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a375276264fa7a60098dd8555dd0b2f2f" name="a375276264fa7a60098dd8555dd0b2f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375276264fa7a60098dd8555dd0b2f2f">&#9670;&#160;</a></span>iter_file_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE * iter_file_open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a temporary file to store iteration history. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">FILE*</td><td>The file pointer to the opened file </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,8 +284,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a35bc532985969a8be3d50e5bbaaefb1c" name="a35bc532985969a8be3d50e5bbaaefb1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35bc532985969a8be3d50e5bbaaefb1c">&#9670;&#160;</a></span>plot_update()</h2>
+<a id="a9c74b0d1cdc9d25e5c888a654b8551c6" name="a9c74b0d1cdc9d25e5c888a654b8551c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c74b0d1cdc9d25e5c888a654b8551c6">&#9670;&#160;</a></span>plot_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +306,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
-          <td class="paramname"><em>config_lines</em>[]&#160;</td>
+          <td class="paramname"><em>config_lines</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>iter_file</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,6 +334,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">gnuplot</td><td>The file pointer to the gnuplot pipe </td></tr>
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
     <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
+    <tr><td class="paramname">iter_file</td><td>The file pointer to the iteration history file </td></tr>
   </table>
   </dd>
 </dl>
