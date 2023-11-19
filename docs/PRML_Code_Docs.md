@@ -28,10 +28,18 @@ Each homework has its result edited, summarized, converted into PDF format store
 
 ### HW3 Basic Shape Classification
 
-將圖一中的所有圖形使用 Rough Set Theory (RST) 中的不變特徵：旋轉、縮放、平移，來分類及辨識圖形。
+將所有圖形使用 Rough Set Theory (RST) 中的不變特徵：旋轉、縮放、平移，來分類及辨識圖形。
 
 ???+ HW3
 
     2 dimensional shape classification.
     [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/2D%E5%88%86%E9%A1%9Ev2.pdf)
 
+### HW4 Basic demonstration for Supervised Learning Algorithm
+
+仿效 Layer Machines 的運作原理以更簡單的方式呈現其在持續不斷更動 Weight 後期望能夠更貼近最佳解。
+
+???+ HW4
+
+    Basic demonstration for Supervised Learning Algorithm with realtime data visual displaying and config file to set without re-compiling the program.
+    [Head to file!]()
