@@ -129,6 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a375276264fa7a60098dd8555dd0b2f2f"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a375276264fa7a60098dd8555dd0b2f2f">iter_file_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:a375276264fa7a60098dd8555dd0b2f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a temporary file to store iteration history.  <br /></td></tr>
 <tr class="separator:a375276264fa7a60098dd8555dd0b2f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125bc813da55889bc3f273a6022ac72c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#a125bc813da55889bc3f273a6022ac72c">iter_file_flush</a> (FILE *iter_file, <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>)</td></tr>
+<tr class="memdesc:a125bc813da55889bc3f273a6022ac72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the iteration history to file.  <br /></td></tr>
+<tr class="separator:a125bc813da55889bc3f273a6022ac72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea2342fb19638608896f5a4d7eb55b1"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8c.html#afea2342fb19638608896f5a4d7eb55b1">plot_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:afea2342fb19638608896f5a4d7eb55b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a gnuplot pipe.  <br /></td></tr>
 <tr class="separator:afea2342fb19638608896f5a4d7eb55b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +184,49 @@ Functions</h2></td></tr>
     <tr><td class="paramname">gnuplot</td><td>The file pointer to the gnuplot pipe </td></tr>
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
     <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> structs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a125bc813da55889bc3f273a6022ac72c" name="a125bc813da55889bc3f273a6022ac72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125bc813da55889bc3f273a6022ac72c">&#9670;&#160;</a></span>iter_file_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iter_file_flush </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>iter_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flush the iteration history to file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter_file</td><td>The file pointer to the iteration history file </td></tr>
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
   </table>
   </dd>
 </dl>
