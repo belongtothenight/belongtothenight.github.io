@@ -42,4 +42,4 @@ Each homework has its result edited, summarized, converted into PDF format store
 ???+ HW4
 
     Basic demonstration for Supervised Learning Algorithm with realtime data visual displaying and config file to set without re-compiling the program.
-    [Head to file!]()
+    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E7%B7%9A%E6%80%A7%E4%BA%A4%E9%BB%9Ev1.pdf)
