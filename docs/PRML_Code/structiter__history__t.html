@@ -128,6 +128,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a81244d52638e082eba158f3b012c6baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad283d211d570d78dfbe6a98936af012b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiter__history__t.html#ad283d211d570d78dfbe6a98936af012b">max_cost</a></td></tr>
 <tr class="separator:ad283d211d570d78dfbe6a98936af012b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92efd42430465827d24b2e032387deec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiter__history__t.html#a92efd42430465827d24b2e032387deec">iter_min</a></td></tr>
+<tr class="separator:a92efd42430465827d24b2e032387deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94d9b4ba724e660042b275b5c10296e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiter__history__t.html#ae94d9b4ba724e660042b275b5c10296e">iter_min_set</a></td></tr>
+<tr class="separator:ae94d9b4ba724e660042b275b5c10296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure for iterate history. </p>
@@ -138,6 +142,9 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate list </td></tr>
     <tr><td class="paramname">cost</td><td>Cost list of the coordinate (learning curve) </td></tr>
     <tr><td class="paramname">iter</td><td>Iteration number list </td></tr>
+    <tr><td class="paramname">max_cost</td><td>Maximum cost </td></tr>
+    <tr><td class="paramname">iter_min</td><td>Minimum iteration number enters plot view </td></tr>
+    <tr><td class="paramname">iter_min_set</td><td>Whether iter_min is set or not </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,6 +185,34 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int iter[<a class="el" href="iter_8h.html#afe2b8aacbc09797d70855713edf21672">MAX_POINT_CNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92efd42430465827d24b2e032387deec" name="a92efd42430465827d24b2e032387deec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92efd42430465827d24b2e032387deec">&#9670;&#160;</a></span>iter_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iter_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae94d9b4ba724e660042b275b5c10296e" name="ae94d9b4ba724e660042b275b5c10296e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae94d9b4ba724e660042b275b5c10296e">&#9670;&#160;</a></span>iter_min_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iter_min_set</td>
         </tr>
       </table>
 </div><div class="memdoc">

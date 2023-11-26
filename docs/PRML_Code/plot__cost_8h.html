@@ -146,9 +146,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abf486e9bc39fdd1a3405892b79da8bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__cost_8h.html#abf486e9bc39fdd1a3405892b79da8bad">cost_plot_update</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, FILE *cost_tmp)</td></tr>
 <tr class="memdesc:abf486e9bc39fdd1a3405892b79da8bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cost plot.  <br /></td></tr>
 <tr class="separator:abf486e9bc39fdd1a3405892b79da8bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d08f183344d88e767cf5f1b17edfe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__cost_8h.html#ac1d08f183344d88e767cf5f1b17edfe0">cost_plot_reset</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
-<tr class="memdesc:ac1d08f183344d88e767cf5f1b17edfe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the cost plot to export to file.  <br /></td></tr>
-<tr class="separator:ac1d08f183344d88e767cf5f1b17edfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd2daa2e8d4bf0b555e989cdda636b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__cost_8h.html#a2fd2daa2e8d4bf0b555e989cdda636b6">cost_plot_reset</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>)</td></tr>
+<tr class="memdesc:a2fd2daa2e8d4bf0b555e989cdda636b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the cost plot to export to file.  <br /></td></tr>
+<tr class="separator:a2fd2daa2e8d4bf0b555e989cdda636b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2740c5387a219e758ab1ba4d2e922ca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__cost_8h.html#a2740c5387a219e758ab1ba4d2e922ca0">cost_plot_close</a> (FILE *gnuplot)</td></tr>
 <tr class="memdesc:a2740c5387a219e758ab1ba4d2e922ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the cost plot.  <br /></td></tr>
 <tr class="separator:a2740c5387a219e758ab1ba4d2e922ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,8 +282,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1d08f183344d88e767cf5f1b17edfe0" name="ac1d08f183344d88e767cf5f1b17edfe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1d08f183344d88e767cf5f1b17edfe0">&#9670;&#160;</a></span>cost_plot_reset()</h2>
+<a id="a2fd2daa2e8d4bf0b555e989cdda636b6" name="a2fd2daa2e8d4bf0b555e989cdda636b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd2daa2e8d4bf0b555e989cdda636b6">&#9670;&#160;</a></span>cost_plot_reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +298,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
-          <td class="paramname"><em>config</em>&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structiter__history__t.html">iter_history_t</a> *&#160;</td>
+          <td class="paramname"><em>iter_history</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,6 +319,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">gnuplot</td><td>Pipe to gnuplot </td></tr>
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
   </table>
   </dd>
 </dl>

@@ -134,9 +134,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a375276264fa7a60098dd8555dd0b2f2f"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a375276264fa7a60098dd8555dd0b2f2f">iter_file_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
-<tr class="memdesc:a375276264fa7a60098dd8555dd0b2f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a temporary file to store iteration history.  <br /></td></tr>
-<tr class="separator:a375276264fa7a60098dd8555dd0b2f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25859d7b8278cff3626ff4565aa76d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a25859d7b8278cff3626ff4565aa76d0a">dotted_line_cord_generate</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], FILE *iter_dt_tmps[])</td></tr>
+<tr class="memdesc:a25859d7b8278cff3626ff4565aa76d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate dotted line coordinates.  <br /></td></tr>
+<tr class="separator:a25859d7b8278cff3626ff4565aa76d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93dbc024a62c0ba239496adafc122209"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a93dbc024a62c0ba239496adafc122209">iter_file_open</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, char *filename)</td></tr>
+<tr class="memdesc:a93dbc024a62c0ba239496adafc122209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a temporary file to store iteration history.  <br /></td></tr>
+<tr class="separator:a93dbc024a62c0ba239496adafc122209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20709d920292f1cba0f4985d83d7d5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#ae20709d920292f1cba0f4985d83d7d5d">iter_file_flush</a> (FILE *iter_tmp, <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:ae20709d920292f1cba0f4985d83d7d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the iteration history to file.  <br /></td></tr>
 <tr class="separator:ae20709d920292f1cba0f4985d83d7d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +149,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a522245526af08b61f0e4eafb543a3d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a522245526af08b61f0e4eafb543a3d82">add_line</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[])</td></tr>
 <tr class="memdesc:a522245526af08b61f0e4eafb543a3d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all lines p1*x + p2*y = p3 to gnuplot.  <br /></td></tr>
 <tr class="separator:a522245526af08b61f0e4eafb543a3d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d30e78b50f43047b4c7c23785f60a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#aa5d30e78b50f43047b4c7c23785f60a1">iter_plot_update</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, FILE *iter_tmp)</td></tr>
-<tr class="memdesc:aa5d30e78b50f43047b4c7c23785f60a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the plot.  <br /></td></tr>
-<tr class="separator:aa5d30e78b50f43047b4c7c23785f60a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5937e89762514b6d72d8811592abd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a6b5937e89762514b6d72d8811592abd7">iter_plot_update</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], <a class="el" href="structiter__history__t.html">iter_history_t</a> *<a class="el" href="hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef">iter_history</a>, FILE *iter_point_tmp, FILE *iter_dt_tmps[])</td></tr>
+<tr class="memdesc:a6b5937e89762514b6d72d8811592abd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the plot.  <br /></td></tr>
+<tr class="separator:a6b5937e89762514b6d72d8811592abd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010c9223054f5ad1f8a2474bc8813605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plot__iter_8h.html#a010c9223054f5ad1f8a2474bc8813605">iter_plot_reset</a> (FILE *gnuplot, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:a010c9223054f5ad1f8a2474bc8813605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the plot to export to file.  <br /></td></tr>
 <tr class="separator:a010c9223054f5ad1f8a2474bc8813605"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +200,56 @@ Functions</h2></td></tr>
     <tr><td class="paramname">gnuplot</td><td>The file pointer to the gnuplot pipe </td></tr>
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
     <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> structs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25859d7b8278cff3626ff4565aa76d0a" name="a25859d7b8278cff3626ff4565aa76d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25859d7b8278cff3626ff4565aa76d0a">&#9670;&#160;</a></span>dotted_line_cord_generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dotted_line_cord_generate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__line__t.html">config_line_t</a>(*)&#160;</td>
+          <td class="paramname"><em>config_lines</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>iter_dt_tmps</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate dotted line coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct list </td></tr>
+    <tr><td class="paramname">iter_dt_tmps</td><td>The file pointer list to the iteration dotted line temporary file </td></tr>
   </table>
   </dd>
 </dl>
@@ -259,8 +312,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a375276264fa7a60098dd8555dd0b2f2f" name="a375276264fa7a60098dd8555dd0b2f2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a375276264fa7a60098dd8555dd0b2f2f">&#9670;&#160;</a></span>iter_file_open()</h2>
+<a id="a93dbc024a62c0ba239496adafc122209" name="a93dbc024a62c0ba239496adafc122209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93dbc024a62c0ba239496adafc122209">&#9670;&#160;</a></span>iter_file_open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,8 +322,18 @@ Functions</h2></td></tr>
           <td class="memname">FILE * iter_file_open </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
-          <td class="paramname"><em>config</em></td><td>)</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -279,6 +342,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
+    <tr><td class="paramname">filename</td><td>The file name of the temporary file </td></tr>
   </table>
   </dd>
 </dl>
@@ -398,8 +462,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5d30e78b50f43047b4c7c23785f60a1" name="aa5d30e78b50f43047b4c7c23785f60a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5d30e78b50f43047b4c7c23785f60a1">&#9670;&#160;</a></span>iter_plot_update()</h2>
+<a id="a6b5937e89762514b6d72d8811592abd7" name="a6b5937e89762514b6d72d8811592abd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5937e89762514b6d72d8811592abd7">&#9670;&#160;</a></span>iter_plot_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +496,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>iter_tmp</em>&#160;</td>
+          <td class="paramname"><em>iter_point_tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>iter_dt_tmps</em>[]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,7 +519,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
     <tr><td class="paramname">config_lines</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
     <tr><td class="paramname">iter_history</td><td>Pointer to <a class="el" href="structiter__history__t.html" title="Structure for iterate history.">iter_history_t</a> struct </td></tr>
-    <tr><td class="paramname">iter_tmp</td><td>The file pointer to the iteration history file </td></tr>
+    <tr><td class="paramname">iter_point_tmp</td><td>The file pointer to the iteration history file </td></tr>
+    <tr><td class="paramname">iter_dt_tmps</td><td>The file pointer to the iteration dotted line temporary file </td></tr>
   </table>
   </dd>
 </dl>

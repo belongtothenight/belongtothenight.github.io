@@ -14,7 +14,7 @@ var searchData=
   ['initial_5fx_11',['initial_x',['../structconfig__t.html#a8e38bbde6353190698c2c1d4ab768e47',1,'config_t']]],
   ['initial_5fy_12',['initial_y',['../structconfig__t.html#a109bceb82a2718f8a14038e4d08182da',1,'config_t']]],
   ['input_5fshape_5ffeatures_13',['input_shape_features',['../namespacetest__frcnn.html#afa01fd7982fb4a7822a467dc8d953454',1,'test_frcnn']]],
-  ['input_5fshape_5fimg_14',['input_shape_img',['../namespacetest__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'test_frcnn.input_shape_img'],['../namespacetrain__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'train_frcnn.input_shape_img']]],
+  ['input_5fshape_5fimg_14',['input_shape_img',['../namespacetrain__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'train_frcnn.input_shape_img'],['../namespacetest__frcnn.html#a1879dee8d4f8c24899a83526bbe5c444',1,'test_frcnn.input_shape_img']]],
   ['input_5fspec_15',['input_spec',['../classkeras__frcnn_1_1_fixed_batch_normalization_1_1_fixed_batch_normalization.html#a16b1387c1f70f8ac7b190e6df130a00c',1,'keras_frcnn::FixedBatchNormalization::FixedBatchNormalization']]],
   ['integral_16',['integral',['../structnorm__dist.html#a1174af01b8a329a6d465ea6e0951b3e5',1,'norm_dist']]],
   ['integral_5fstep_17',['integral_step',['../structnorm__dist.html#a57f79540f91837eb36efc6b7d2938e69',1,'norm_dist']]],
@@ -22,8 +22,15 @@ var searchData=
   ['ious_19',['IouS',['../namespacetrain__frcnn.html#abc0e49a2654f888bb48ff80b01df1cd1',1,'train_frcnn']]],
   ['it_20',['it',['../classkeras__frcnn_1_1data__generators_1_1threadsafe__iter.html#abe6ae68f2bb310ea30b1fe389e0418d6',1,'keras_frcnn::data_generators::threadsafe_iter']]],
   ['iter_21',['iter',['../structiter__history__t.html#a81244d52638e082eba158f3b012c6baf',1,'iter_history_t']]],
-  ['iter_5fhistory_22',['iter_history',['../hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef',1,'main.c']]],
-  ['iter_5fimg_23',['iter_img',['../structconfig__t.html#a54548d712e03f0688292b4a3ffb75123',1,'config_t']]],
-  ['iter_5fnum_24',['iter_num',['../namespacetrain__frcnn.html#ae086584b2dd4fd8aeba9fab8298fcc17',1,'train_frcnn']]],
-  ['iter_5ftmp_25',['iter_tmp',['../structconfig__t.html#a2ea8777c63bbb9add992ac1cc96667b6',1,'config_t']]]
+  ['iter_5fdotted_5fline_5fnum_5fper_5fx_22',['iter_dotted_line_num_per_x',['../structconfig__t.html#ae63ac1dc55ccf418275fdf792315cad4',1,'config_t']]],
+  ['iter_5fdotted_5fline_5frange_23',['iter_dotted_line_range',['../structconfig__t.html#a8d42348e511b1bdb7022673d8665da61',1,'config_t']]],
+  ['iter_5fdotted_5fline_5fstep_24',['iter_dotted_line_step',['../structconfig__t.html#af556e78aa99790b587828aa6d0e99f90',1,'config_t']]],
+  ['iter_5fdt_5ffiles_25',['iter_dt_files',['../hw4_2main_8c.html#a1799097139216dec4805e75ecf1cfda8',1,'main.c']]],
+  ['iter_5fdt_5ftmp_26',['iter_dt_tmp',['../structconfig__t.html#ae12a01d52417e263bb71d74b14e5c175',1,'config_t']]],
+  ['iter_5fhistory_27',['iter_history',['../hw4_2main_8c.html#a5884265385ead2abf07afd3eb50e27ef',1,'main.c']]],
+  ['iter_5fimg_28',['iter_img',['../structconfig__t.html#a54548d712e03f0688292b4a3ffb75123',1,'config_t']]],
+  ['iter_5fmin_29',['iter_min',['../structiter__history__t.html#a92efd42430465827d24b2e032387deec',1,'iter_history_t']]],
+  ['iter_5fmin_5fset_30',['iter_min_set',['../structiter__history__t.html#ae94d9b4ba724e660042b275b5c10296e',1,'iter_history_t']]],
+  ['iter_5fnum_31',['iter_num',['../namespacetrain__frcnn.html#ae086584b2dd4fd8aeba9fab8298fcc17',1,'train_frcnn']]],
+  ['iter_5fpoint_5ftmp_32',['iter_point_tmp',['../structconfig__t.html#a758ea70e22aa103e83a101212efbd78c',1,'config_t']]]
 ];

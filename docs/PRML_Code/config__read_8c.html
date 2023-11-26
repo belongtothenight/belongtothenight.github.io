@@ -146,9 +146,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a1bc2619d7b52c203fc2a5aed8b654794">config_parse</a> (char *buf, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
 <tr class="memdesc:a1bc2619d7b52c203fc2a5aed8b654794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a>.  <br /></td></tr>
 <tr class="separator:a1bc2619d7b52c203fc2a5aed8b654794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#ae498418f516c5eb1139fcd7c4b8fc74e">config_line_parse</a> (char *buf, <a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line, int *line_cnt)</td></tr>
-<tr class="memdesc:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a>.  <br /></td></tr>
-<tr class="separator:ae498418f516c5eb1139fcd7c4b8fc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d4e44e00010c1f2320c50bbd359ce4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#a13d4e44e00010c1f2320c50bbd359ce4">config_line_parse</a> (char *buf, <a class="el" href="structconfig__line__t.html">config_line_t</a> *config_line, int *line_cnt, <a class="el" href="structconfig__t.html">config_t</a> *config)</td></tr>
+<tr class="memdesc:a13d4e44e00010c1f2320c50bbd359ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse config file and assign values to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a>.  <br /></td></tr>
+<tr class="separator:a13d4e44e00010c1f2320c50bbd359ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config__read_8c.html#adc9bbcf7cf5e0d6b34d2847af9cf079c">config_read</a> (<a class="el" href="structconfig__t.html">config_t</a> *config, <a class="el" href="structconfig__line__t.html">config_line_t</a>(*<a class="el" href="hw4_2main_8c.html#a86dfd738fd3d0bc28a09ec5deeef9d2a">config_lines</a>)[], char *filename)</td></tr>
 <tr class="memdesc:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read config file and parse directives.  <br /></td></tr>
 <tr class="separator:adc9bbcf7cf5e0d6b34d2847af9cf079c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +261,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae498418f516c5eb1139fcd7c4b8fc74e" name="ae498418f516c5eb1139fcd7c4b8fc74e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae498418f516c5eb1139fcd7c4b8fc74e">&#9670;&#160;</a></span>config_line_parse()</h2>
+<a id="a13d4e44e00010c1f2320c50bbd359ce4" name="a13d4e44e00010c1f2320c50bbd359ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d4e44e00010c1f2320c50bbd359ce4">&#9670;&#160;</a></span>config_line_parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +283,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>line_cnt</em>&#160;</td>
+          <td class="paramname"><em>line_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconfig__t.html">config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -299,6 +305,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">buf</td><td>Pointer to read buffer </td></tr>
     <tr><td class="paramname">config_line</td><td>Pointer to <a class="el" href="structconfig__line__t.html" title="Data structure for config file individual line settings.">config_line_t</a> struct </td></tr>
     <tr><td class="paramname">line_cnt</td><td>Pointer to line_cnt </td></tr>
+    <tr><td class="paramname">config</td><td>Pointer to <a class="el" href="structconfig__t.html" title="Data structure for config file general settings.">config_t</a> struct </td></tr>
   </table>
   </dd>
 </dl>

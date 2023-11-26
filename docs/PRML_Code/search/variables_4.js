@@ -8,10 +8,11 @@ var searchData=
   ['data_5ftest_5',['data_test',['../namespacedata__gen.html#a28aae9b6dd5af7703131d66db23f9e77',1,'data_gen']]],
   ['data_5ftest_5fmean_6',['data_test_mean',['../namespacedata__gen.html#a9b6b9e7c40c28954d0f9806f988ca42a',1,'data_gen']]],
   ['data_5ftest_5fstd_7',['data_test_std',['../namespacedata__gen.html#a18bbb371d8e77f5a59fc61a90f5c32c3',1,'data_gen']]],
-  ['decimal_8',['decimal',['../namespacedata__gen.html#af560a38dbf20703219e1d31e7a5571b0',1,'data_gen']]],
-  ['default_9',['default',['../namespacetest__frcnn.html#affb1327b18bf08a379d19eef89cf1ed1',1,'test_frcnn.default'],['../namespacetrain__frcnn.html#affb1327b18bf08a379d19eef89cf1ed1',1,'train_frcnn.default']]],
-  ['dest_10',['dest',['../namespacetrain__frcnn.html#ab0bede79c5f4cbed9c2cd932a0ace201',1,'train_frcnn.dest'],['../namespacetest__frcnn.html#ab0bede79c5f4cbed9c2cd932a0ace201',1,'test_frcnn.dest']]],
-  ['df_11',['df',['../namespacexml__to__csv.html#ab52c96bea30646abf8170f333bbd42b9',1,'xml_to_csv']]],
-  ['dim_5fordering_12',['dim_ordering',['../classkeras__frcnn_1_1_roi_pooling_conv_1_1_roi_pooling_conv.html#a7ed310c2ca58c2be2638b3a9b17ddf74',1,'keras_frcnn::RoiPoolingConv::RoiPoolingConv']]],
-  ['dynamic_5fstep_13',['dynamic_step',['../structconfig__t.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config_t']]]
+  ['debug_5fmode_8',['debug_mode',['../structconfig__t.html#aa021995764a0c77f628e3411497239cc',1,'config_t']]],
+  ['decimal_9',['decimal',['../namespacedata__gen.html#af560a38dbf20703219e1d31e7a5571b0',1,'data_gen']]],
+  ['default_10',['default',['../namespacetest__frcnn.html#affb1327b18bf08a379d19eef89cf1ed1',1,'test_frcnn.default'],['../namespacetrain__frcnn.html#affb1327b18bf08a379d19eef89cf1ed1',1,'train_frcnn.default']]],
+  ['dest_11',['dest',['../namespacetest__frcnn.html#ab0bede79c5f4cbed9c2cd932a0ace201',1,'test_frcnn.dest'],['../namespacetrain__frcnn.html#ab0bede79c5f4cbed9c2cd932a0ace201',1,'train_frcnn.dest']]],
+  ['df_12',['df',['../namespacexml__to__csv.html#ab52c96bea30646abf8170f333bbd42b9',1,'xml_to_csv']]],
+  ['dim_5fordering_13',['dim_ordering',['../classkeras__frcnn_1_1_roi_pooling_conv_1_1_roi_pooling_conv.html#a7ed310c2ca58c2be2638b3a9b17ddf74',1,'keras_frcnn::RoiPoolingConv::RoiPoolingConv']]],
+  ['dynamic_5fstep_14',['dynamic_step',['../structconfig__t.html#a6bb8ea267f455a4894a81439ece7f95d',1,'config_t']]]
 ];
