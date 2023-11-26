@@ -14,8 +14,9 @@ Each homework has its result edited, summarized, converted into PDF format store
 
 ???+ HW1
 
-    Generate figures for beans classification result.
-    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E6%97%8F%E7%BE%A4%E5%88%86%E9%A1%9E%E5%AF%A6%E9%A9%97(%E7%B1%B3%E7%B2%92%E8%B1%86%E5%AD%90)v3.pdf)
+    Generate figures for beans classification result.  
+    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E6%97%8F%E7%BE%A4%E5%88%86%E9%A1%9E%E5%AF%A6%E9%A9%97(%E7%B1%B3%E7%B2%92%E8%B1%86%E5%AD%90)v3.pdf)  
+    [Head to source code!](https://github.com/belongtothenight/PRML_Code/tree/main/src/hw1)
 
 ### HW2 Pinky Knuckle Dimension Distribution
 
@@ -23,8 +24,9 @@ Each homework has its result edited, summarized, converted into PDF format store
 
 ???+ HW2
 
-    Pinky knuckle dimension statistical distribution visualization.
-    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E6%89%8B%E6%8C%87%E7%AC%AC%E4%B8%80%E6%8C%87%E7%AF%80v3.pdf)
+    Pinky knuckle dimension statistical distribution visualization.  
+    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E6%89%8B%E6%8C%87%E7%AC%AC%E4%B8%80%E6%8C%87%E7%AF%80v3.pdf)  
+    [Head to source code!](https://github.com/belongtothenight/PRML_Code/tree/main/src/hw2)
 
 ### HW3 Basic Shape Classification
 
@@ -32,8 +34,9 @@ Each homework has its result edited, summarized, converted into PDF format store
 
 ???+ HW3
 
-    2 dimensional shape classification.
-    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/2D%E5%88%86%E9%A1%9Ev2.pdf)
+    2 dimensional shape classification.  
+    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/2D%E5%88%86%E9%A1%9Ev2.pdf)  
+    [Head to source code!](https://github.com/belongtothenight/PRML_Code/tree/main/src/hw3)
 
 ### HW4 Basic demonstration for Supervised Learning Algorithm
 
@@ -41,5 +44,6 @@ Each homework has its result edited, summarized, converted into PDF format store
 
 ???+ HW4
 
-    Basic demonstration for Supervised Learning Algorithm with realtime data visual displaying and config file to set without re-compiling the program.
-    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E7%B7%9A%E6%80%A7%E4%BA%A4%E9%BB%9Ev1.pdf)
+    Basic demonstration for Supervised Learning Algorithm with realtime data visual displaying and config file to set without re-compiling the program.  
+    [Head to file!](https://github.com/belongtothenight/PRML_Code/blob/main/docs/pdf/%E7%B7%9A%E6%80%A7%E4%BA%A4%E9%BB%9Ev2.pdf)  
+    [Head to source code!](https://github.com/belongtothenight/PRML_Code/tree/main/src/hw4)
