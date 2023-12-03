@@ -1,4 +1,4 @@
-# DIP Code Docs
+# DIP Code Reports
 
 Holds code for CYCUEE Digital Image Processing course. Go to [source](https://github.com/belongtothenight/DIP_Code) to see more.
 
