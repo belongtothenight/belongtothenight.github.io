@@ -1,0 +1,31 @@
+<map id="E:/GitHub/PRML_Code/src/hw2/lib/normal_distribution.h" name="E:/GitHub/PRML_Code/src/hw2/lib/normal_distribution.h">
+<area shape="rect" id="Node000001" title="Normal distribution functions." alt="" coords="383,5,538,64"/>
+<area shape="rect" id="Node000002" href="$hw2_2lib_2decision__boundary_8c.html" title=" " alt="" coords="28,219,184,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="398,74,329,114,153,220,151,216,326,110,395,70"/>
+<area shape="rect" id="Node000003" href="$hw2_2lib_2decision__boundary_8h.html" title="Decision boundary functions." alt="" coords="383,112,538,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="463,80,463,112,458,112,458,80"/>
+<area shape="rect" id="Node000006" href="$hw2_2main_8c.html" title="Main function of hw2 &#45; Pinky knuckle dimension distribution." alt="" coords="232,325,388,368"/>
+<area shape="poly" id="edge18_Node000001_Node000006" title=" " alt="" coords="368,46,279,62,230,76,181,94,133,116,89,145,50,179,19,220,11,235,8,249,10,262,19,276,32,287,52,297,106,314,170,327,232,335,231,341,169,332,104,319,50,302,29,291,15,279,5,264,3,249,6,233,14,217,47,175,86,140,131,112,179,89,228,71,277,57,367,41"/>
+<area shape="rect" id="Node000007" href="$test_8c.html" title=" " alt="" coords="607,325,762,368"/>
+<area shape="poly" id="edge19_Node000001_Node000007" title=" " alt="" coords="554,42,643,59,692,73,741,91,789,114,834,142,874,176,907,217,915,233,919,248,916,263,907,279,877,308,841,327,802,339,763,346,762,341,800,334,839,322,874,303,903,276,911,261,913,248,910,235,902,220,870,180,830,146,786,118,739,96,690,78,642,64,553,47"/>
+<area shape="rect" id="Node000008" href="$output__csv_8c.html" title=" " alt="" coords="728,227,892,269"/>
+<area shape="poly" id="edge16_Node000001_Node000008" title=" " alt="" coords="522,70,777,224,774,228,519,75"/>
+<area shape="rect" id="Node000009" href="$output__csv_8h.html" title="Output csv functions." alt="" coords="208,227,372,269"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="412,76,373,114,331,174,302,227,297,225,327,171,369,110,408,72"/>
+<area shape="rect" id="Node000010" href="$hw2_2lib_2normal__distribution_8c.html" title=" " alt="" coords="967,112,1122,171"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="554,44,737,70,949,109,967,114,966,119,948,115,736,75,553,49"/>
+<area shape="poly" id="edge8_Node000003_Node000002" title=" " alt="" coords="369,171,196,221,185,225,183,220,195,216,367,166"/>
+<area shape="rect" id="Node000004" href="$hw2_2lib_2data__plot_8c.html" title=" " alt="" coords="422,325,577,368"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="471,185,489,277,498,325,493,326,483,278,466,186"/>
+<area shape="rect" id="Node000005" href="$hw2_2lib_2data__plot_8h.html" title="Plotting functions for data." alt="" coords="498,227,653,269"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="505,179,555,224,551,228,501,183"/>
+<area shape="poly" id="edge13_Node000003_Node000006" title=" " alt="" coords="444,186,419,232,387,279,363,305,338,327,335,323,359,301,383,276,414,229,439,183"/>
+<area shape="poly" id="edge14_Node000003_Node000007" title=" " alt="" coords="554,153,585,163,615,176,643,194,667,217,681,243,689,273,690,325,685,325,684,273,677,245,663,220,640,198,612,181,583,168,552,158"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="554,168,742,224,740,229,553,173"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="403,181,325,228,322,224,400,177"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="552,283,518,327,513,323,548,280"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="505,278,368,327,366,322,503,273"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="612,278,663,323,659,327,608,282"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="300,284,308,324,303,326,295,285"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="388,270,607,324,606,329,387,276"/>
+</map>
