@@ -101,6 +101,11 @@ I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab)
 | --- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | 1   | [Microcontroller-Experiment](https://github.com/CYCU-AIoT-System-Lab/Microcontroller-Experiment) | ![GitHub Repo stars](https://img.shields.io/github/stars/CYCU-AIoT-System-Lab/Microcontroller-Experiment?style=flat-square) ![GitHub watchers](https://img.shields.io/github/watchers/CYCU-AIoT-System-Lab/Microcontroller-Experiment?style=flat-square) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CYCU-AIoT-System-Lab/Microcontroller-Experiment?style=flat-square) | Detail documentation about HT32 Firmware Library examples and experiments. |
 
+## Academic Research
+
+1. IEEE Xplore: Conference 2023 International Automatic Control Conference (CACS 2023) - [Automatic Visual Effect Adjustment System](https://ieeexplore.ieee.org/document/10326206) (Registered on [EngineeringVillage](https://engineeringvillage.com/))
+2. IEEE Xplore: Conference 2023 IEEE 5th Eurasia Conference on IOT, Communication and Engineering (ECICE 2023) - [Interactive System Based on Millimeter Wave And Wavelet Transform](https://ieeexplore.ieee.org/document/10383034)
+
 ## Possible Plans
 
 1. a website keeping record of newest technology and developing history. (tech frontier/advance tree?)
