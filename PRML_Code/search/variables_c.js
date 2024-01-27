@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['name_0',['name',['../namespacexml__to__csv.html#ab74e6bf80237ddc4109968cedc58c151',1,'xml_to_csv']]],
+  ['nb_5fchannels_1',['nb_channels',['../classkeras__frcnn_1_1_roi_pooling_conv_1_1_roi_pooling_conv.html#a4e80db014bfa38471d2a2908e52d811e',1,'keras_frcnn::RoiPoolingConv::RoiPoolingConv']]],
+  ['neg_5fsamples_2',['neg_samples',['../namespacetrain__frcnn.html#a37e2c748effc85c54cfb81b4a528a5a7',1,'train_frcnn']]],
+  ['network_3',['network',['../classkeras__frcnn_1_1config_1_1_config.html#a6b288a470bcb2fd5f321915ef4045b8b',1,'keras_frcnn.config.Config.network'],['../namespacetrain__frcnn.html#a6b288a470bcb2fd5f321915ef4045b8b',1,'train_frcnn.network']]],
+  ['new_5fboxes_4',['new_boxes',['../namespacetest__frcnn.html#af29013709e276138bb908df224bf18a6',1,'test_frcnn']]],
+  ['new_5fprobs_5',['new_probs',['../namespacetest__frcnn.html#a04f4ebf7464e34cfe42a6a95fe38b111',1,'test_frcnn']]],
+  ['none_6',['None',['../namespaceannotate.html#ac7485dcc8d256a6f197ed7802687f252',1,'annotate']]],
+  ['normal_5fsplit_5fcount_7',['normal_split_count',['../structdataset.html#ade50175db1f8b8849d43f3438f003ae7',1,'dataset']]],
+  ['normal_5fsplit_5fdata_8',['normal_split_data',['../structdataset.html#a050e1a41d229064c76d744ecd23c90bd',1,'dataset']]],
+  ['normal_5fsplit_5fpoints_9',['normal_split_points',['../structdataset.html#a81895d4cdae19743b5667b0ae66d9d9b',1,'dataset']]],
+  ['normal_5fsplit_5fpoints_5fcenter_10',['normal_split_points_center',['../structdataset.html#aebf777940059ca94314f5741459df9a3',1,'dataset']]],
+  ['num_5fanchors_11',['num_anchors',['../namespacetrain__frcnn.html#a09d54300f3c54dc05cd197dbc14bacee',1,'train_frcnn.num_anchors'],['../namespacetest__frcnn.html#a09d54300f3c54dc05cd197dbc14bacee',1,'test_frcnn.num_anchors']]],
+  ['num_5fcols_12',['num_cols',['../structdata__t.html#aa018f449152d3670dbaa863f46a9e564',1,'data_t::num_cols'],['../structcsv__t.html#aa018f449152d3670dbaa863f46a9e564',1,'csv_t::num_cols']]],
+  ['num_5fepochs_13',['num_epochs',['../namespacetrain__frcnn.html#a050e7ca8e0fbdc0d0b46e75bc458bedc',1,'train_frcnn']]],
+  ['num_5ffeatures_14',['num_features',['../namespacetest__frcnn.html#aef0090071c7adec0cda2fafc090f4e26',1,'test_frcnn']]],
+  ['num_5fimgs_15',['num_imgs',['../namespacetrain__frcnn.html#a09e6b6ea0ed8017e74082ec6c411ae49',1,'train_frcnn']]],
+  ['num_5frois_16',['num_rois',['../classkeras__frcnn_1_1_roi_pooling_conv_1_1_roi_pooling_conv.html#a3e38da22c05036d1bc1b8a75fa4ab2e1',1,'keras_frcnn.RoiPoolingConv.RoiPoolingConv.num_rois'],['../classkeras__frcnn_1_1config_1_1_config.html#a3e38da22c05036d1bc1b8a75fa4ab2e1',1,'keras_frcnn.config.Config.num_rois'],['../namespacetest__frcnn.html#a3e38da22c05036d1bc1b8a75fa4ab2e1',1,'test_frcnn.num_rois'],['../namespacetrain__frcnn.html#a3e38da22c05036d1bc1b8a75fa4ab2e1',1,'train_frcnn.num_rois']]],
+  ['num_5frows_17',['num_rows',['../structcsv__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'csv_t::num_rows'],['../structdata__t.html#ab03eee162822f8b3b8f3ac1dfb1398a1',1,'data_t::num_rows']]]
+];
