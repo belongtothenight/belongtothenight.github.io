@@ -15,18 +15,18 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
+      primary: indigo
       accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: orange
+      accent: purple 
   icon:
     admonition:
       note: material/book-alert-outline
@@ -57,3 +57,12 @@ markdown_extensions:
 
 copyright: |
   &copy; 2023 <a href="https://github.com/belongtothenight"  target="_blank" rel="noopener">Dachuan Chen</a>
+
+plugins:
+  - search
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
