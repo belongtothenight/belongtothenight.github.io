@@ -22,7 +22,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.X
-      - run: pip install mkdocs-material
+          python-version: 3.12
+      - run: pip install mkdocs-material mkdocs-nav-weight
       - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
