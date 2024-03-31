@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
       - name: Caching action
-        uses: actions/cache@v3
+        uses: actions/cache@main
         with:
           path: .cache
           key: ${{ github.ref }}
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@main
         with:
           python-version: 3.X
       - run: pip install mkdocs-material
