@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Caching action
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: .cache
           key: ${{ github.ref }}
