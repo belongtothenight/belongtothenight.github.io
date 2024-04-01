@@ -5,6 +5,13 @@ title: How-To Guides
 
 This is a summary of how-to guides shown down below.
 
+## Paper
+
+| No  | Page                                                     | Update Record |
+| :-: | -----------                                              | :-----------: |
+| 1   | how_to_PAPER-summarize_paper_for_easier_understanding    | -             |
+| 2   | how_to_PAPER-outline_paper_for_better_writing_experience | -             |
+
 ## GitHub
 
 | No  | Page                                            | Update Record |
