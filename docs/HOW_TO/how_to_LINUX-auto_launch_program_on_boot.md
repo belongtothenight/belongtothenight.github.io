@@ -18,7 +18,7 @@ Figure 1: Linux Boot Process [2]
 
 ### Step 1: Create a Service File
 
-In this step, let's create a service file that systemd can use to launch our program. After activated, this service is considered as a daemon process.
+In this step, let's create a service file that systemd can use to launch our program. After activated, the program launched by this service is considered as a daemon process.
 
 1. Create a service file in path `/lib/systemd/system/<service_name>.service`, which can very depending on the Linux distribution you are using. This is proven to work on both Ubuntu and Raspbian.
     ```bash
@@ -78,7 +78,7 @@ If you want to know more about the options in the service file, you can search f
 
 ### Step 3: (optional) Routine Execution
 
-In this step, let's create a timer service/daemon that will routinely trigger our service/daemon, which in turn will launch our program.
+In this step, let's create a timer service that will routinely trigger our service, which in turn will launch our program.
 
 1. Create a service file in path `/lib/systemd/system/<service_name>.timer`, which can very depending on the Linux distribution you are using. This is proven to work on both Ubuntu and Raspbian.
     ```bash
