@@ -64,3 +64,7 @@ After project initialized, you can edit `mkdocs.yml` for configuration, and edit
 1. [https://www.mkdocs.org/](https://www.mkdocs.org/)
 2. [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
 3. [YouTube - James Willett - How to Create STUNNING Code Documentation With MkDocs Material Theme](https://youtu.be/Q-YA_dA8C20?si=2t6VQOF58xb62juB)
+
+## Error Correction
+
+If you find any mistakes in the document, please create an [Issue](https://github.com/belongtothenight/belongtothenight.github.io/issues) or a [Pull request](https://github.com/belongtothenight/belongtothenight.github.io/pulls) or leave a message in [Discussions](https://github.com/belongtothenight/belongtothenight.github.io/discussions) or send me a mail directly with the mail icon at the bottom right. Thank you!

@@ -115,3 +115,7 @@ You can modify the following scripts to your needs while following the [Provided
 2. [YouTube - ByteByteGo - How Does Linux Boot Process Work?](https://youtu.be/XpFsMB6FoOs?si=69epCUbu9p4JavW7)
 3. [https://unix.stackexchange.com/questions/48203/run-script-once-a-day-with-systemd](https://unix.stackexchange.com/questions/48203/run-script-once-a-day-with-systemd)
 4. [https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html](https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html)
+
+## Error Correction
+
+If you find any mistakes in the document, please create an [Issue](https://github.com/belongtothenight/belongtothenight.github.io/issues) or a [Pull request](https://github.com/belongtothenight/belongtothenight.github.io/pulls) or leave a message in [Discussions](https://github.com/belongtothenight/belongtothenight.github.io/discussions) or send me a mail directly with the mail icon at the bottom right. Thank you!

@@ -143,3 +143,7 @@ There are many online tools that can convert BibTex file into your desired forma
 
 1. [https://www.bibtex.org/](https://www.bibtex.org/)
 2. [https://bibtex.eu/](https://bibtex.eu/)
+
+## Error Correction
+
+If you find any mistakes in the document, please create an [Issue](https://github.com/belongtothenight/belongtothenight.github.io/issues) or a [Pull request](https://github.com/belongtothenight/belongtothenight.github.io/pulls) or leave a message in [Discussions](https://github.com/belongtothenight/belongtothenight.github.io/discussions) or send me a mail directly with the mail icon at the bottom right. Thank you!
