@@ -102,8 +102,19 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
     If more fields or typees are needed, you can visit [https://bibtex.eu/](https://bibtex.eu/) for more information.
 4. Example of final form of your ".bib" file can be found in [my GitHub](https://github.com/belongtothenight/powershell_scripts/blob/main/latex_tex2pdf/report.bib).
 
+### Step 2-1: Conversion Online.
 
-### Step 2-1: Use in LaTex
+There are many online tools that can convert BibTex file into your desired format. In this case, we will use IEEE format.
+
+1. Go to [BibTex to IEEE converter](https://www.bibtex.com/c/bibtex-to-ieee-converter/).
+2. Click "Choose BibTex file..." and select your BibTex file.
+3. Click "$\rightarrow$ Convert" and download the converted file in "Word" format.
+4. Now you can copy and paste the references into your paper.
+
+![bibtex_to_ieee](./pic/3_1.png)
+Figure 1: BibTex to IEEE converter.
+
+### Step 2-2: Use in LaTex
 
 1. Before using citations in LaTeX, you need to set document class and include additional setting in your "./tex" file:
     ```latex
@@ -126,18 +137,6 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
     2. [md_gen_pdf.ps1](https://github.com/belongtothenight/powershell_scripts/tree/main/pandoc_md2pdf)
     3. [md_gen_pdf2.ps1](https://github.com/belongtothenight/powershell_scripts/tree/main/md2pdf)
     <br>Or you can use the compiler in your LaTeX editor.
-
-### Step 2-2: Conversion Online.
-
-There are many online tools that can convert BibTex file into your desired format. In this case, we will use IEEE format.
-
-1. Go to [BibTex to IEEE converter](https://www.bibtex.com/c/bibtex-to-ieee-converter/).
-2. Click "Choose BibTex file..." and select your BibTex file.
-3. Click "$\rightarrow$ Convert" and download the converted file in "Word" format.
-4. Now you can copy and paste the references into your paper.
-
-
-![bibtex_to_ieee](./pic/3_1.png)
 
 ## Reference
 
