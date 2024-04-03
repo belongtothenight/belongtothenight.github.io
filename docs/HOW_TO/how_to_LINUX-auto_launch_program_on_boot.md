@@ -14,7 +14,7 @@ In linux system boot sequence, BIOS/UEFI gets loaded and executed, later it trig
 
 Figure 1: Linux Boot Process [2]
 
-## Solution
+## Solution 1: systemd
 
 ### Step 1: Create a Service File
 
@@ -103,11 +103,48 @@ In this step, let's create a timer service that will routinely trigger our servi
 
 ### Step 4: (optional) Write a Script to Automatically Finish All the Steps
 
-You can modify the following scripts to your needs while following the [Provided License](https://github.com/belongtothenight/bash_scripts/blob/main/LICENSE).
+You can modify the following script to your needs while following the [Provided License](https://github.com/belongtothenight/bash_scripts/blob/main/LICENSE).
+
+1. [schedule_routine.sh](https://github.com/belongtothenight/bash_scripts/blob/main/src/schedule_routine.sh): This is another script that will setup a `update_task.timer` to routinely trigger the `update_task.sh` to execute a custom script `update_task.sh` after system boot.
+
+## Solution 2: Desktop Entry
+
+This solution is preferred for GUI applications, as it will launch the application in the user's desktop environment. Also, it is a lot easier to setup compared to systemd.
+
+### Step 1: Create a Desktop Entry File
+
+1. Create a desktop entry file in path `$HOME/.config/autosart/<app_name>.desktop`:
+    ```bash
+    touch $HOME/.config/autostart/test.desktop
+    ```
+2. Open the file in a text editor and add the following content:
+    ```ini
+    [Desktop Entry]
+    Type=Application
+    Version=1.0
+    Name=Test
+    Comment=This is a test entry to launch a script on boot
+    Exec=/bin/bash /opt/boot_trigger.sh
+    StartupNotify=false
+    Terminal=true               # This is set to true to launch the script in a terminal window
+    ```
+3. Create the script that you want to launch in path `/opt/boot_trigger.sh`:
+    ```bash
+    touch /opt/boot_trigger.sh
+    echo -e "\
+    #!/bin/bash\n\
+    gnome-terminal\n\
+    sleep infinity # This is to keep the original terminal open for debugging\n\
+    " > /opt/boot_trigger.sh
+    ```
+    
+Next time you boot up your system, you will see a terminal window pop up automatically.
+    
+### Step 2: (optional) Write a Script to Automatically Finish the Step
+
+You can modify the following script to your needs while following the [Provided License](https://github.com/belongtothenight/bash_scripts/blob/main/LICENSE).
 
 1. [schedule_startup.sh](https://github.com/belongtothenight/bash_scripts/blob/main/src/schedule_startup.sh): This is a script that will setup a `update_task.service` to execute a custom script `update_task.sh` after system boot.
-
-2. [schedule_routine.sh](https://github.com/belongtothenight/bash_scripts/blob/main/src/schedule_routine.sh): This is another script that will setup a `update_task.timer` to routinely trigger the `update_task.sh` to execute a custom script `update_task.sh` after system boot.
 
 ## References
 
@@ -115,6 +152,8 @@ You can modify the following scripts to your needs while following the [Provided
 2. [YouTube - ByteByteGo - How Does Linux Boot Process Work?](https://youtu.be/XpFsMB6FoOs?si=69epCUbu9p4JavW7)
 3. [https://unix.stackexchange.com/questions/48203/run-script-once-a-day-with-systemd](https://unix.stackexchange.com/questions/48203/run-script-once-a-day-with-systemd)
 4. [https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html](https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html)
+5. [https://www.reddit.com/r/Fedora/comments/o1s94a/systemdissue_launch_gnome_terminal_startup/](https://www.reddit.com/r/Fedora/comments/o1s94a/systemdissue_launch_gnome_terminal_startup/)
+6. [https://unix.stackexchange.com/questions/319341/how-do-i-debug-a-desktop-file](https://unix.stackexchange.com/questions/319341/how-do-i-debug-a-desktop-file)
 
 ## Error Correction
 
