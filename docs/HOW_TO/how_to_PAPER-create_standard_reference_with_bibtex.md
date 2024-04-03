@@ -48,7 +48,7 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
     3. Other websites:
         1. Find the paper you want to cite.
         2. Look for citation options. If none, you can manually create the BibTex entry.
-3. Frequent types of BibTex entries:
+3. Example of frequent types of BibTex entries:
     ```bibtex title="Website Reference"
     @misc{tpm12,
         title = {{TPM} Main Specification version 1.2},
