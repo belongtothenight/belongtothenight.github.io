@@ -34,10 +34,11 @@ This is a summary of how-to guides shown down below.
 
 ## Bash
 
-| No  | Page                                      | Update Record |
-| :-: | -----------                               | :-----------: |
-| 1   | how_to_BASH-parse_CLI_input_arguments     | -             |
-| 2   | how_to_BASH-parse_config_file_as_variable | -             |
+| No  | Page                                                                         | Update Record |
+| :-: | -----------                                                                  | :-----------: |
+| 1   | [how_to_BASH-open_terminal_with_CLI](how_to_BASH-open_terminal_with_CLI.md)  | 2024-04-04    |
+| 2   | how_to_BASH-parse_CLI_input_arguments                                        | -             |
+| 3   | how_to_BASH-parse_config_file_as_variable                                    | -             |
 
 ## Python
 
