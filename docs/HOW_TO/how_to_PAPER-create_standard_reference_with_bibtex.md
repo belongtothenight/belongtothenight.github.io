@@ -138,6 +138,10 @@ Figure 1: BibTex to IEEE converter.
     3. [md_gen_pdf2.ps1](https://github.com/belongtothenight/powershell_scripts/tree/main/md2pdf)
     <br>Or you can use the compiler in your LaTeX editor.
 
+## Step 3: Re-Check
+
+All conferences and journals should have provided a template for you to use. Make sure to verify the format of the reference with the template. If no template is provided, you can always use previous published papers to verify.
+
 ## Reference
 
 1. [https://www.bibtex.org/](https://www.bibtex.org/)
