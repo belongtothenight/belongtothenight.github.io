@@ -1,6 +1,6 @@
-# Create Standard Reference with BibTex
+# Create Standard Reference with BibTeX
 
-This guide will show you how to create a standard reference word style with BibTex and showcase with Institute of Electrical and Electronics Engineers (IEEE) format.
+This guide will show you how to create a standard reference word style with BibTeX and showcase with Institute of Electrical and Electronics Engineers (IEEE) format.
 
 ## Problem
 
@@ -8,9 +8,9 @@ When writing a paper, you want to have the correct format of reference in the pa
 
 ## Background
 
-BibTex is a file format aims to help with managing references in LaTeX documents, and is frequently used in academic writing. It is sort of like JSON format, acting as the standard format to be easily converted into other reference formats.
+BibTeX is a file format aims to help with managing references in LaTeX documents, and is frequently used in academic writing. It is sort of like JSON format, acting as the standard format to be easily converted into other reference formats.
 
-BibTex file has the following structure: (filename with ".bib" extension)
+BibTeX file has the following structure: (filename with ".bib" extension)
 
 ```bibtex
 @entry_type{citation_key,
@@ -26,7 +26,7 @@ Indentation is not necessary, but it is recommended for readability.
 
 Finished step 1, and then continue to step 2-1 or step 2-2.
 
-### Step 1: Create a BibTex file
+### Step 1: Create a BibTeX file
 
 1. Create a new file with ".bib" extension, e.g. "reference.bib":
     ```bash title="Linux Bash"
@@ -35,7 +35,7 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
     ```pwsh title="Windows PowerShell"
     New-Item reference.bib
     ```
-2. Copy BibTex from website:
+2. Copy BibTeX from website:
     1. IEEE Xplore:
         1. Find the paper you want to cite.
         2. Click "Cite This" and select "BibTeX".
@@ -47,8 +47,8 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
         4. Click "Copy to clipboard" and paste it into the ".bib" file.
     3. Other websites:
         1. Find the paper you want to cite.
-        2. Look for citation options. If none, you can manually create the BibTex entry.
-3. Example of frequent types of BibTex entries:
+        2. Look for citation options. If none, you can manually create the BibTeX entry.
+3. Example of frequent types of BibTeX entries:
     ```bibtex title="Website Reference"
     @misc{tpm12,
         title = {{TPM} Main Specification version 1.2},
@@ -104,17 +104,17 @@ Finished step 1, and then continue to step 2-1 or step 2-2.
 
 ### Step 2-1: Conversion Online.
 
-There are many online tools that can convert BibTex file into your desired format. In this case, we will use IEEE format.
+There are many online tools that can convert BibTeX file into your desired format. In this case, we will use IEEE format.
 
-1. Go to [BibTex to IEEE converter](https://www.bibtex.com/c/bibtex-to-ieee-converter/).
-2. Click "Choose BibTex file..." and select your BibTex file.
+1. Go to [BibTeX to IEEE converter](https://www.bibtex.com/c/bibtex-to-ieee-converter/).
+2. Click "Choose BibTeX file..." and select your BibTeX file.
 3. Click "$\rightarrow$ Convert" and download the converted file in "Word" format.
 4. Now you can copy and paste the references into your paper.
 
 ![bibtex_to_ieee](./pic/3_1.png)
-Figure 1: BibTex to IEEE converter.
+Figure 1: BibTeX to IEEE converter.
 
-### Step 2-2: Use in LaTex
+### Step 2-2: Use in LaTeX
 
 1. Before using citations in LaTeX, you need to set document class and include additional setting in your "./tex" file:
     ```latex
