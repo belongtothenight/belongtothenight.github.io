@@ -9,7 +9,7 @@ This is a summary of how-to guides shown down below.
 
 | No  | Page                                                                                                        | Update Record |
 | :-: | -----------                                                                                                 | :-----------: |
-| 1   | [how_to_PAPER-create_standard_reference_with_bibtex](how_to_PAPER-create_standard_reference_with_bibtex.md) | 2024-04-03    |
+| 1   | [how_to_PAPER-create_standard_reference_with_bibtex](how_to_PAPER-create_standard_reference_with_bibtex.md) | 2024-04-08    |
 | 2   | how_to_PAPER-summarize_paper_for_easier_understanding                                                       | -             |
 | 3   | how_to_PAPER-outline_paper_for_better_writing_experience                                                    | -             |
 
@@ -24,7 +24,7 @@ This is a summary of how-to guides shown down below.
 
 | No  | Page                                                                                    | Update Record |
 | :-: | -----------                                                                             | :-----------: |
-| 1   | [how_to_LINUX-auto_launch_program_on_boot](how_to_LINUX-auto_launch_program_on_boot.md) | 2024-03-31    |
+| 1   | [how_to_LINUX-auto_launch_program_on_boot](how_to_LINUX-auto_launch_program_on_boot.md) | 2024-04-04    |
 
 ## Website
 
