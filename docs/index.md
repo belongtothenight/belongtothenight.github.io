@@ -53,8 +53,8 @@ Source: [Shield.io](https://shields.io/badges) | [Simple Icons](https://simpleic
 ## About Me
 
 - 👋 Hi, I’m @belongtothenight, currently studying in CYCU Electrical Engineering Master Degree.
-- 👀 I’m interested in Drones, Control Systems, ML, DL, BD, audio, analog circuit design, IoT.
-- I’m currently learning RTDSP, FPGA, CN, CF, QC.
+- I have experience in drones, control systems, machine learning, big data, audio processing, analog circuit design, IoT, Real-Time Digital Signal Processing, FPGA, Computer Network, Chaos and Fractal, Quantum Computer, and more.
+- I’m currently learning/working on advance computer network (stream processing), IC layout, trusted platform module (TPM).
 - I've love to collaborate on: Anything!
 - Email: dachuan516@gmail.com
 
@@ -62,44 +62,51 @@ Source: [Shield.io](https://shields.io/badges) | [Simple Icons](https://simpleic
 
 | No. | Name / Link                                                                                                | Description                                                                                                                                             |
 | --- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [adventofcode_s909](https://github.com/belongtothenight/adventofcode_s909)                                           | Personal used bash files.                                                                                                                               |
-| 2   | [bash_scripts](https://github.com/belongtothenight/bash_scripts)                                           | Personal used bash files.                                                                                                                               |
-| 3   | [batch_scripts](https://github.com/belongtothenight/batch_scripts)                                         | Personal used batch files.                                                                                                                              |
-| 4   | [BD_ML_Code](https://github.com/belongtothenight/BD_ML_Code)                                               | Codes for CYCUEE Big Data and Machine Learning course.                                                                                                  |
-| 5   | [belongtothenight.github.io](https://github.com/belongtothenight/belongtothenight.github.io)               | This website.                                                                                                                                           |
-| 6   | [CF_Code](https://github.com/belongtothenight/CF_Code)                                                     | Neumerical and Graphical demonstration of CYCUEE Chaos and Fractals course.                                                                             |
-| 7   | [CN_Code](https://github.com/belongtothenight/CN_Code)                                                     | Codes for CYCUEE Computer Network course including encryption, DDoS, Ubuntu Server and more.                                                            |
-| 8   | [config-files](https://github.com/belongtothenight/config-files)                                           | Configuration files for my development environment.                                                                                                     |
-| 9   | [CYCU-Grade-Exporter](https://github.com/belongtothenight/CYCU-Grade-Exporter)                             | Web scraper to generate CYCU students grade related data.                                                                                               |
-| 10   | [Davinci-Resolve-Clip-Loader](https://github.com/belongtothenight/Davinci-Resolve-Clip-Loader)             | Davinci Resolve 17 automatic clip loader.                                                                                                               |
-| 11  | [DIP_Code](https://github.com/belongtothenight/DIP_Code)                                                   | Codes for CYCUEE Digital Image Processing course.                                                                                                       |
-| 12  | [Drone_Motion_Control](https://github.com/belongtothenight/DIP_Code)                                       | Simulating drone motion control with data generated from repo FRCNN_Related_Code.                                                                       |
-| 13  | [File-Format-Converter](https://github.com/belongtothenight/File-Format-Converter)                         | Format converter function library. Converting between markdown, CSV, XML in bulk with GUI.                                                              |
-| 14  | [foo.bar_challange](https://github.com/belongtothenight/foo.bar_challenge)                                 | My personnal foo.bar answers.                                                                                                                           |
-| 15  | [FPGAA_Code](https://github.com/belongtothenight/FPGAA_Code)                                               | Codes for CYCUEE FPGA Application course.                                                                                                               |
-| 16  | [FRCNN_Related_Code](https://github.com/belongtothenight/FRCNN_Related_Code)                               | Multiple different resources and codes helping improving FRCNN development speed.                                                                       |
-| 17  | [IoTP_Code](https://github.com/belongtothenight/IoTP_Code)                                                 | Codes for CYCUEE Internet of Things Practice course. Including Node.js, JS, HTML, CSS, ML, OpenData, BlockChain, Webserver, MCU, Hosting, and Database. |
-| 18  | [IQC_Code](https://github.com/belongtothenight/IQC_Code)                                                   | Codes for CYCUEE Quantum Computing course.                                                                                                              |
-| 19  | [Local-File-Backup](https://github.com/belongtothenight/Local-File-Backup)                                 | A less complex version of backup software. Able to automate backup, archiving, unpacking process.                                                       |
-| 20  | [Minecraft-Scripts](https://github.com/belongtothenight/Minecraft-Scripts)                                 | Scripts used to make Minecraft content creation easier.                                                                                                 |
-| 21  | [NTC_Code](https://github.com/belongtothenight/NTC_Code)                                                   | Codes for CYCUEE Number Theory and Cryptography course. Created a working website demonstrating calculation process of AES.                             |
-| 22  | [PDF_similarity_tester](https://github.com/belongtothenight/PDF_similarity_tester)                         | Automatic batch PDF similarity tester.                                                                                                                  |
-| 23  | [powershell_scripts](https://github.com/belongtothenight/powershell_scripts)                         | Automatic batch PDF similarity tester.                                                                                                                  |
-| 24  | [PRML_Code](https://github.com/belongtothenight/PRML_Code)                                                 | Codes for CYCUEE Pattern Recognition and Machine Learning course.                                                                                       |
-| 25  | [RTDSP_Code](https://github.com/belongtothenight/RTDSP_Code)                                               | Codes for CYCUEE Real-Time Digital Signal Processing course.                                                                                            |
-| 26  | [SMRBS-ESP32](https://github.com/belongtothenight/SMRBS-ESP32)                                             | Smart Meeting Record and Broadcast System implementation.                                                                                               |
-| 27  | [video_processing](https://github.com/belongtothenight/video_processing)                                   | Batch video processing scripted with FFMPEG.                                                                                                            |
-| 28  | [video_similarity_tester](https://github.com/belongtothenight/video_similarity_tester)                     | Automatic batch video similarity tester.                                                                                                                |
-| 29  | [WPD-on-phone](https://github.com/belongtothenight/WPD-on-phone)                                           | App service to process app-sent videos and performs BPM extraction and HRV analysis on locally hosted and tunneled servers.                             |
-| 30  | [YouTube-Video-Statistic-Gathering](https://github.com/belongtothenight/YouTube-Video-Statistic-Gathering) | Read YouTube link from markdown files on the designated local folder, and organize statistics returned from YouTube.                                    |
+| 1   | [ACN_Code](https://github.com/belongtothenight/ACN_Code)                                                   | Code for CYCUEE Advance computer network course.                                                                                                        |
+| 2   | [adventofcode_s909](https://github.com/belongtothenight/adventofcode_s909)                                 | Personal used bash files.                                                                                                                               |
+| 3   | [autotools_init_setup](https://github.com/belongtothenight/autotools_init_setup)                           | C project autotools files.                                                                                                                              |
+| 4   | [bash_scripts](https://github.com/belongtothenight/bash_scripts)                                           | Personal used bash files.                                                                                                                               |
+| 5   | [batch_scripts](https://github.com/belongtothenight/batch_scripts)                                         | Personal used batch files.                                                                                                                              |
+| 6   | [BD_ML_Code](https://github.com/belongtothenight/BD_ML_Code)                                               | Code for CYCUEE Big Data and Machine Learning course.                                                                                                   |
+| 7   | [belongtothenight.github.io](https://github.com/belongtothenight/belongtothenight.github.io)               | This website.                                                                                                                                           |
+| 8   | [CF_Code](https://github.com/belongtothenight/CF_Code)                                                     | Neumerical and Graphical demonstration of CYCUEE Chaos and Fractals course.                                                                             |
+| 9   | [CN_Code](https://github.com/belongtothenight/CN_Code)                                                     | Code for CYCUEE Computer Network course including encryption, DDoS, Ubuntu Server and more.                                                             |
+| 10  | [config-files](https://github.com/belongtothenight/config-files)                                           | Configuration files for my development environment.                                                                                                     |
+| 11  | [CYCU-Grade-Exporter](https://github.com/belongtothenight/CYCU-Grade-Exporter)                             | Web scraper to generate CYCU students grade related data.                                                                                               |
+| 12  | [Davinci-Resolve-Clip-Loader](https://github.com/belongtothenight/Davinci-Resolve-Clip-Loader)             | Davinci Resolve 17 automatic clip loader.                                                                                                               |
+| 13  | [DIP_Code](https://github.com/belongtothenight/DIP_Code)                                                   | Code for CYCUEE Digital Image Processing course.                                                                                                        |
+| 14  | [Drone_Motion_Control](https://github.com/belongtothenight/Drone_Motion_Control)                           | Simulating drone motion control with data generated from repo FRCNN_Related_Code.                                                                       |
+| 15  | [File-Format-Converter](https://github.com/belongtothenight/File-Format-Converter)                         | Format converter function library. Converting between markdown, CSV, XML in bulk with GUI.                                                              |
+| 16  | [foo.bar_challange](https://github.com/belongtothenight/foo.bar_challenge)                                 | My personnal foo.bar answers.                                                                                                                           |
+| 17  | [FPGAA_Code](https://github.com/belongtothenight/FPGAA_Code)                                               | Code for CYCUEE FPGA Application course.                                                                                                                |
+| 18  | [FRCNN_Related_Code](https://github.com/belongtothenight/FRCNN_Related_Code)                               | Multiple different resources and codes helping improving FRCNN development speed.                                                                       |
+| 19  | [fuzzy_ctl_code](https://github.com/belongtothenight/fuzzy_ctl_code)                                       | Code for CYCUEE Fuzzy control course.                                                                                                                   |
+| 20  | [IoTP_Code](https://github.com/belongtothenight/IoTP_Code)                                                 | Code for CYCUEE Internet of Things Practice course. Including Node.js, JS, HTML, CSS, ML, OpenData, BlockChain, Webserver, MCU, Hosting, and Database.  |
+| 21  | [IQC_Code](https://github.com/belongtothenight/IQC_Code)                                                   | Code for CYCUEE Quantum Computing course.                                                                                                               |
+| 22  | [Local-File-Backup](https://github.com/belongtothenight/Local-File-Backup)                                 | A less complex version of backup software. Able to automate backup, archiving, unpacking process.                                                       |
+| 23  | [Minecraft-Scripts](https://github.com/belongtothenight/Minecraft-Scripts)                                 | Scripts used to make Minecraft content creation easier.                                                                                                 |
+| 24  | [NTC_Code](https://github.com/belongtothenight/NTC_Code)                                                   | Code for CYCUEE Number Theory and Cryptography course. Created a working website demonstrating calculation process of AES.                              |
+| 25  | [PDF_similarity_tester](https://github.com/belongtothenight/PDF_similarity_tester)                         | Automatic batch PDF similarity tester.                                                                                                                  |
+| 26  | [powershell_scripts](https://github.com/belongtothenight/powershell_scripts)                               | Automatic batch PDF similarity tester.                                                                                                                  |
+| 27  | [PRML_Code](https://github.com/belongtothenight/PRML_Code)                                                 | Code for CYCUEE Pattern Recognition and Machine Learning course.                                                                                        |
+| 28  | [RTDSP_Code](https://github.com/belongtothenight/RTDSP_Code)                                               | Code for CYCUEE Real-Time Digital Signal Processing course.                                                                                             |
+| 29  | [SMRBS-ESP32](https://github.com/belongtothenight/SMRBS-ESP32)                                             | Smart Meeting Record and Broadcast System implementation.                                                                                               |
+| 30  | [video_processing](https://github.com/belongtothenight/video_processing)                                   | Batch video processing scripted with FFMPEG.                                                                                                            |
+| 31  | [video_similarity_tester](https://github.com/belongtothenight/video_similarity_tester)                     | Automatic batch video similarity tester.                                                                                                                |
+| 32  | [WPD-on-phone](https://github.com/belongtothenight/WPD-on-phone)                                           | App service to process app-sent videos and performs BPM extraction and HRV analysis on locally hosted and tunneled servers.                             |
+| 33  | [YouTube-Video-Statistic-Gathering](https://github.com/belongtothenight/YouTube-Video-Statistic-Gathering) | Read YouTube link from markdown files on the designated local folder, and organize statistics returned from YouTube.                                    |
 
 ## Organization Repositories
 
-I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab). This is a list of repositories opened sourced for now.
+I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab). This is a list of repositories that I have contributed to.
 
 | No. | Name / Link                                                                                      | Description                                                                |
 | --- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
 | 1   | [Microcontroller-Experiment](https://github.com/CYCU-AIoT-System-Lab/Microcontroller-Experiment) | Detail documentation about HT32 Firmware Library examples and experiments. |
+| 2   | Microcontroller-Experiment-Code                                                                  | Closed source.                                                             |
+| 3   | MusicGenreRecognition                                                                            | Closed source.                                                             |
+| 4   | Medical-Waste-Classifier                                                                         | Closed source.                                                             |
+| 5   | TPM_Sharing_Scheme                                                                               | Closed source.                                                             |
 
 ## Academic Research
 
@@ -111,21 +118,8 @@ I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab)
 1. a website keeping record of newest technology and developing history. (tech frontier/advance tree?)
 2. host a database with content: minecraft pics, vids, mods, shaders, textures... language: MySQL, HTML?, JS?
 3. code a minecraft mod for filming, player path/environment logging.
+4. create more how-to websites.
 
-## Acronym
-
-| acronym | fullword                            |
-| ------- | ----------------------------------- |
-| ML      | Machine Learning                    |
-| DL      | Deep Learning                       |
-| BD      | Big Data                            |
-| IoT     | Internet of Things                  |
-| RTDSP   | Real Time Digital Signal Processing |
-| FPGA    | Field Programmable Gate Array       |
-| CN      | Computer Network                    |
-| CF      | Chaos and Fractal                   |
-| QC      | Quantum Computing                   |
-
-Updated Time: 20230402
+Updated Time: 2024-04-08
 
 Check website deployment action stats: <https://github.com/belongtothenight/belongtothenight.github.io/actions>-
