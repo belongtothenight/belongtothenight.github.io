@@ -101,6 +101,7 @@ Indentation is not necessary, but it is recommended for readability.
 4. Format special cases:
     1. Traditional chinese authors' names should be written in the format "Firstname Lastname" with no comma in between, e.g. `author={<firstname1> <lastname1> and <firstname2> <lastname2> and <firstname3> <lastname3>}`
     2. If you want to prevent title or author from being shortened/processed, you can use curly braces to wrap the text, e.g. `title={{This is a long title THAT wON't be FORMATED}}`.
+    3. If your referencing material haven't been published yet or any other situation, you can use `year` field to indicate the year of the material, e.g. `year={in press}`.
 5. Example of final form of your ".bib" file can be found in [my GitHub](https://github.com/belongtothenight/powershell_scripts/blob/main/latex_tex2pdf/report.bib).
 
 ### Step 2 Option 1: Use LaTeX template
