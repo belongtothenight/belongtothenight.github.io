@@ -42,10 +42,11 @@ This is a summary of how-to guides shown down below.
 
 ## Python
 
-| No  | Page                                                  | Update Record |
-| :-: | -----------                                           | :-----------: |
-| 1   | how_to_PYTHON-parse_CLI_input_arguments               | -             |
-| 2   | how_to_PYTHON-multiprocessing_to_parallel_and_speedup | -             |
+| No  | Page                                                                                                              | Update Record |
+| :-: | -----------                                                                                                       | :-----------: |
+| 1   | [how_to_PYTHON-multiprocessing_to_parallel_and_speedup](how_to_PYTHON-multiprocessing_to_parallel_and_speedup.md) | 2024-04-14    |
+| 2   | how_to_PYTHON-parse_CLI_input_arguments                                                                           | -             |
+| 3   | how_to_PYTHON-code_formating_for_developing_experience                                                            | -             |
 
 ## C
 

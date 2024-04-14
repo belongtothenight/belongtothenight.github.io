@@ -1,6 +1,6 @@
 # Open Terminal with CLI
 
-This guid will show you how to open terminal with CLI when you are scripting in desktop environment.
+This guide will show you how to open terminal with CLI when you are scripting in desktop environment.
 
 ## Problem
 

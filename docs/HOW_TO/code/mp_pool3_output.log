@@ -1,0 +1,21 @@
+Time: 1713117240.12 | Process ID: 16284 | working
+Time: 1713117240.12 | Process ID: 16284 | Received: {'status': 'new', 'idx_start': 0, 'idx_end': 1}
+Time: 1713117240.12 | Process ID: 3852 | working
+Time: 1713117240.12 | Process ID: 3852 | Received: {'status': 'new', 'idx_start': 1, 'idx_end': 2}
+Time: 1713117240.12 | Process ID: 16912 | working
+Time: 1713117240.12 | Process ID: 16912 | Received: {'status': 'new', 'idx_start': 2, 'idx_end': 3}
+Time: 1713117240.12 | Process ID: 884 | working
+Time: 1713117240.12 | Process ID: 884 | Received: {'status': 'new', 'idx_start': 3, 'idx_end': 4}
+Time: 1713117241.12 | Process ID: 16284 | Result: 1
+Time: 1713117241.12 | Process ID: 16284 | Received: {'status': 'new', 'idx_start': 4, 'idx_end': 5}
+Time: 1713117241.12 | Process ID: 3852 | Result: 3
+Time: 1713117241.12 | Process ID: 3852 | Received: {'status': 'new', 'idx_start': 5, 'idx_end': 6}
+Time: 1713117241.12 | Process ID: 16912 | Result: 5
+Time: 1713117241.12 | Process ID: 16912 | Received: {'status': 'new', 'idx_start': 6, 'idx_end': 7}
+Time: 1713117241.13 | Process ID: 884 | Result: 7
+Time: 1713117241.13 | Process ID: 884 | Received: {'status': 'new', 'idx_start': 7, 'idx_end': 8}
+Time: 1713117242.12 | Process ID: 16284 | Result: 9
+Time: 1713117242.12 | Process ID: 3852 | Result: 11
+Time: 1713117242.12 | Process ID: 16912 | Result: 13
+Time: 1713117242.13 | Process ID: 884 | Result: 15
+Time: 1713117242.96 | Results: [{'status': 'done', 'idx_start': 0, 'idx_end': 1, 'result': 1}, {'status': 'done', 'idx_start': 1, 'idx_end': 2, 'result': 3}, {'status': 'done', 'idx_start': 2, 'idx_end': 3, 'result': 5}, {'status': 'done', 'idx_start': 3, 'idx_end': 4, 'result': 7}, {'status': 'done', 'idx_start': 4, 'idx_end': 5, 'result': 9}, {'status': 'done', 'idx_start': 5, 'idx_end': 6, 'result': 11}, {'status': 'done', 'idx_start': 6, 'idx_end': 7, 'result': 13}, {'status': 'done', 'idx_start': 7, 'idx_end': 8, 'result': 15}]
