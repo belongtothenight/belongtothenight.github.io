@@ -45,7 +45,7 @@ A example of using **multiprocessing** to speed up network package (pcap) proces
     --8<-- "docs/HOW_TO/code/mp_pool.py"
     ```
     ```bash title="code output"
-    --8<-- "docs/HOW_TO/code/mp_pool_output.log"
+    --8<-- "docs/HOW_TO/log/mp_pool_output.log"
     ```
     This method is useful when you have a list of tasks (more than CPU core count) to run in parallel. The `Pool` class will automatically launch processes when a core is available.
 - Using `multiprocessing.Process`:
@@ -53,7 +53,7 @@ A example of using **multiprocessing** to speed up network package (pcap) proces
     --8<-- "docs/HOW_TO/code/mp_process.py"
     ```
     ```bash title="code output"
-    --8<-- "docs/HOW_TO/code/mp_process_output.log"
+    --8<-- "docs/HOW_TO/log/mp_process_output.log"
     ```
     This method is useful when you want to manually control the number of processes to run in parallel. After each process is created, you can call `process.start()` to start the process and `process.join()` to wait for the process to finish.
 
@@ -71,7 +71,7 @@ For the following example, we will only use `multiprocessing.Pool` method. It is
 --8<-- "docs/HOW_TO/code/mp_pool1.py"
 ```
 ```bash title="code output"
---8<-- "docs/HOW_TO/code/mp_pool1_output.log"
+--8<-- "docs/HOW_TO/log/mp_pool1_output.log"
 ```
 
 - Line `14-15`: Create a list of tuples containing different arguments for the function.
@@ -90,7 +90,7 @@ With this method, child processes can also read and write to the shared memory s
 --8<-- "docs/HOW_TO/code/mp_pool2.py"
 ```
 ```bash title="code output"
---8<-- "docs/HOW_TO/code/mp_pool2_output.log"
+--8<-- "docs/HOW_TO/log/mp_pool2_output.log"
 ```
 
 - Line `15-16`: Use `multiprocessing.Manager().dict()` to create a shared dictionary between the parent and child processes. In this case, child processes write to the dictionary, and the parent process read from the dictionary, this process is bi-directional.
@@ -117,7 +117,7 @@ Before using this, you need to know that a queue is a First-In-First-Out (FIFO) 
 --8<-- "docs/HOW_TO/code/mp_pool3.py"
 ```
 ```bash title="code output"
---8<-- "docs/HOW_TO/code/mp_pool3_output.log"
+--8<-- "docs/HOW_TO/log/mp_pool3_output.log"
 ```
 
 - Line `20-21`: Create a queue to let parent send data to child processes, and another queue to let child processes send data back to the parent.
