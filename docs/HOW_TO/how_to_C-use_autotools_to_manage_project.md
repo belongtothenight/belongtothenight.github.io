@@ -234,9 +234,17 @@ The world of autotools can be a lot more complex than this. However, the followi
 - The entire project to start with can be found in [https://github.com/belongtothenight/autotools_init_setup/tree/main](https://github.com/belongtothenight/autotools_init_setup/tree/main).
 - More complex project based on this can be found in [https://github.com/belongtothenight/ACN_Code/tree/main/hw5_c_trace_analyze](https://github.com/belongtothenight/ACN_Code/tree/main/hw5_c_trace_analyze).
 
+Open-sourced and mature projects managed by autotools:
+
+- [https://github.com/LibtraceTeam/wandio](https://github.com/LibtraceTeam/wandio)
+- [https://github.com/LibtraceTeam/libtrace](https://github.com/LibtraceTeam/libtrace)
+- [https://github.com/kgoldman/ibmtss](https://github.com/kgoldman/ibmtss)
+- [https://github.com/tpm2-software/tpm2-tss](https://github.com/tpm2-software/tpm2-tss)
+
 ## Reference
 
-1. [https://github.com/belongtothenight/autotools_init_setup/](https://github.com/belongtothenight/autotools_init_setup/)
+1. [How to use autotools (automake, autoconf, aclocal, autoheader) by Daniel Persson](https://youtu.be/3XO0d9Qyc34?si=vo2eT0Znm8kdLPgs)
+2. [Introduction to the Autotools, part 1 by David A. Wheeler](https://youtu.be/4q_inV9M_us?si=zBfY6WSWCrLH87ss)
 
 ## Error Correction
 
