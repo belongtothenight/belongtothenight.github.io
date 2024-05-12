@@ -50,6 +50,7 @@ This is a summary of how-to guides shown down below.
 
 ## C
 
-| No  | Page                               | Update Record |
-| :-: | -----------                        | :-----------: |
-| 1   | how_to_C-parse_CLI_input_arguments | -             |
+| No  | Page                                                                                    | Update Record |
+| :-: | -----------                                                                             | :-----------: |
+| 1   | [how_to_C-use_autotools_to_manage_project](how_to_C-use_autotools_to_manage_project.md) | 2024-05-12    |
+| 2   | how_to_C-parse_CLI_input_arguments                                                      | -             |
