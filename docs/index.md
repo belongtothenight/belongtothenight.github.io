@@ -110,8 +110,11 @@ I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab)
 
 ## Academic Research
 
-1. IEEE Xplore: Conference 2023 International Automatic Control Conference (CACS 2023) - [Automatic Visual Effect Adjustment System](https://ieeexplore.ieee.org/document/10326206) (Registered on [EngineeringVillage](https://engineeringvillage.com/))
-2. IEEE Xplore: Conference 2023 IEEE 5th Eurasia Conference on IOT, Communication and Engineering (ECICE 2023) - [Interactive System Based on Millimeter Wave And Wavelet Transform](https://ieeexplore.ieee.org/document/10383034)
+1. [**Conference**] 2023 IEEE International Automatic Control Conference (CACS) - *Automatic Visual Effect Adjustment System* ([IEEE Xplore](https://ieeexplore.ieee.org/document/10326206)/[EngineeringVillage](https://www.engineeringvillage.com/app/doc/?docid=cpx_478c4bbf18caccfe78cM660c1017816545))
+2. [**Conference**] 2023 IEEE 5th Eurasia Conference on IOT, Communication and Engineering (ECICE) - *Interactive System Based on Millimeter Wave And Wavelet Transform* ([IEEE Xplore](https://ieeexplore.ieee.org/document/10383034)/[EngineeringVillage](https://www.engineeringvillage.com/app/doc/?docid=cpx_1804a68318d9f14d7a6M777d10178165153))
+3. [**Journal**] 2023 Sensors and Materials - *Implementation of Interactive System with Milimeter Wave and Wavelet Transform* ([Sensors and Materials](https://sensors.myu-group.co.jp/article.php?ss=4885))
+4. [**Conference**] 2024 IEEE 10th International Conference on Applied System Innovation (ICASI) - *Automatic Classification of Medical Waste* ([IEEE Xplore](https://ieeexplore.ieee.org/document/10547993)/[EngineeringVillage](https://www.engineeringvillage.com/app/doc/?docid=cpx_M29c1e61906db421aeM70f810178165134))
+5. [**Conference**] 2024 IEEE 10th International Conference on Applied System Innovation (ICASI) - *TPM Resource Sharing for Embedded System Network Security* ([IEEE Xplore](https://ieeexplore.ieee.org/document/10547999)/[EngineeringVillage](https://www.engineeringvillage.com/app/doc/?docid=cpx_M29c1e61906db421aeM70e210178165134))
 
 ## Possible Plans
 
@@ -120,6 +123,6 @@ I am a member of [CYCU AIoT System Lab](https://github.com/CYCU-AIoT-System-Lab)
 3. code a minecraft mod for filming, player path/environment logging.
 4. create more how-to websites.
 
-Updated Time: 2024-04-08
+Updated Time: 2024-08-06
 
-Check website deployment action stats: <https://github.com/belongtothenight/belongtothenight.github.io/actions>-
+Check website deployment action stats: <https://github.com/belongtothenight/belongtothenight.github.io/actions>
