@@ -1,0 +1,31 @@
+<map id="E:/GitHub/PRML_Code/src/hw4/lib/plot_iter.c" name="E:/GitHub/PRML_Code/src/hw4/lib/plot_iter.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,5,388,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="52,320,112,347"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,40,171,55,108,80,79,97,52,118,30,143,14,172,9,190,9,208,19,245,39,279,61,307,57,310,34,282,14,247,3,209,4,189,9,170,26,140,49,114,76,93,106,75,170,50,231,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="325,320,388,347"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="329,47,385,130,414,185,435,245,438,259,435,273,419,296,397,313,394,309,415,292,430,271,433,259,430,246,409,187,381,132,325,50"/>
+<area shape="rect" id="Node000004" href="$plot__iter_8h.html" title="Create a gnuplot drawing API for iter.h." alt="" coords="135,96,213,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,51,210,90,207,85,274,46"/>
+<area shape="rect" id="Node000005" href="$config__read_8h.html" title=" " alt="" coords="125,245,223,272"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="300,50,191,233,187,231,296,47"/>
+<area shape="rect" id="Node000008" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines Ref:" alt="" coords="24,171,74,197"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="233,49,178,69,125,98,92,128,67,159,63,156,88,124,122,94,175,65,231,44"/>
+<area shape="rect" id="Node000009" href="$libc_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="496,96,655,123"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="379,46,520,88,518,94,378,51"/>
+<area shape="rect" id="Node000010" href="$random_8h.html" title="Random number generation functions. Ref:" alt="" coords="298,245,421,272"/>
+<area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="319,47,331,95,357,229,352,230,326,97,313,49"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="170,124,115,246,93,306,88,304,110,244,165,122"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="183,122,225,188,255,230,288,270,330,308,326,312,284,274,251,233,220,191,179,125"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="177,123,177,230,171,230,171,123"/>
+<area shape="poly" id="edge11_Node000004_Node000008" title=" " alt="" coords="154,126,85,165,82,160,151,121"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="160,275,111,313,108,308,156,270"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="207,270,311,311,309,316,205,275"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="137,320,211,347"/>
+<area shape="poly" id="edge9_Node000005_Node000006" title=" " alt="" coords="177,273,177,304,171,304,171,273"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="235,320,300,347"/>
+<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="192,270,241,308,238,313,189,275"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="54,197,78,304,73,305,49,198"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="72,196,141,235,138,240,69,200"/>
+<area shape="poly" id="edge18_Node000010_Node000002" title=" " alt="" coords="309,275,128,322,127,317,308,270"/>
+<area shape="poly" id="edge19_Node000010_Node000003" title=" " alt="" coords="362,273,360,304,355,304,356,272"/>
+</map>

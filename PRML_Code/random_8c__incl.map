@@ -1,0 +1,11 @@
+<map id="E:/GitHub/PRML_Code/src/libc/random.c" name="E:/GitHub/PRML_Code/src/libc/random.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,172,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,171,66,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,50,61,72,47,97,40,127,38,156,32,155,35,126,42,95,56,69,73,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="121,171,185,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,47,132,69,146,95,154,126,156,155,151,156,148,127,141,97,128,72,111,50"/>
+<area shape="rect" id="Node000004" href="$random_8h.html" title="Random number generation functions. Ref:" alt="" coords="57,96,132,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,49,97,80,92,80,92,49"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="86,125,57,160,53,157,82,122"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="106,122,135,157,131,160,102,125"/>
+</map>

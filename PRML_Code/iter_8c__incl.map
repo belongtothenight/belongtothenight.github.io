@@ -1,0 +1,26 @@
+<map id="E:/GitHub/PRML_Code/src/hw4/lib/iter.c" name="E:/GitHub/PRML_Code/src/hw4/lib/iter.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="182,5,337,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,245,66,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,51,147,70,111,98,86,129,67,165,44,231,39,229,62,163,81,127,107,94,144,66,186,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="277,245,341,272"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,48,306,230,300,231,261,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="340,171,401,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,47,354,156,350,159,272,50"/>
+<area shape="rect" id="Node000005" href="$iter_8h.html" title="Iterate through points and fine the point closest to the intersection of lines Ref:" alt="" coords="121,96,171,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,51,178,89,175,85,229,46"/>
+<area shape="rect" id="Node000006" href="$config__read_8h.html" title=" " alt="" coords="124,171,222,197"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="250,50,190,158,185,156,246,47"/>
+<area shape="rect" id="Node000009" href="$distance_8h.html" title="Distance calculation functions Ref:" alt="" coords="348,96,478,123"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="300,46,377,86,374,91,298,51"/>
+<area shape="rect" id="Node000010" href="$intersection_8h.html" title="Intersection of two sets." alt="" coords="502,96,649,123"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="338,45,512,89,511,94,337,50"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="139,125,56,234,52,231,135,122"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="153,122,166,155,161,157,148,124"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="150,200,74,240,72,235,148,196"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="198,196,273,235,270,240,195,200"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="90,245,165,272"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="167,199,146,233,141,231,163,196"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="189,245,253,272"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="183,196,206,231,202,234,179,199"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="408,125,387,159,383,156,403,122"/>
+</map>

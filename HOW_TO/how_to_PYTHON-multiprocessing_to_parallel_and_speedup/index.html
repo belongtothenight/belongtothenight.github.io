@@ -1,0 +1,1403 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://belongtothenight.github.io/HOW_TO/how_to_PYTHON-multiprocessing_to_parallel_and_speedup/">
+      
+      
+        <link rel="prev" href="../how_to_PAPER-create_standard_reference_with_bibtex/">
+      
+      
+        <link rel="next" href="../how_to_WEBSITE-create_documentation_website_with_mkdocs/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Multiprocessing to Parrallel and Speed Up - belongtothenight Homepage</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 2H4c-1.1 0-2 .9-2 2v16a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V4a2 2 0 0 0-2-2m0 18H4V4h2v8l2.5-2.25L11 12V4h5v16m4-5h2v2h-2v-2m2-8v6h-2V7h2Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#multiprocessing-to-parrallel-and-speed-up" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="belongtothenight Homepage" class="md-header__button md-logo" aria-label="belongtothenight Homepage" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            belongtothenight Homepage
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Multiprocessing to Parrallel and Speed Up
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome to belongtothenight docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  HOW TO
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../DIP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  DIP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../FPGA_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  FPGA Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../IoTP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  IoTP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../NTC_Code_Report/" class="md-tabs__link">
+        
+  
+    
+  
+  NTC Code Report
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PRML_Code_Docs/" class="md-tabs__link">
+        
+  
+    
+  
+  PRML Code Docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RTDSP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  RTDSP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="belongtothenight Homepage" class="md-nav__button md-logo" aria-label="belongtothenight Homepage" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    belongtothenight Homepage
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to belongtothenight docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    HOW TO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            HOW TO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_BASH-open_terminal_with_CLI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Terminal with CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_C-use_autotools_to_manage_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Autotools to Manage Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_LINUX-auto_launch_program_on_boot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Launch Program on Boot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_PAPER-create_standard_reference_with_bibtex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Standard Reference with BibTeX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Multiprocessing to Parrallel and Speed Up
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Multiprocessing to Parrallel and Speed Up
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-make-sure-to-have-sufficent-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Make Sure to have Sufficent Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-use-the-multiprocessing-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Use the multiprocessing Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-send-parent-process-data-to-child-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Send Parent Process Data to Child Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-return-child-process-data-to-parent-process-with-multiprocessingmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Return Child Process Data to Parent Process with multiprocessing.Manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-share-data-between-parent-and-child-processes-with-multiprocessingqueue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Share Data Between Parent and Child Processes with multiprocessing.Queue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Correction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_WEBSITE-create_documentation_website_with_mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Documentation Website with MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DIP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DIP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FPGA_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FPGA Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IoTP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IoTP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NTC_Code_Report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NTC Code Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PRML_Code_Docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PRML Code Docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTDSP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTDSP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="multiprocessing-to-parrallel-and-speed-up">Multiprocessing to Parrallel and Speed Up</h1>
+<p>This guide will show you how to enable multiprocessing to speed up your Python program.</p>
+<h2 id="problem">Problem</h2>
+<p>You have a Python program that takes a long time to run and is performing CPU-bound (math, data processing, etc.), none I/O-bound (network, disk, etc.) tasks. You want to speed up the program by making it work in parallel.</p>
+<h2 id="background">Background</h2>
+<p>Note:</p>
+<ol>
+<li>Not all libraries support multiprocessing.</li>
+<li>This guide assumes you are familiar with Python and have a basic understanding of CPU and memory usage.</li>
+<li>Tasks that are CPU-bound can be sped up by this.</li>
+<li>Tasks that are I/O-bound can be sped up by using threading.</li>
+<li>Tasks are independent of each other. (next task does not depend on the previous task's result)</li>
+</ol>
+<p>The idea of <strong>multi-processing</strong> is to use multiple CPU-cores (1 core per process) to run multiple independent tasks at the same time. This is different from <strong>multi-threading</strong>, which uses multiple threads (1 core multiple tasks) to share CPU resources when independent tasks take a lot of time waiting for external triggers (network request, GPIO input, time) by idling.</p>
+<p>Each newly created processes will have its own memory space without sharing memory with the parent process. Therefore, data sharing between processes and the parent process is not as easy as sharing data between threads. Methods like spawning with input argument, and <code>multiprocessing.Queue</code> can be used.</p>
+<p>A example of using <strong>multiprocessing</strong> to speed up network package (pcap) processing can be found <a href="https://github.com/belongtothenight/ACN_Code/blob/main/hw1_traffic_pcap_parser/execute.py">in my GitHub</a>.</p>
+<h2 id="solution">Solution</h2>
+<h3 id="step-1-make-sure-to-have-sufficent-resources">Step 1: Make Sure to have Sufficent Resources</h3>
+<ol>
+<li>CPU: The more cores you have, the more tasks you can run in parallel.<ul>
+<li>If you are using Windows, you can check Task Manager to see how many cores you have.</li>
+<li>If you are using Linux, you can use tools like <code>htop</code>, <code>top</code>, or <code>echo $(nproc)</code> to see how many cores you have.</li>
+<li>If you want to check with Python code, you can use the following code:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">())</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>Memory: Make sure you have enough memory to run multiple tasks at the same time. You can approximate the memory usage by multiplying the memory usage of one task by the number of tasks you want to run in parallel.<ul>
+<li>If you are using Windows, you can check Task Manager to see how much memory you have.</li>
+<li>If you are using Linux, you can use tools like <code>htop</code>, <code>top</code>, or <code>free -h</code> to see how much memory you have.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-use-the-multiprocessing-library">Step 2: Use the <code>multiprocessing</code> Library</h3>
+<ul>
+<li>Using <code>multiprocessing.Pool</code>:
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">def</span> <span class="nf">new_process</span><span class="p">(</span><span class="n">required_iterable_item</span><span class="p">):</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Process ID: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Process Name: </span><span class="si">{</span><span class="n">mp</span><span class="o">.</span><span class="n">current_process</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="n">mp</span><span class="o">.</span><span class="n">freeze_support</span><span class="p">()</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>    <span class="n">cpu_count</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#os.cpu_count()</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll">    <span class="k">with</span> <span class="n">mp</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
+</span><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll">        <span class="n">p</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">new_process</span><span class="p">,</span> <span class="n">iterable</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+    <div class="highlight"><span class="filename">code output</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Time:<span class="w"> </span><span class="m">1713118619</span>.71<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16624</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>SpawnPoolWorker-1
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Time:<span class="w"> </span><span class="m">1713118619</span>.71<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">12120</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>SpawnPoolWorker-2
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Time:<span class="w"> </span><span class="m">1713118619</span>.71<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">7640</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>SpawnPoolWorker-3
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Time:<span class="w"> </span><span class="m">1713118619</span>.72<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">4232</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>SpawnPoolWorker-4
+</code></pre></div>
+    This method is useful when you have a list of tasks (more than CPU core count) to run in parallel. The <code>Pool</code> class will automatically launch processes when a core is available.</li>
+<li>Using <code>multiprocessing.Process</code>:
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">def</span> <span class="nf">new_process</span><span class="p">(</span><span class="n">process_id</span><span class="p">):</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Process ID: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Process Name: </span><span class="si">{</span><span class="n">mp</span><span class="o">.</span><span class="n">current_process</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="n">mp</span><span class="o">.</span><span class="n">freeze_support</span><span class="p">()</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="n">cpu_count</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#os.cpu_count()</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">):</span>
+</span><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="hll">        <span class="n">p</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">new_process</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,))</span>
+</span><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="hll">        <span class="n">p</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> <span class="c1"># Control when the process starts</span>
+</span><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="hll">        <span class="c1"># p.join() # Halts the main process until the child process is done</span>
+</span></code></pre></div></td></tr></table></div>
+    <div class="highlight"><span class="filename">code output</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Time:<span class="w"> </span><span class="m">1713118698</span>.65<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">8864</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>Process-1
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Time:<span class="w"> </span><span class="m">1713118698</span>.66<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">17096</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>Process-2
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Time:<span class="w"> </span><span class="m">1713118698</span>.66<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">5608</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>Process-3
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Time:<span class="w"> </span><span class="m">1713118698</span>.66<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">10104</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>Name:<span class="w"> </span>Process-4
+</code></pre></div>
+    This method is useful when you want to manually control the number of processes to run in parallel. After each process is created, you can call <code>process.start()</code> to start the process and <code>process.join()</code> to wait for the process to finish.</li>
+</ul>
+<p>Note:</p>
+<ol>
+<li><code>if __name__ == '__main__':</code> in line <code>8</code> is required to prevent infinite recursion when creating new processes. This is because the new processes will import the main module again, and the <code>if __name__ == '__main__':</code> block will prevent the new processes from running the code inside the block.</li>
+<li><code>multiprocessing.freeze_support()</code> in line <code>9</code> is recommended to be called after the <code>if __name__ == '__main__':</code> block to allow the program.</li>
+<li>Format whatever process you want to run into a function for both methods. In this case, <code>new_process</code> in line <code>4</code> is the function that runs in parallel, can you can see they all stops at the same time instead of executing linearly.</li>
+</ol>
+<h3 id="step-3-send-parent-process-data-to-child-process">Step 3: Send Parent Process Data to Child Process</h3>
+<p>For the following example, we will only use <code>multiprocessing.Pool</code> method. It is interchangable with <code>multiprocessing.Process</code> method.</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="hll"><span class="k">def</span> <span class="nf">new_process</span><span class="p">(</span><span class="n">input_data</span><span class="p">):</span>
+</span><a id="__codelineno-5-5" name="__codelineno-5-5"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="hll">    <span class="n">idx_start</span><span class="p">,</span> <span class="n">idx_end</span> <span class="o">=</span> <span class="n">input_data</span>
+</span><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Start: </span><span class="si">{</span><span class="n">idx_start</span><span class="si">}</span><span class="s2"> | End: </span><span class="si">{</span><span class="n">idx_end</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>    <span class="n">mp</span><span class="o">.</span><span class="n">freeze_support</span><span class="p">()</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>    <span class="n">cpu_count</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#os.cpu_count()</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a>    <span class="c1"># Create a list of input data</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="hll">    <span class="n">increment</span> <span class="o">=</span> <span class="mi">1</span>
+</span><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="hll">    <span class="n">input_data</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="o">*</span><span class="n">increment</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">increment</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">)]</span>
+</span><a id="__codelineno-5-16" name="__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a>    <span class="k">with</span> <span class="n">mp</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="hll">        <span class="n">p</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">new_process</span><span class="p">,</span> <span class="n">iterable</span><span class="o">=</span><span class="n">input_data</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">code output</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Time:<span class="w"> </span><span class="m">1713111614</span>.02<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Time:<span class="w"> </span><span class="m">1713111614</span>.02<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Time:<span class="w"> </span><span class="m">1713111614</span>.02<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>Time:<span class="w"> </span><span class="m">1713111614</span>.02<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">4</span>
+</code></pre></div></p>
+<ul>
+<li>Line <code>14-15</code>: Create a list of tuples containing different arguments for the function.</li>
+<li>Line <code>18</code>: Spawn a pool of processes with independent input arguments.</li>
+<li>Line <code>6</code>: Unpack the tuple to retrieve the arguments.</li>
+</ul>
+<p>You can see from the output that the parent process sends different arguments to the child process, and the child process receives the arguments correctly and prints them out.</p>
+<h3 id="step-4-return-child-process-data-to-parent-process-with-multiprocessingmanager">Step 4: Return Child Process Data to Parent Process with <code>multiprocessing.Manager</code></h3>
+<p>For the following example, we will only use <code>multiprocessing.Pool</code> method and use <code>multiprocessing.Manager().dict()</code> to create a shared memory space between the parent and child processes.</p>
+<p>With this method, child processes can also read and write to the shared memory space, which is useful when different child processes are responsible for different tasks and need to share data with themselves.</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span>
+<span class="normal"><a href="#__codelineno-7-18">18</a></span>
+<span class="normal"><a href="#__codelineno-7-19">19</a></span>
+<span class="normal"><a href="#__codelineno-7-20">20</a></span>
+<span class="normal"><a href="#__codelineno-7-21">21</a></span>
+<span class="normal"><a href="#__codelineno-7-22">22</a></span>
+<span class="normal"><a href="#__codelineno-7-23">23</a></span>
+<span class="normal"><a href="#__codelineno-7-24">24</a></span>
+<span class="normal"><a href="#__codelineno-7-25">25</a></span>
+<span class="normal"><a href="#__codelineno-7-26">26</a></span>
+<span class="normal"><a href="#__codelineno-7-27">27</a></span>
+<span class="normal"><a href="#__codelineno-7-28">28</a></span>
+<span class="normal"><a href="#__codelineno-7-29">29</a></span>
+<span class="normal"><a href="#__codelineno-7-30">30</a></span>
+<span class="normal"><a href="#__codelineno-7-31">31</a></span>
+<span class="normal"><a href="#__codelineno-7-32">32</a></span>
+<span class="normal"><a href="#__codelineno-7-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="kn">import</span> <span class="nn">collections</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="k">def</span> <span class="nf">new_process</span><span class="p">(</span><span class="n">input_data</span><span class="p">):</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a>    <span class="n">idx_start</span><span class="p">,</span> <span class="n">idx_end</span><span class="p">,</span> <span class="n">return_dict</span> <span class="o">=</span> <span class="n">input_data</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="hll">    <span class="n">calculation_result</span> <span class="o">=</span> <span class="n">idx_start</span> <span class="o">+</span> <span class="n">idx_end</span>
+</span><a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Start: </span><span class="si">{</span><span class="n">idx_start</span><span class="si">}</span><span class="s2"> | End: </span><span class="si">{</span><span class="n">idx_end</span><span class="si">}</span><span class="s2"> | Result: </span><span class="si">{</span><span class="n">calculation_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="hll">    <span class="n">return_dict</span><span class="p">[</span><span class="n">idx_start</span><span class="p">]</span> <span class="o">=</span> <span class="n">calculation_result</span>
+</span><a id="__codelineno-7-11" name="__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>    <span class="n">mp</span><span class="o">.</span><span class="n">freeze_support</span><span class="p">()</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a>    <span class="n">cpu_count</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#os.cpu_count()</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="hll">    <span class="n">manager</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">Manager</span><span class="p">()</span>
+</span><a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="hll">    <span class="n">return_dict</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
+</span><a id="__codelineno-7-17" name="__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a>    <span class="c1"># Create a list of input data</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a>    <span class="n">increment</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="hll">    <span class="n">input_data</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="o">*</span><span class="n">increment</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">increment</span><span class="p">,</span> <span class="n">return_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">)]</span>
+</span><a id="__codelineno-7-21" name="__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a>    <span class="k">with</span> <span class="n">mp</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23"></a>        <span class="n">p</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">new_process</span><span class="p">,</span> <span class="n">iterable</span><span class="o">=</span><span class="n">input_data</span><span class="p">)</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Return Dict: </span><span class="si">{</span><span class="n">return_dict</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><a id="__codelineno-7-25" name="__codelineno-7-25"></a>
+<a id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="hll">    <span class="n">return_dict</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">OrderedDict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">return_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+</span><a id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ordered Dict: </span><span class="si">{</span><span class="n">return_dict</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><a id="__codelineno-7-28" name="__codelineno-7-28"></a>
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="hll">    <span class="n">final_arr</span> <span class="o">=</span> <span class="p">[]</span>
+</span><a id="__codelineno-7-30" name="__codelineno-7-30"></a><span class="hll">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">return_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><a id="__codelineno-7-31" name="__codelineno-7-31"></a><span class="hll">        <span class="c1">#print(f&quot;Key: {key} / Value: {value}&quot;)</span>
+</span><a id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="hll">        <span class="n">final_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span><a id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Final Array: </span><span class="si">{</span><span class="n">final_arr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">code output</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Time:<span class="w"> </span><span class="m">1713112527</span>.44<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Time:<span class="w"> </span><span class="m">1713112527</span>.44<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Time:<span class="w"> </span><span class="m">1713112527</span>.44<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>Time:<span class="w"> </span><span class="m">1713112527</span>.44<span class="w"> </span><span class="p">|</span><span class="w"> </span>Start:<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>End:<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">7</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>Return<span class="w"> </span>Dict:<span class="w"> </span><span class="o">{</span><span class="m">1</span>:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">0</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>:<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">3</span>:<span class="w"> </span><span class="m">7</span><span class="o">}</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>Ordered<span class="w"> </span>Dict:<span class="w"> </span>OrderedDict<span class="o">({</span><span class="m">0</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">1</span>:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">2</span>:<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">3</span>:<span class="w"> </span><span class="m">7</span><span class="o">})</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>Final<span class="w"> </span>Array:<span class="w"> </span><span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>
+</code></pre></div></p>
+<ul>
+<li>Line <code>15-16</code>: Use <code>multiprocessing.Manager().dict()</code> to create a shared dictionary between the parent and child processes. In this case, child processes write to the dictionary, and the parent process read from the dictionary, this process is bi-directional.</li>
+<li>Line <code>20</code>: Add the shared dictionary to the input arguments.</li>
+<li>Line <code>8</code>: Perform some kind of operation in the child process.</li>
+<li>Line <code>10</code>: Write the result to the shared dictionary with <code>idx_start</code> as the key. This helps to keep track of the order of the results.</li>
+<li>Line <code>24</code>: Read the shared dictionary populated by the child processes.</li>
+<li>Line <code>26-27</code>: Order the dictionary by key and print the result, since child processes write to the dictionary once they finish, the order of the dictionary is not guaranteed. Depending on your use case, this step is optional.</li>
+<li>Line <code>29-33</code>: Retrieve data from shared dictionary as a list and print the result.</li>
+</ul>
+<h3 id="step-5-share-data-between-parent-and-child-processes-with-multiprocessingqueue">Step 5: Share Data Between Parent and Child Processes with <code>multiprocessing.Queue</code></h3>
+<p>For the following example, we will only use <code>multiprocessing.Pool</code> method and use <code>multiprocessing.Queue()</code> to create a shared memory space between the parent and child processes.</p>
+<p>With this method, child processes can also read and write to the shared memory space, which is useful when different child processes are responsible for different tasks and need to share data with themselves.</p>
+<p>Before using this, you need to know that a queue is a First-In-First-Out (FIFO) data structure, which means that the first element added to the queue will be the first element removed from the queue. Following are the common method for queue</p>
+<ul>
+<li><code>put()</code>: Add an item to the queue. (at the end, last one to be removed)</li>
+<li><code>get()</code>: Remove and return an item from the queue. (from the front, the oldest one)</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span>
+<span class="normal"><a href="#__codelineno-9-25">25</a></span>
+<span class="normal"><a href="#__codelineno-9-26">26</a></span>
+<span class="normal"><a href="#__codelineno-9-27">27</a></span>
+<span class="normal"><a href="#__codelineno-9-28">28</a></span>
+<span class="normal"><a href="#__codelineno-9-29">29</a></span>
+<span class="normal"><a href="#__codelineno-9-30">30</a></span>
+<span class="normal"><a href="#__codelineno-9-31">31</a></span>
+<span class="normal"><a href="#__codelineno-9-32">32</a></span>
+<span class="normal"><a href="#__codelineno-9-33">33</a></span>
+<span class="normal"><a href="#__codelineno-9-34">34</a></span>
+<span class="normal"><a href="#__codelineno-9-35">35</a></span>
+<span class="normal"><a href="#__codelineno-9-36">36</a></span>
+<span class="normal"><a href="#__codelineno-9-37">37</a></span>
+<span class="normal"><a href="#__codelineno-9-38">38</a></span>
+<span class="normal"><a href="#__codelineno-9-39">39</a></span>
+<span class="normal"><a href="#__codelineno-9-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="k">def</span> <span class="nf">worker_main</span><span class="p">(</span><span class="n">input_queue</span><span class="p">,</span> <span class="n">output_queue</span><span class="p">):</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Process ID: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span><span class="si">}</span><span class="s2"> | working&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="hll">        <span class="n">item</span> <span class="o">=</span> <span class="n">input_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span><a id="__codelineno-9-9" name="__codelineno-9-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Process ID: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Received: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># simulate a &quot;long&quot; operation</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a>        <span class="n">calculation_result</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;idx_start&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;idx_end&quot;</span><span class="p">]</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a>        <span class="n">item</span><span class="p">[</span><span class="s2">&quot;result&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">calculation_result</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a>        <span class="n">item</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;done&quot;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="hll">        <span class="n">output_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span><a id="__codelineno-9-15" name="__codelineno-9-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Process ID: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Result: </span><span class="si">{</span><span class="n">calculation_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a>
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18"></a>    <span class="n">mp</span><span class="o">.</span><span class="n">freeze_support</span><span class="p">()</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19"></a>    <span class="n">cpu_count</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#os.cpu_count()</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="hll">    <span class="n">input_queue</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+</span><a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="hll">    <span class="n">output_queue</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+</span><a id="__codelineno-9-22" name="__codelineno-9-22"></a>
+<a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="hll">    <span class="n">the_pool</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">,</span> <span class="n">initializer</span><span class="o">=</span><span class="n">worker_main</span><span class="p">,</span> <span class="n">initargs</span><span class="o">=</span><span class="p">(</span><span class="n">input_queue</span><span class="p">,</span> <span class="n">output_queue</span><span class="p">))</span>
+</span><a id="__codelineno-9-24" name="__codelineno-9-24"></a>
+<a id="__codelineno-9-25" name="__codelineno-9-25"></a>    <span class="n">increment</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cpu_count</span><span class="o">*</span><span class="mi">2</span><span class="p">):</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27"></a>        <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28"></a>        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;new&quot;</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29"></a>        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;idx_start&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30"></a>        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;idx_end&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">increment</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31"></a><span class="hll">        <span class="n">input_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><a id="__codelineno-9-32" name="__codelineno-9-32"></a>
+<a id="__codelineno-9-33" name="__codelineno-9-33"></a><span class="hll">    <span class="k">while</span> <span class="p">(</span><span class="n">output_queue</span><span class="o">.</span><span class="n">qsize</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">cpu_count</span><span class="o">*</span><span class="mi">2</span><span class="p">):</span>
+</span><a id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="hll">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><a id="__codelineno-9-35" name="__codelineno-9-35"></a>
+<a id="__codelineno-9-36" name="__codelineno-9-36"></a><span class="hll">    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+</span><a id="__codelineno-9-37" name="__codelineno-9-37"></a><span class="hll">    <span class="k">while</span> <span class="ow">not</span> <span class="n">output_queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+</span><a id="__codelineno-9-38" name="__codelineno-9-38"></a><span class="hll">        <span class="n">item</span> <span class="o">=</span> <span class="n">output_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span><a id="__codelineno-9-39" name="__codelineno-9-39"></a><span class="hll">        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span><a id="__codelineno-9-40" name="__codelineno-9-40"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> | Results: </span><span class="si">{</span><span class="n">results</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">code output</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16284</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>working
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16284</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">3852</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>working
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">3852</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">2</span><span class="o">}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16912</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>working
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16912</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">3</span><span class="o">}</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">884</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>working
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>Time:<span class="w"> </span><span class="m">1713117240</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">884</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">4</span><span class="o">}</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16284</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16284</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">5</span><span class="o">}</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">3852</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">3852</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">6</span><span class="o">}</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16912</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16912</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">7</span><span class="o">}</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.13<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">884</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">7</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>Time:<span class="w"> </span><span class="m">1713117241</span>.13<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">884</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Received:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;new&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">8</span><span class="o">}</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>Time:<span class="w"> </span><span class="m">1713117242</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16284</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">9</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>Time:<span class="w"> </span><span class="m">1713117242</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">3852</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">11</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>Time:<span class="w"> </span><span class="m">1713117242</span>.12<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">16912</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">13</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>Time:<span class="w"> </span><span class="m">1713117242</span>.13<span class="w"> </span><span class="p">|</span><span class="w"> </span>Process<span class="w"> </span>ID:<span class="w"> </span><span class="m">884</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Result:<span class="w"> </span><span class="m">15</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>Time:<span class="w"> </span><span class="m">1713117242</span>.96<span class="w"> </span><span class="p">|</span><span class="w"> </span>Results:<span class="w"> </span><span class="o">[{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">3</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">5</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">7</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">9</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">11</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">13</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;done&#39;</span>,<span class="w"> </span><span class="s1">&#39;idx_start&#39;</span>:<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="s1">&#39;idx_end&#39;</span>:<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="m">15</span><span class="o">}]</span>
+</code></pre></div></p>
+<ul>
+<li>Line <code>20-21</code>: Create a queue to let parent send data to child processes, and another queue to let child processes send data back to the parent.</li>
+<li>Line <code>23</code>: Spawn a pool of processes and expose the queues to the child processes. Note that these processes will be reused for different tasks.</li>
+<li>Line <code>31</code>: Put the data into the queue to send to the child processes. The data can be any Python object, I use a dictionary for this example.</li>
+<li>Line <code>8</code>: While the queue is not empty, get the data from the queue.</li>
+<li>Line <code>14</code>: After processing the data, put the result into another queue to send back to the parent process.</li>
+<li>Line <code>33-34</code>: Wait for all child processes to finish. Note that these processes are not terminated, and will execute till the end of the program. You can terminate them if you want.</li>
+<li>Line <code>36-39</code>: Get the result from the queue.</li>
+</ul>
+<p>This method is useful when each child process requires relaively small amount of time to process or you do not have sufficient memory to store several copies of the data. Each child process will live until all data is processed and dynamically accepts new tasks passed by parent process.</p>
+<h2 id="reference">Reference</h2>
+<ol>
+<li><a href="https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing">https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing</a></li>
+<li><a href="https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool">https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool</a></li>
+<li><a href="https://docs.python.org/3/library/queue.html">https://docs.python.org/3/library/queue.html</a></li>
+<li><a href="https://stackoverflow.com/questions/44660676/python-using-multiprocessing">https://stackoverflow.com/questions/44660676/python-using-multiprocessing</a></li>
+<li><a href="https://stackoverflow.com/questions/17241663/filling-a-queue-and-managing-multiprocessing-in-python">https://stackoverflow.com/questions/17241663/filling-a-queue-and-managing-multiprocessing-in-python</a></li>
+<li><a href="https://stackoverflow.com/questions/11515944/how-to-use-multiprocessing-queue-in-python">https://stackoverflow.com/questions/11515944/how-to-use-multiprocessing-queue-in-python</a></li>
+<li><a href="https://stackoverflow.com/questions/1540822/dumping-a-multiprocessing-queue-into-a-list">https://stackoverflow.com/questions/1540822/dumping-a-multiprocessing-queue-into-a-list</a></li>
+</ol>
+<h2 id="error-correction">Error Correction</h2>
+<p>If you find any mistakes in the document, please create an <a href="https://github.com/belongtothenight/belongtothenight.github.io/issues">Issue</a> or a <a href="https://github.com/belongtothenight/belongtothenight.github.io/pulls">Pull request</a> or leave a message in <a href="https://github.com/belongtothenight/belongtothenight.github.io/discussions">Discussions</a> or send me a mail directly with the mail icon at the bottom right. Thank you!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../how_to_PAPER-create_standard_reference_with_bibtex/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Standard Reference with BibTeX">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Create Standard Reference with BibTeX
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../how_to_WEBSITE-create_documentation_website_with_mkdocs/" class="md-footer__link md-footer__link--next" aria-label="Next: Create Documentation Website with MkDocs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Create Documentation Website with MkDocs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/belongtothenight"  target="_blank" rel="noopener">Dachuan Chen</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/belongtothenight" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/da-chuan-chen-2b5752251/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:dachuan516@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

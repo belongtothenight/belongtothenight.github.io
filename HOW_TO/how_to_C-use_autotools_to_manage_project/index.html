@@ -1,0 +1,1383 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://belongtothenight.github.io/HOW_TO/how_to_C-use_autotools_to_manage_project/">
+      
+      
+        <link rel="prev" href="../how_to_BASH-open_terminal_with_CLI/">
+      
+      
+        <link rel="next" href="../how_to_LINUX-auto_launch_program_on_boot/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Use Autotools to Manage Project - belongtothenight Homepage</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 2H4c-1.1 0-2 .9-2 2v16a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V4a2 2 0 0 0-2-2m0 18H4V4h2v8l2.5-2.25L11 12V4h5v16m4-5h2v2h-2v-2m2-8v6h-2V7h2Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#use-autotools-to-manage-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="belongtothenight Homepage" class="md-header__button md-logo" aria-label="belongtothenight Homepage" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            belongtothenight Homepage
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Use Autotools to Manage Project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome to belongtothenight docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  HOW TO
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../DIP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  DIP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../FPGA_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  FPGA Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../IoTP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  IoTP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../NTC_Code_Report/" class="md-tabs__link">
+        
+  
+    
+  
+  NTC Code Report
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PRML_Code_Docs/" class="md-tabs__link">
+        
+  
+    
+  
+  PRML Code Docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RTDSP_Code_Reports/" class="md-tabs__link">
+        
+  
+    
+  
+  RTDSP Code Reports
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="belongtothenight Homepage" class="md-nav__button md-logo" aria-label="belongtothenight Homepage" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    belongtothenight Homepage
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to belongtothenight docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    HOW TO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            HOW TO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_BASH-open_terminal_with_CLI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Terminal with CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Use Autotools to Manage Project
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Use Autotools to Manage Project
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Install Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Create Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-write-configureac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Write configure.ac
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-write-makefileam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Write Makefile.am
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-write-srcmakefileam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Write ./src/Makefile.am
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-build-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Build Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Correction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_LINUX-auto_launch_program_on_boot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Launch Program on Boot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_PAPER-create_standard_reference_with_bibtex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Standard Reference with BibTeX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_PYTHON-multiprocessing_to_parallel_and_speedup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiprocessing to Parrallel and Speed Up
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_WEBSITE-create_documentation_website_with_mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Documentation Website with MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DIP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DIP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FPGA_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FPGA Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IoTP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IoTP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NTC_Code_Report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NTC Code Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PRML_Code_Docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PRML Code Docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTDSP_Code_Reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTDSP Code Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="use-autotools-to-manage-project">Use Autotools to Manage Project</h1>
+<p>This guide will show you how to use <a href="https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html">Autotools</a> to create makefiles and manage your project.</p>
+<h2 id="problem">Problem</h2>
+<p>When developing C or C++(CXX) projects, often times it is necessary to worry about how the program is built, how to support the same code base for different platforms and OS, how to make sure all the requirements and dependencies are met, and how everything is installed.</p>
+<h2 id="background">Background</h2>
+<p>Compilers like <a href="https://gcc.gnu.org/">GCC</a>, <a href="https://directory.fsf.org/wiki/G%2B%2B">G++</a>, <a href="https://clang.llvm.org/">clang</a> are used to compile C and C++ code. However, when multiple files presents in a project, it can be troublesome to type in all of the files and flags for each and every files. With the help of <a href="https://www.gnu.org/software/make/">Make</a>, developers can code up how project should be compiled, enabling more stable reproducibility. Most personal project should only requires this level of scripting to manage the entire code base. If on the other hand, you have more requirements like what I mentioned in the <a href="#problem">Problem</a> section, tools like <a href="https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html">Autotools</a> and <a href="https://cmake.org/">CMake</a> can greatly help with managing complex project and achieve even more stable reproducibility.</p>
+<h2 id="solution">Solution</h2>
+<h3 id="step-1-install-requirements">Step 1: Install Requirements</h3>
+<p>Install git, make, libtool, and automake.</p>
+<div class="highlight"><span class="filename">Debian OS</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>git<span class="w"> </span>make<span class="w"> </span>libtool<span class="w"> </span>automake
+</code></pre></div>
+<p>If newer versions are needed, you can install them from source.</p>
+<h3 id="step-2-create-project">Step 2: Create Project</h3>
+<p>Create a new project directory like the following. It is recommended to use git to perform version control along side with the project.</p>
+<div class="highlight"><span class="filename">Debian OS</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├──<span class="w"> </span>.gitignore
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├──<span class="w"> </span>Makefile.am
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├──<span class="w"> </span>configure.ac
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>├──<span class="w"> </span>m4
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│<span class="w">   </span>└──<span class="w"> </span>.keepdir
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>├──<span class="w"> </span>readme.md
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>└──<span class="w"> </span>src
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span>├──<span class="w"> </span>Makefile.am
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span>├──<span class="w"> </span>lib.c
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span>├──<span class="w"> </span>lib.h
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span>└──<span class="w"> </span>main.c
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="m">2</span><span class="w"> </span>directories,<span class="w"> </span><span class="m">9</span><span class="w"> </span>files
+</code></pre></div>
+<p>One <code>configure.ac</code> and <code>Makefile.am</code> file is required at the root of the project. The <code>./configure.ac</code> file is responsible for finding required dependencies and generating <code>./configure</code> script, which generate makefiles for this project. <code>./Makefile.am</code> file is responsible for setting up project structure, sort of like <code>Makefile</code>. Each subdirectory containing source code requires coreesponding Makefile.am like <code>./src/Makefile.am</code>. <code>./m4</code> directory is responsible to handle generated intermediate auxiliary files.</p>
+<h3 id="step-3-write-configureac">Step 3: Write <code>configure.ac</code></h3>
+<p>Following is a sample of <code>configure.ac</code> file. You can modify it to fit your project.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">configure.ac</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span>
+<span class="normal"><a href="#__codelineno-2-28">28</a></span>
+<span class="normal"><a href="#__codelineno-2-29">29</a></span>
+<span class="normal"><a href="#__codelineno-2-30">30</a></span>
+<span class="normal"><a href="#__codelineno-2-31">31</a></span>
+<span class="normal"><a href="#__codelineno-2-32">32</a></span>
+<span class="normal"><a href="#__codelineno-2-33">33</a></span>
+<span class="normal"><a href="#__codelineno-2-34">34</a></span>
+<span class="normal"><a href="#__codelineno-2-35">35</a></span>
+<span class="normal"><a href="#__codelineno-2-36">36</a></span>
+<span class="normal"><a href="#__codelineno-2-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>AC_PREREQ([2.71])
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>AC_INIT([hello], [0.0.1], [dachuan516@gmail.com])
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>AC_CONFIG_AUX_DIR([build-aux])
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects]) # Display all errors, treat warning as error, following minimum GNU policy, enable automake to look into subdirectories
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>AC_CONFIG_SRCDIR([src])
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>AC_CONFIG_HEADERS([config.h])
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>AC_CONFIG_MACRO_DIR([m4])
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>AM_PROG_AR
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a># Checks for programs.
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>AC_PROG_CC
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>LT_INIT([disable-static])
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a># Checks for libraries.
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a># Checks for header files.
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a>AC_CHECK_HEADERS([arpa/inet.h stdio.h stdlib.h string.h unistd.h])
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a># Checks for typedefs, structures, and compiler characteristics.
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>AC_TYPE_SIZE_T
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>AC_TYPE_INT8_T
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a>AC_TYPE_INT16_T
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a>AC_TYPE_INT32_T
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a>AC_TYPE_INT64_T
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a>AC_TYPE_UINT8_T
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a>AC_TYPE_UINT16_T
+<a id="__codelineno-2-27" name="__codelineno-2-27"></a>AC_TYPE_UINT32_T
+<a id="__codelineno-2-28" name="__codelineno-2-28"></a>AC_TYPE_UINT64_T
+<a id="__codelineno-2-29" name="__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30"></a># Checks for library functions.
+<a id="__codelineno-2-31" name="__codelineno-2-31"></a>AC_FUNC_MALLOC
+<a id="__codelineno-2-32" name="__codelineno-2-32"></a>AC_FUNC_REALLOC
+<a id="__codelineno-2-33" name="__codelineno-2-33"></a>AC_CHECK_FUNCS([gethostbyname memmove memset socket strerror strtoul])
+<a id="__codelineno-2-34" name="__codelineno-2-34"></a>
+<a id="__codelineno-2-35" name="__codelineno-2-35"></a>AC_CONFIG_FILES([Makefile
+<a id="__codelineno-2-36" name="__codelineno-2-36"></a>                 src/Makefile])
+<a id="__codelineno-2-37" name="__codelineno-2-37"></a>AC_OUTPUT
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><code>Line 2</code>: Set basic information for the project.</li>
+<li><code>Line 3</code>: Set auxiliary directory to hold generated files.</li>
+<li><code>Line 4</code>: Set automake flags. This is not GCC flags.</li>
+<li><code>Line 5</code>: Set source directory. Can have multiple source directories.</li>
+<li><code>Line 7</code>: Set macro holding directory.</li>
+<li><code>Line 12</code>: Set libtool settings.</li>
+<li><code>Line 15</code>: Check for libraries. Not used in this example.</li>
+<li><code>Line 17</code>: Check for header files.</li>
+<li><code>Line 20-28</code>: Check for typedefs, structures, and compiler characteristics.</li>
+<li><code>Line 31-33</code>: Check for library functions.</li>
+<li><code>Line 35-36</code>: Write out all of the <code>Makefile.am</code> files.</li>
+</ul>
+<h3 id="step-4-write-makefileam">Step 4: Write <code>Makefile.am</code></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">configure.ac</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span>
+<span class="normal"><a href="#__codelineno-3-33">33</a></span>
+<span class="normal"><a href="#__codelineno-3-34">34</a></span>
+<span class="normal"><a href="#__codelineno-3-35">35</a></span>
+<span class="normal"><a href="#__codelineno-3-36">36</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>SUBDIRS = src
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>EXTRA_DIST = m4/.keepdir
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>ACLOCAL_AMFLAGS = -I m4 --install
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>clean-local:
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>    rm -rf \
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>        autoscan.log \
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>        aclocal.m4 \
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>        autom4te.cache \
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>        build-aux \
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>        config.h \
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>        config.h.in \
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>        config.h.in~ \
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>        config.log \
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>        config.status \
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>        configure \
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>        libtool \
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>        m4/* \
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a>        .deps \
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a>        Makefile.in \
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a>        Makefile \
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a>        stamp-h1 \
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a>        src/*.in \
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a>        src/*.o \
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a>        src/*.la \
+<a id="__codelineno-3-27" name="__codelineno-3-27"></a>        src/*.lo \
+<a id="__codelineno-3-28" name="__codelineno-3-28"></a>        src/main \
+<a id="__codelineno-3-29" name="__codelineno-3-29"></a>        src/.deps \
+<a id="__codelineno-3-30" name="__codelineno-3-30"></a>        src/.libs \
+<a id="__codelineno-3-31" name="__codelineno-3-31"></a>        src/Makefile
+<a id="__codelineno-3-32" name="__codelineno-3-32"></a>    mkdir -p m4
+<a id="__codelineno-3-33" name="__codelineno-3-33"></a>    touch m4/.keepdir
+<a id="__codelineno-3-34" name="__codelineno-3-34"></a>    rm -rf \
+<a id="__codelineno-3-35" name="__codelineno-3-35"></a>        configure~ \
+<a id="__codelineno-3-36" name="__codelineno-3-36"></a>        *.tar.gz
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><code>Line 1</code>: Set subdirectories to look into.</li>
+<li><code>Line 4</code>: Set extra flags for aclocal.</li>
+<li><code>Line 6-36</code>: Clean up all the generated files. This extends the <code>make clean</code> command. Really helpful when you want to clean up everything but the source code.</li>
+</ul>
+<h3 id="step-5-write-srcmakefileam">Step 5: Write <code>./src/Makefile.am</code></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">configure.ac</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span>
+<span class="normal"><a href="#__codelineno-4-32">32</a></span>
+<span class="normal"><a href="#__codelineno-4-33">33</a></span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span>
+<span class="normal"><a href="#__codelineno-4-35">35</a></span>
+<span class="normal"><a href="#__codelineno-4-36">36</a></span>
+<span class="normal"><a href="#__codelineno-4-37">37</a></span>
+<span class="normal"><a href="#__codelineno-4-38">38</a></span>
+<span class="normal"><a href="#__codelineno-4-39">39</a></span>
+<span class="normal"><a href="#__codelineno-4-40">40</a></span>
+<span class="normal"><a href="#__codelineno-4-41">41</a></span>
+<span class="normal"><a href="#__codelineno-4-42">42</a></span>
+<span class="normal"><a href="#__codelineno-4-43">43</a></span>
+<span class="normal"><a href="#__codelineno-4-44">44</a></span>
+<span class="normal"><a href="#__codelineno-4-45">45</a></span>
+<span class="normal"><a href="#__codelineno-4-46">46</a></span>
+<span class="normal"><a href="#__codelineno-4-47">47</a></span>
+<span class="normal"><a href="#__codelineno-4-48">48</a></span>
+<span class="normal"><a href="#__codelineno-4-49">49</a></span>
+<span class="normal"><a href="#__codelineno-4-50">50</a></span>
+<span class="normal"><a href="#__codelineno-4-51">51</a></span>
+<span class="normal"><a href="#__codelineno-4-52">52</a></span>
+<span class="normal"><a href="#__codelineno-4-53">53</a></span>
+<span class="normal"><a href="#__codelineno-4-54">54</a></span>
+<span class="normal"><a href="#__codelineno-4-55">55</a></span>
+<span class="normal"><a href="#__codelineno-4-56">56</a></span>
+<span class="normal"><a href="#__codelineno-4-57">57</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>project = autotools_init_setup_type2
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>common_cflag = -Wno-implicit-function-declaration -Wextra -Wall -Wfloat-equal -Wundef -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wstrict-overflow=5 -Wwrite-strings -Waggregate-return -Wcast-qual -Wswitch-default -Wswitch-enum -Wconversion -Wunreachable-code -Wformat=2 -O3
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>common_cxxflag = -Wextra -Wall -Wfloat-equal -Wundef -Wshadow -Wpointer-arith -Wcast-align -Wstrict-overflow=5 -Wwrite-strings -Waggregate-return -Wcast-qual -Wswitch-default -Wswitch-enum -Wconversion -Wunreachable-code -Wformat=2 -O3
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a># ====================================
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a># install directory of public:
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a># - plugins         (.so, .a, .la)
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a># - libtool library (.so, .a, .la)
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a># - header          (.h)
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a># - binary
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a># NOTE: comment out if not needed of individual install
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a># NOTE: created directory won&#39;t be removed by uninstall
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a># NOTE: header ladir need to use the library name as prefix
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a># ====================================
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a>#plugindir  = $(prefix)/lib/${project}
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a>libdir      = $(prefix)/lib/${project}
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a>lib_ladir   = $(prefix)/include/${project}
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a>bindir      = $(prefix)/bin/${project}
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a># ====================================
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a># add library to install as plugin
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a># NOTE: can&#39;t be used with plugin_LTLIBRARIES
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a># ====================================
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a>lib_LTLIBRARIES = lib.la
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a># lib_LTLIBRARIES += lib2.la
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a># ====================================
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a># add library to install as libtool library
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a># NOTE: can&#39;t be used with lib_LTLIBRARIES
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a># ====================================
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a># plugin_LTLIBRARIES = lib.la
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a># plugin_LTLIBRARIES += lib2.la
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a># ====================================
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a># add source to build library
+<a id="__codelineno-4-36" name="__codelineno-4-36"></a># NOTE: need to use the library name as prefix
+<a id="__codelineno-4-37" name="__codelineno-4-37"></a># ====================================
+<a id="__codelineno-4-38" name="__codelineno-4-38"></a>lib_la_SOURCES = lib.c
+<a id="__codelineno-4-39" name="__codelineno-4-39"></a># lib_la_SOURCES += lib2.c
+<a id="__codelineno-4-40" name="__codelineno-4-40"></a>lib_la_HEADERS = lib.h
+<a id="__codelineno-4-41" name="__codelineno-4-41"></a># lib_la_HEADERS += lib2.h
+<a id="__codelineno-4-42" name="__codelineno-4-42"></a>lib_la_CFLAGS = $(common_cflag)
+<a id="__codelineno-4-43" name="__codelineno-4-43"></a># lib_la_CFLAGS += -I$(lib_ladir)
+<a id="__codelineno-4-44" name="__codelineno-4-44"></a>
+<a id="__codelineno-4-45" name="__codelineno-4-45"></a># ====================================
+<a id="__codelineno-4-46" name="__codelineno-4-46"></a># add executable to build
+<a id="__codelineno-4-47" name="__codelineno-4-47"></a># ====================================
+<a id="__codelineno-4-48" name="__codelineno-4-48"></a>bin_PROGRAMS = main
+<a id="__codelineno-4-49" name="__codelineno-4-49"></a># bin_PROGRAMS += main2
+<a id="__codelineno-4-50" name="__codelineno-4-50"></a>
+<a id="__codelineno-4-51" name="__codelineno-4-51"></a># ====================================
+<a id="__codelineno-4-52" name="__codelineno-4-52"></a># add source to build executable
+<a id="__codelineno-4-53" name="__codelineno-4-53"></a># NOTE: need to use the executable name as prefix
+<a id="__codelineno-4-54" name="__codelineno-4-54"></a># ====================================
+<a id="__codelineno-4-55" name="__codelineno-4-55"></a>main_SOURCES = main.c
+<a id="__codelineno-4-56" name="__codelineno-4-56"></a>main_CFLAGS = $(common_cflag)
+<a id="__codelineno-4-57" name="__codelineno-4-57"></a>main_LDADD = lib.la
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><code>Line 1-3</code>: Set variables for later use.</li>
+<li><code>Line 15-18</code>: Set install directories for binaries, libraries, headers, and plugins.</li>
+<li><code>Line 24</code>: Create a library to build named <code>lib</code>. If you have multiple libraries, you can add them like <code>Line 25</code>.</li>
+<li><code>Line 38-43</code>: Add sources, headers, and compiling flags for the library. Their names should be prefixed with the library name.</li>
+<li><code>Line 48</code>: Create an executable to build named <code>main</code>. If you have multiple executables, you can add them like <code>Line 49</code>.</li>
+<li><code>Line 55-57</code>: Add sources, compiling flags, and libraries to link for the executable. Their names should be prefixed with the executable name.</li>
+</ul>
+<h3 id="step-6-build-project">Step 6: Build Project</h3>
+<p>Execute the following commands to build the project.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>autoreconf<span class="w"> </span>-iv
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>./configure
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>make
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a>sudo<span class="w"> </span>make<span class="w"> </span>install
+</code></pre></div></td></tr></table></div>
+<p><code>Line 1</code> can actually be split into multiple steps, but for simplicity, this command is used instead. Also, if you prefer to do with multiple steps, people usually code them into a script <code>./bootstrap.sh</code> and execute it instead.</p>
+<p>The world of autotools can be a lot more complex than this. However, the following example should give you a good start.</p>
+<ul>
+<li>The entire project to start with can be found in <a href="https://github.com/belongtothenight/autotools_init_setup/tree/main">https://github.com/belongtothenight/autotools_init_setup/tree/main</a>.</li>
+<li>More complex project based on this can be found in <a href="https://github.com/belongtothenight/ACN_Code/tree/main/hw5_c_trace_analyze">https://github.com/belongtothenight/ACN_Code/tree/main/hw5_c_trace_analyze</a>.</li>
+</ul>
+<p>Open-sourced and mature projects managed by autotools:</p>
+<ul>
+<li><a href="https://github.com/LibtraceTeam/wandio">https://github.com/LibtraceTeam/wandio</a></li>
+<li><a href="https://github.com/LibtraceTeam/libtrace">https://github.com/LibtraceTeam/libtrace</a></li>
+<li><a href="https://github.com/kgoldman/ibmtss">https://github.com/kgoldman/ibmtss</a></li>
+<li><a href="https://github.com/tpm2-software/tpm2-tss">https://github.com/tpm2-software/tpm2-tss</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ol>
+<li><a href="https://youtu.be/3XO0d9Qyc34?si=vo2eT0Znm8kdLPgs">How to use autotools (automake, autoconf, aclocal, autoheader) by Daniel Persson</a></li>
+<li><a href="https://youtu.be/4q_inV9M_us?si=zBfY6WSWCrLH87ss">Introduction to the Autotools, part 1 by David A. Wheeler</a></li>
+</ol>
+<h2 id="error-correction">Error Correction</h2>
+<p>If you find any mistakes in the document, please create an <a href="https://github.com/belongtothenight/belongtothenight.github.io/issues">Issue</a> or a <a href="https://github.com/belongtothenight/belongtothenight.github.io/pulls">Pull request</a> or leave a message in <a href="https://github.com/belongtothenight/belongtothenight.github.io/discussions">Discussions</a> or send me a mail directly with the mail icon at the bottom right. Thank you!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../how_to_BASH-open_terminal_with_CLI/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Open Terminal with CLI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Open Terminal with CLI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../how_to_LINUX-auto_launch_program_on_boot/" class="md-footer__link md-footer__link--next" aria-label="Next: Auto Launch Program on Boot">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Auto Launch Program on Boot
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/belongtothenight"  target="_blank" rel="noopener">Dachuan Chen</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/belongtothenight" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/da-chuan-chen-2b5752251/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:dachuan516@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<map id="E:/GitHub/PRML_Code/src/hw2/main.c" name="E:/GitHub/PRML_Code/src/hw2/main.c">
+<area shape="rect" id="Node000001" title="Main function of hw2 &#45; Pinky knuckle dimension distribution." alt="" coords="179,5,335,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,171,66,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,50,132,70,89,98,65,127,48,158,43,155,60,124,86,94,130,65,178,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,171,159,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,45,135,65,116,79,100,97,95,111,97,126,110,156,105,159,91,128,90,111,96,95,112,75,132,60,177,40"/>
+<area shape="rect" id="Node000004" href="$hw2_2lib_2data__proc_8h.html" title="Data processing functions for hw2." alt="" coords="188,171,302,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,48,250,155,244,155,253,48"/>
+<area shape="rect" id="Node000005" href="$hw2_2lib_2data__plot_8h.html" title="Plotting functions for data." alt="" coords="110,96,220,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,51,192,88,189,84,231,47"/>
+<area shape="rect" id="Node000006" href="$hw2_2lib_2decision__boundary_8h.html" title="Decision boundary functions." alt="" coords="377,171,518,197"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="336,40,385,61,408,76,428,94,444,124,450,155,444,156,439,126,424,98,405,80,383,65,334,45"/>
+<area shape="rect" id="Node000007" href="$hw2_2lib_2normal__distribution_8h.html" title="Normal distribution functions." alt="" coords="377,245,518,272"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="336,39,391,55,447,81,474,98,497,119,517,142,533,170,537,184,533,199,514,222,491,240,488,235,511,218,528,196,531,184,528,172,513,145,494,122,470,103,445,86,389,60,334,44"/>
+<area shape="rect" id="Node000009" href="$output__csv_8h.html" title="Output csv functions." alt="" coords="295,96,414,123"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="284,47,329,84,326,88,280,51"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="144,126,73,165,70,160,141,121"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="161,124,143,158,138,156,156,122"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="181,121,222,158,218,162,177,125"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="215,121,384,164,383,169,213,126"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="450,198,450,230,445,230,445,198"/>
+<area shape="rect" id="Node000008" href="$hw2_2lib_2output__format_8h.html" title="Output format struct for color printing (charactors)" alt="" coords="392,320,503,347"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="450,273,450,304,445,304,445,273"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="337,125,278,164,275,160,334,121"/>
+<area shape="poly" id="edge15_Node000009_Node000006" title=" " alt="" coords="372,121,421,159,418,163,369,125"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="355,123,356,158,359,178,367,196,386,218,409,235,405,239,382,222,363,199,354,179,350,158,350,123"/>
+</map>
