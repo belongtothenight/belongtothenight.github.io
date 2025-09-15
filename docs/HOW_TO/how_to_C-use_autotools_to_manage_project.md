@@ -104,7 +104,7 @@ AC_OUTPUT
 
 ### Step 4: Write `Makefile.am`
 
-```m4 title="configure.ac" linenums="1"
+```m4 title="Makefile.am" linenums="1"
 SUBDIRS = src
 
 EXTRA_DIST = m4/.keepdir
@@ -149,7 +149,7 @@ clean-local:
 
 ### Step 5: Write `./src/Makefile.am`
 
-```m4 title="configure.ac" linenums="1"
+```m4 title="src/Makefile.am" linenums="1"
 project = autotools_init_setup_type2
 common_cflag = -Wno-implicit-function-declaration -Wextra -Wall -Wfloat-equal -Wundef -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wstrict-overflow=5 -Wwrite-strings -Waggregate-return -Wcast-qual -Wswitch-default -Wswitch-enum -Wconversion -Wunreachable-code -Wformat=2 -O3
 common_cxxflag = -Wextra -Wall -Wfloat-equal -Wundef -Wshadow -Wpointer-arith -Wcast-align -Wstrict-overflow=5 -Wwrite-strings -Waggregate-return -Wcast-qual -Wswitch-default -Wswitch-enum -Wconversion -Wunreachable-code -Wformat=2 -O3
